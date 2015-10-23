@@ -1,4 +1,4 @@
-platform :ios, '8.0'
+platform :ios, '8.4'
 
 def corekit_pods
     pod 'CocoaLumberjack', '1.9.2'
