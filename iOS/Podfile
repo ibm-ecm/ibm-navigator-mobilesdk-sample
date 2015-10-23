@@ -1,0 +1,17 @@
+platform :ios, '8.0'
+
+def corekit_pods
+    pod 'CocoaLumberjack', '1.9.2'
+    pod 'Alamofire', '1.2.3'
+    pod 'Mantle', '2.0.2'
+    pod 'MTLManagedObjectAdapter', '1.0.0'
+end
+
+xcodeproj 'IBMECMCoreSample/IBMECMCoreSample.xcodeproj'
+target :'IBMECMCoreSampleApp' do
+    corekit_pods
+    use_frameworks!
+    xcodeproj 'IBMECMCoreSample/IBMECMCoreSample.xcodeproj'
+end
+
+workspace 'mobileIBMECMCloudAppWorkspace'

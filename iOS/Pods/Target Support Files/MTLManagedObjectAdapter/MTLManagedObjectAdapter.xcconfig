@@ -1,0 +1,1 @@
+MTLMANAGEDOBJECTADAPTER_OTHER_LDFLAGS = -framework "CoreData" -framework "Foundation"
