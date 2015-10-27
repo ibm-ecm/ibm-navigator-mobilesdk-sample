@@ -1,4 +1,3 @@
-iOS/IBMECMCoreSample/IBMECMCoreSample.xcodeproj/xcuserdata
-iOS/IBMECMCore.framework
-.DS_Store
-screenshots/.DS_Store
+**/xcuserdata
+**/IBMECMCore.framework
+**/.DS_Store
