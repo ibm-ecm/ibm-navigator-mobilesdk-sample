@@ -8,22 +8,22 @@ PODS:
   - Mantle (2.0.2):
     - Mantle/extobjc (= 2.0.2)
   - Mantle/extobjc (2.0.2)
-  - MTLManagedObjectAdapter (1.0):
+  - MTLManagedObjectAdapter (1.0.0.1):
     - Mantle (~> 2.0)
-    - MTLManagedObjectAdapter/extobjc (= 1.0)
-  - MTLManagedObjectAdapter/extobjc (1.0):
+    - MTLManagedObjectAdapter/extobjc (= 1.0.0.1)
+  - MTLManagedObjectAdapter/extobjc (1.0.0.1):
     - Mantle (~> 2.0)
 
 DEPENDENCIES:
   - Alamofire (= 1.2.3)
   - CocoaLumberjack (= 1.9.2)
   - Mantle (= 2.0.2)
-  - MTLManagedObjectAdapter (= 1.0.0)
+  - MTLManagedObjectAdapter (= 1.0.0.1)
 
 SPEC CHECKSUMS:
   Alamofire: 5550bf0b575ed1a4bf9be572f9463e1015cc169e
   CocoaLumberjack: 628fca2e88ef06f7cf6817309aa405f325d9a6fa
   Mantle: 967fd31ea0220890b2e76589198996b534bb3fb1
-  MTLManagedObjectAdapter: cd1bf9562f205407d584ab7a577bd112ec140095
+  MTLManagedObjectAdapter: 2da4b0244ee66f87b43e5fe9e7cd47838dea83ae
 
-COCOAPODS: 0.38.2
+COCOAPODS: 0.39.0
