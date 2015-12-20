@@ -17,12 +17,12 @@ class LoginViewController : UIViewController {
     var ibmecmapp: IBMECMApplication?
     
     @IBAction func submitTapped(sender: UIButton) {
-        print("username: \(usernameTxt.text)")
-        print("password: you kidding?")
-        print("username: \(navigatorUrlTxt.text)")
+        println("username: \(usernameTxt.text)")
+        println("password: you kidding?")
+        println("username: \(navigatorUrlTxt.text)")
         
         if let user: String = usernameTxt.text, password = passwordTxt.text, url = navigatorUrlTxt.text {
-            if( user.characters.count < 1 || password.characters.count < 1 || url.characters.count < 1) {
+            if(count(user) < 1 || count(password) < 1 || count(url) < 1) {
                 Util.showError("Error", message: "Username, password and navigator url are all required for login.", vc: self)
                 
                 return
@@ -47,14 +47,14 @@ class LoginViewController : UIViewController {
                             message = detailMessage
                         }
                         
-                        if let ibmecmapp = ibmecmapp where (IBMECMFactory.sharedInstance.getCurrentRepository(ibmecmapp) == nil) {
+                        if(IBMECMFactory.sharedInstance.getCurrentRepository(ibmecmapp!) == nil) {
                             Util.showError(title, message: message, vc: weakSelf)
                         
                             return
                         }
                     }
                     
-                    if let _ = ibmecmapp {                        
+                    if let weakApp = ibmecmapp {                        
                         weakSelf.performSegueWithIdentifier("transitionToMainMenu", sender: weakSelf)
                     }
                 }
@@ -65,10 +65,12 @@ class LoginViewController : UIViewController {
     }
         
     @IBAction func unwindSegue(segue: UIStoryboardSegue) {
-        print("unwindSegue: LoginViewController")
+        println("unwindSegue: LoginViewController")
         
-        let svc = segue.sourceViewController
-        self.ibmecmapp?.logoff(nil)
-        svc.dismissViewControllerAnimated(true, completion: nil)
+        if let svc = segue.sourceViewController as? UIViewController {
+            self.ibmecmapp?.logoff(nil)
+            
+            svc.dismissViewControllerAnimated(true, completion: nil)
+        }
     }
 }

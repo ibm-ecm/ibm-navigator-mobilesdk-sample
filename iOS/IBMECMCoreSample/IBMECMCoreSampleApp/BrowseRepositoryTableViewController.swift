@@ -59,7 +59,7 @@ class BrowseRepositoryTableViewController : UITableViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         if(self.hasMore && indexPath.row == self.contentItems.count) {
-            let cell = tableView.dequeueReusableCellWithIdentifier("BrowseMore")// as? UITableViewCell
+            var cell = tableView.dequeueReusableCellWithIdentifier("BrowseMore") as? UITableViewCell
             
             return cell!
         }
@@ -96,7 +96,7 @@ class BrowseRepositoryTableViewController : UITableViewController {
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let selectedCell = self.tableView.cellForRowAtIndexPath(indexPath) as? RepositoryObjectTableViewCell
+        var selectedCell = self.tableView.cellForRowAtIndexPath(indexPath) as? RepositoryObjectTableViewCell
         
         if let cell = selectedCell {
             if(!cell.contentItem.isFolder) {
@@ -119,25 +119,20 @@ class BrowseRepositoryTableViewController : UITableViewController {
         
     }
     
-//    func tableView(tableView: UITableView, editActionsForRowAtIndexPath indexPath: NSIndexPath) -> [UITableViewRowAction]? {
-//        code
-//    }
-    
-    
-    override func tableView(tableView: UITableView, editActionsForRowAtIndexPath indexPath: NSIndexPath) -> [UITableViewRowAction]? {
+    override func tableView(tableView: UITableView, editActionsForRowAtIndexPath indexPath: NSIndexPath) -> [AnyObject]? {
         if(self.hasMore && indexPath.row == self.contentItems.count) {
             return nil
         }
         
-        let selectedCell = self.tableView.cellForRowAtIndexPath(indexPath) as? RepositoryObjectTableViewCell
-        let contentItem = selectedCell?.contentItem
+        var selectedCell = self.tableView.cellForRowAtIndexPath(indexPath) as? RepositoryObjectTableViewCell
+        var contentItem = selectedCell?.contentItem
         
         var favLabel = "Favorite"
         if(selectedCell!.isFavorite) {
             favLabel = "Unfavorite"
         }
         
-        let favoriteAction = UITableViewRowAction(style: UITableViewRowActionStyle.Default, title: favLabel , handler: {
+        var favoriteAction = UITableViewRowAction(style: UITableViewRowActionStyle.Default, title: favLabel , handler: {
             (action:UITableViewRowAction!, indexPath:NSIndexPath!) -> Void in
             
         })
@@ -147,11 +142,11 @@ class BrowseRepositoryTableViewController : UITableViewController {
         var actions: [UITableViewRowAction] = [favoriteAction]
         
         if (!contentItem!.isFolder) {
-            let deleteAction = UITableViewRowAction(style: UITableViewRowActionStyle.Default, title: "Delete", handler: {
+            var deleteAction = UITableViewRowAction(style: UITableViewRowActionStyle.Default, title: "Delete", handler: {
                 [weak contentItem, weak self] (action: UITableViewRowAction!, indexPath: NSIndexPath!) -> Void in
                 
                 if let weakSelf = self, let weakCitem = contentItem {
-                    let confirmation = UIAlertController(title: "Confirm", message: "Are you sure you want to delete this?", preferredStyle: UIAlertControllerStyle.Alert)
+                    var confirmation = UIAlertController(title: "Confirm", message: "Are you sure you want to delete this?", preferredStyle: UIAlertControllerStyle.Alert)
                     
                     confirmation.addAction(UIAlertAction(title: "Delete", style: UIAlertActionStyle.Destructive, handler: { (action: UIAlertAction!) in
                         weakSelf.deleteObject(weakCitem, indexPath: indexPath)
@@ -175,7 +170,7 @@ class BrowseRepositoryTableViewController : UITableViewController {
         self.repository.deleteItems([cItem], onComplete: {
             (error: NSError?) -> Void in
             
-            if let _ = error {
+            if let error = error {
                 Util.showError("Error", message: "Could not delete repository object, please login and retry", vc: self)
             } else {
                 self.contentItems.removeObjectAtIndex(indexPath.row)
@@ -190,7 +185,7 @@ class BrowseRepositoryTableViewController : UITableViewController {
             [weak self] (contentItem: IBMECMContentItem?, error: NSError?) -> Void in
             
             if let weakSelf = self {
-                if let _ = error {
+                if let err = error {
                     Util.showError("Error", message: "Could not fetch repository objects, please login and retry", vc: weakSelf)
                     
                     return
@@ -211,7 +206,7 @@ class BrowseRepositoryTableViewController : UITableViewController {
                 [weak self] (resultSet: IBMECMResultSet?, error: NSError?) -> Void in
                 
                 if let weakSelf = self {
-                    if let _ = error {
+                    if let err = error {
                         Util.showError("Error", message: "Could not fetch repository objects, please login and retry", vc: weakSelf)
                         
                         weakSelf.tableView.reloadData()
@@ -243,7 +238,7 @@ class BrowseRepositoryTableViewController : UITableViewController {
             [weak self](results: IBMECMResultSet?, error: NSError?) -> Void in
             
             if let weakSelf = self {
-                if let _ = error {
+                if let error = error {
                     Util.showError("Error", message: "Could not next page, please login and retry", vc: weakSelf)
                     
                     return
