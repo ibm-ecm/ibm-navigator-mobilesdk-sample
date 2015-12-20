@@ -47,7 +47,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             if let loginError = error {
                 // login failed
                 
-                println("login failed for user \(USERNAME). The error was: \(loginError.description)")
+                print("login failed for user \(USERNAME). The error was: \(loginError.description)")
                 
                 return
             }
@@ -79,7 +79,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 if let err = error {
                     // error searching
                     
-                    println("Could not get search results. The error was: \(err.description)")
+                    print("Could not get search results. The error was: \(err.description)")
                     
                     return
                 }
@@ -87,12 +87,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 if let rs = resultSet {
                     if let items = rs.items {
                         for item: IBMECMContentItem in items {
-                            println("Search match id = \(item.id), name = \(item.name), isFolder = \(item.isFolder)")
+                            print("Search match id = \(item.id), name = \(item.name), isFolder = \(item.isFolder)")
                         }
                     }
                 }
                 
-                println("search done")
+                print("search done")
                 
         })
     }
@@ -107,13 +107,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             if let loginError = error {
                 // login failed
                 
-                println("login failed for user \(USERNAME). The error was: \(loginError.description)")
+                print("login failed for user \(USERNAME). The error was: \(loginError.description)")
                 
                 return
             }
             
             //Obtain the current repository set for the default desktop
-            var repository: IBMECMRepository = IBMECMFactory.sharedInstance.getCurrentRepository(ibmecmapp)!
+            let repository: IBMECMRepository = IBMECMFactory.sharedInstance.getCurrentRepository(ibmecmapp)!
             
             // SEE: FETCH DOCUMENT BY ID
             repository.retrieveItem("Document,{336211AE-4EB8-4DB3-8E95-BD40317C20BA},{67625351-DB38-4500-B83D-9BAD391358C7}", onComplete: {
@@ -122,7 +122,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 if let err = error {
                     // error retriving folder
                     
-                    println("Could not get root folder. The error was: \(err.description)")
+                    print("Could not get root folder. The error was: \(err.description)")
                     
                     return
                 }
@@ -134,7 +134,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                         if let loginError = error {
                             // login failed
                             
-                            println("liking the document failed. The error was: \(loginError.description)")
+                            print("liking the document failed. The error was: \(loginError.description)")
                             
                             return
                         }
@@ -147,11 +147,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                             if let items = recommendationItems.items {
                                 for item: IBMECMSocialItem in items {
                                     // iterate through document likes
-                                    println("document like by user: \(item.originator)")
+                                    print("document like by user: \(item.originator)")
                                 }
                             }
                             
-                            if let item = recommendationItems.myRecommendation {
+                            if let _ = recommendationItems.myRecommendation {
                                 // determine whether this user has liked the document
                             }
                         }
@@ -172,15 +172,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             if let loginError = error {
                 // login failed
                 
-                println("login failed for user \(USERNAME). The error was: \(loginError.description)")
+                print("login failed for user \(USERNAME). The error was: \(loginError.description)")
                 
                 return
             }
             
             //Obtain the current repository set for the default desktop
-            var repository: IBMECMRepository = IBMECMFactory.sharedInstance.getCurrentRepository(ibmecmapp)!
+            let repository: IBMECMRepository = IBMECMFactory.sharedInstance.getCurrentRepository(ibmecmapp)!
             
-            println("logged in as \(USERNAME). Repository name: \(repository.id)")
+            print("logged in as \(USERNAME). Repository name: \(repository.id)")
             
             // SEE: FETCH ITEM BY ID
             repository.retrieveItem("Folder,{336211AE-4EB8-4DB3-8E95-BD40317C20BA},{FAA7B1A0-94FC-4E78-AA28-C540D4B3A0CA}", onComplete: {
@@ -189,13 +189,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 if let err = error {
                     // error addind folder
                     
-                    println("Could not get root folder. The error was: \(err.description)")
+                    print("Could not get root folder. The error was: \(err.description)")
                     
                     return
                 }
                 
                 if let retrievedFolder: IBMECMContentItem = contentItem {
-                    println("the retrieved folder's id is: \(retrievedFolder.id), the name is \(retrievedFolder.name)")
+                    print("the retrieved folder's id is: \(retrievedFolder.id), the name is \(retrievedFolder.name)")
                     
                     // SEE: GET FOLDER CONTAINEES
                     retrievedFolder.retrieveFolderContent(false, orderBy: nil, descending: false, pageSize: 25, teamspaceId: nil, onComplete: {
@@ -204,18 +204,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                         if let err = error {
                             // error adding folder
                             
-                            println("Could not get folder contents. The error was: \(err.description)")
+                            print("Could not get folder contents. The error was: \(err.description)")
                             
                             return
                         }
                         
                         if let rs = resultSet {
                             if let items = rs.items {
-                                var foundOne: Bool = false
-                                println("items count \(items.count)")
+//                                var foundOne: Bool = false
+                                print("items count \(items.count)")
                                 for item: IBMECMContentItem in items {
                                     
-                                    println("Folder Containeee: id = \(item.id), name = \(item.name), isFolder = \(item.isFolder)")
+                                    print("Folder Containeee: id = \(item.id), name = \(item.name), isFolder = \(item.isFolder)")
                                     
                                     if(item.isFolder) {
                                         continue
@@ -226,20 +226,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                                     // SEE: GET DOCUMENT PROPERTIES
                                     let docProps: [String : AnyObject] = item.properties
                                     for(propName, propValue) in docProps {
-                                        println("Property Name '\(propName)' - Property Value '\(propValue)'")
+                                        print("Property Name '\(propName)' - Property Value '\(propValue)'")
                                     }
-                                    
-                                    let tempFilePath: String = NSTemporaryDirectory().stringByAppendingPathExtension("txt")!
+                                    //TODO
+                                    let tempFilePath: String = String (stringInterpolation: "\(NSTemporaryDirectory())txt") //.stringByAppendingPathExtension("txt")!
                                     
                                     // Remove exising file in tempFilePath
-                                    var error:NSError?
+//                                    var error:NSError?
                                     let fileManager = NSFileManager()
-                                    if fileManager.removeItemAtPath(tempFilePath, error: &error){
-                                        println("Successfully deleted the path \(tempFilePath)")
-                                    } else {
-                                        if let theError = error{
-                                            println("Failed to remove path \(tempFilePath) with error \(theError)")
-                                        }
+                                    
+                                    do {
+                                     try fileManager.removeItemAtPath(tempFilePath)
+                                        print("Successfully deleted the path \(tempFilePath)")
+                                    } catch let err as NSError {
+                                        print("Failed to remove path \(tempFilePath) with error \(err)")
+                                        
                                     }
                                     // SEE: GET DOCUMENT CONTENT
                                     
@@ -249,15 +250,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                                             
                                             if let err = error {
                                                 // error downloading document content
-                                                println("document content could not be retrived. The error was: \(err.description)")
+                                                print("document content could not be retrived. The error was: \(err.description)")
                                                 
                                                 return
                                             }
+                                            do{
+                                            let contentsOfFile: String = try NSString(contentsOfFile: tempFilePath, encoding: NSUTF8StringEncoding) as String
                                             
-                                            let contentsOfFile: String = String(contentsOfFile: tempFilePath, encoding: NSUTF8StringEncoding, error: nil)!
-                                            
-                                            println("contents of the file: \(contentsOfFile)")
-                                            
+                                            print("contents of the file: \(contentsOfFile)")
+                                            } catch let err as NSError {
+                                                print("Failed to get string content from path \(tempFilePath) with error \(err)")
+                                                
+                                            }
                                         }, progress: nil)
                                     
                                     // we will just do this for one document for now and then break
@@ -281,15 +285,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             if let loginError = error {
                 // login failed
                 
-                println("login failed for user \(USERNAME). The error was: \(loginError.description)")
+                print("login failed for user \(USERNAME). The error was: \(loginError.description)")
                 
                 return
             }
             
             //Obtain the current repository set for the default desktop
-            var repository: IBMECMRepository = IBMECMFactory.sharedInstance.getCurrentRepository(ibmecmapp)!
+            let repository: IBMECMRepository = IBMECMFactory.sharedInstance.getCurrentRepository(ibmecmapp)!
             
-            println("logged in as \(USERNAME). Repository name: \(repository.id)")
+            print("logged in as \(USERNAME). Repository name: \(repository.id)")
             
             // SEE: FETCH ITEM BY PATH
             repository.retrieveItem("/", onComplete: {
@@ -298,13 +302,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 if let err = error {
                     // error addind folder
                     
-                    println("Could not get root folder. The error was: \(err.description)")
+                    print("Could not get root folder. The error was: \(err.description)")
                     
                     return
                 }
                 
                 if let rootFolder: IBMECMContentItem = contentItem {
-                    println("the root folder's id is: \(rootFolder.id), the name is \(rootFolder.name)")
+                    print("the root folder's id is: \(rootFolder.id), the name is \(rootFolder.name)")
                     
                     var properties = [[String : AnyObject]]()
                     properties.append([
@@ -318,7 +322,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                         if let err = error {
                             // error addind folder
                             
-                            println("folder could not be added. The error was: \(err.description)")
+                            print("folder could not be added. The error was: \(err.description)")
                             
                             return
                         }
@@ -326,7 +330,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                         // folder was added successfully
                         
                         if let folderAdded: IBMECMContentItem = contentItem {
-                            println("the new folder's id is: \(folderAdded.id) and folder name is: \(folderAdded.name)")
+                            print("the new folder's id is: \(folderAdded.id) and folder name is: \(folderAdded.name)")
                             
                             var properties = [[String : AnyObject]]()
                             properties.append([
@@ -350,7 +354,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                                     if let err = error {
                                         // error addind folder
                                         
-                                        println("document could not be added. The error was: \(err.description)")
+                                        print("document could not be added. The error was: \(err.description)")
                                         
                                         return
                                     }
@@ -376,8 +380,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             ])
         let asMinorVersion = false
         
-        var error: NSError?
-        let content:NSData? = String(contentsOfFile: "SAMPLE/PATH/SAMPLE.txt", encoding: NSUTF8StringEncoding, error: &error)?.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: false)
+//        var error: NSError?
+        do {
+        let content:NSData? = try NSString(contentsOfFile: "SAMPLE/PATH/SAMPLE.txt", encoding: NSUTF8StringEncoding).dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: false)
         
         contentItem.checkIn(contentItem.name, templateName: contentItem.templateName!, contentSourceType: IBMECMContentSourceType.Document, mimetype: contentItem.mimetype!, data: content!, properties: properties, asMinorVersion: asMinorVersion, onComplete:
             {
@@ -390,6 +395,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 }
             },
             progress: nil)
+        } catch let err as NSError {
+            print("Failed to checkIn with error \(err)")
+            
+        }
+
     }
     
     //Retrieve the parent folder by calling the repository.retrieveItem API.  The ID/PATH allows you to retrieve any folder.
@@ -399,7 +409,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             (contentItem: IBMECMContentItem?, error: NSError?) -> Void in
             
             if let item = contentItem {
-                println("Item's name: \(item.name)")
+                print("Item's name: \(item.name)")
                 onComplete(contentItem: item)
             }
         })
@@ -412,8 +422,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             "name": "DocumentTitle",
             "value": "New Document \(AppDelegate.randomStringWithLength(8))"])
         
-        var error: NSError?
-        let content:NSData? = String(contentsOfFile: "SAMPLE/PATH/SAMPLE.txt", encoding: NSUTF8StringEncoding, error: &error)?.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: false)
+//        var error: NSError?
+        do {
+
+        let content:NSData? = try NSString(contentsOfFile: "SAMPLE/PATH/SAMPLE.txt", encoding: NSUTF8StringEncoding).dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: false)
         
         repository?.addDocumentItem(parentFolder.id, teamspaceId: teamspace?.id, templateName: "Document", contentSourceType: IBMECMContentSourceType.Document, properties: properties, mimeType: "text/plain", fileName: "NewDocument.txt", content: content!, addAsMinorVersion: false, onComplete:
             {
@@ -422,7 +434,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     self.displayError(err)
                 }
                 else {
-                    println("Finished adding new document")
+                    print("Finished adding new document")
                     if let item = contentItem {
                         onComplete?(contentItem: item)
                     }
@@ -430,6 +442,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             },
             progress: nil
         )
+        } catch let err as NSError {
+            print("Failed to add doc with error \(err)")
+            
+        }
+
     }
     
     //Adds a new folder by providing property values
@@ -447,7 +464,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 self.displayError(err)
             }
             else {
-                println("Finished adding new folder")
+                print("Finished adding new folder")
                 if let item = contentItem {
                     onComplete?(contentItem: item)
                 }
@@ -455,10 +472,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         })
     }
     
-    private func displayError(error: NSError){
-        if let userInfo = error.userInfo {
+    private func displayError(error: NSError?){
+        if let userInfo = error?.userInfo {
             for (key, value) in userInfo {
-                println("Error Key: \(key) - Error Message: \(value)")
+                print("Error Key: \(key) - Error Message: \(value)")
             }
         }
     }
@@ -488,11 +505,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     class func randomStringWithLength (len : Int) -> NSString {
         let letters : NSString = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
         
-        var randomString : NSMutableString = NSMutableString(capacity: len)
+        let randomString : NSMutableString = NSMutableString(capacity: len)
         
         for (var i=0; i < len; i++){
-            var length = UInt32 (letters.length)
-            var rand = arc4random_uniform(length)
+            let length = UInt32 (letters.length)
+            let rand = arc4random_uniform(length)
             randomString.appendFormat("%C", letters.characterAtIndex(Int(rand)))
         }
         

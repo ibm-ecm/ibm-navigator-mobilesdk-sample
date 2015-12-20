@@ -17,20 +17,20 @@ class DocumentViewerController: QLPreviewController, QLPreviewControllerDataSour
 
         self.dataSource = self
 
-        if let cItem = contentItem {
+        if let _ = contentItem {
             self.downloadDocument()
         }
     }
     
-    func numberOfPreviewItemsInPreviewController(controller: QLPreviewController!) -> Int{
-        if let cItem = self.contentItem {
+    func numberOfPreviewItemsInPreviewController(controller: QLPreviewController) -> Int{
+        if let _ = self.contentItem {
             return 1
         } else {
             return 0
         }
     }
     
-    func previewController(controller: QLPreviewController!, previewItemAtIndex index: Int) -> QLPreviewItem {
+    func previewController(controller: QLPreviewController, previewItemAtIndex index: Int) -> QLPreviewItem {
         let previewItem = SamplePreviewItem(document: self.contentItem!)
         
         return previewItem
@@ -46,7 +46,7 @@ class DocumentViewerController: QLPreviewController, QLPreviewControllerDataSour
         }
         
         let progress : (bytesRead:Int64, totalBytesRead:Int64, totalBytesExpectedToRead:Int64) -> Void = {
-            [weak self] (bytesRead, totalBytesRead, totalBytesExpectedToRead ) -> Void in
+           /* [weak self] */(bytesRead, totalBytesRead, totalBytesExpectedToRead ) -> Void in
             // unused
         }
         

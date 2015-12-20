@@ -1,5 +1,5 @@
 PODS:
-  - Alamofire (1.2.3)
+  - Alamofire (2.0.2)
   - CocoaLumberjack (1.9.2):
     - CocoaLumberjack/Extensions (= 1.9.2)
   - CocoaLumberjack/Core (1.9.2)
@@ -15,13 +15,13 @@ PODS:
     - Mantle (~> 2.0)
 
 DEPENDENCIES:
-  - Alamofire (= 1.2.3)
+  - Alamofire (~> 2.0)
   - CocoaLumberjack (= 1.9.2)
   - Mantle (= 2.0.2)
   - MTLManagedObjectAdapter (= 1.0.0.1)
 
 SPEC CHECKSUMS:
-  Alamofire: 5550bf0b575ed1a4bf9be572f9463e1015cc169e
+  Alamofire: 8edbab00802a752bb5240cc2abe70e7e881488ad
   CocoaLumberjack: 628fca2e88ef06f7cf6817309aa405f325d9a6fa
   Mantle: 967fd31ea0220890b2e76589198996b534bb3fb1
   MTLManagedObjectAdapter: 2da4b0244ee66f87b43e5fe9e7cd47838dea83ae

@@ -24,7 +24,7 @@ class MenuOptionsTableViewController : UITableViewController {
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCellWithIdentifier("MenuOptionTableViewCell") as? UITableViewCell
+        var cell = tableView.dequeueReusableCellWithIdentifier("MenuOptionTableViewCell") //as? UITableViewCell
         
         if cell == nil {
             cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "MenuOptionTableViewCell")

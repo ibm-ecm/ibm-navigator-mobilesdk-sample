@@ -26,7 +26,7 @@ class SamplePreviewItem: NSObject, QLPreviewItem {
     
     var previewItemTitle: String? {
         get {
-            return count(self.document.name) == 0 ? "undefined" : self.document.name
+            return self.document.name.characters.count == 0 ? "undefined" : self.document.name
         }
     }
 }

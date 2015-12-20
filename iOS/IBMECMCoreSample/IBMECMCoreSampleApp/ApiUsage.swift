@@ -23,15 +23,15 @@ class ApiUsage {
         ibmecmapp.login(username, password: password, onComplete: {
             (error: NSError?) -> Void in
             
-            if let loginError = error {
+            if let _ = error {
                 // login failed
             } else {
                 // login succeeded
                 
                 //Obtain the current repository set for the default desktop
-                var repository: IBMECMRepository = IBMECMFactory.sharedInstance.getCurrentRepository(self.ibmecmapp)!
+                let repository: IBMECMRepository = IBMECMFactory.sharedInstance.getCurrentRepository(self.ibmecmapp)!
                 
-                println("logged in as \(username). Repository name: \(repository.id)")
+                print("logged in as \(username). Repository name: \(repository.id)")
             }
         })
     }
@@ -47,7 +47,7 @@ class ApiUsage {
             (contentItem: IBMECMContentItem?, error: NSError?) -> Void in
             
             if let item = contentItem {
-                println("item's name: \(item.name)")
+                print("item's name: \(item.name)")
             }
         })
     }
@@ -62,19 +62,19 @@ class ApiUsage {
         repository.retrieveContentItemAllVersions(itemId, onComplete: {
             (resultSet: IBMECMResultSet?, error: NSError?) -> Void in
             
-            if let err = error {
+            if let _ = error {
                 // error while retrieving all versions for current item
             } else {
                 if let rs = resultSet {
                     // all versions retrieved successfully
-                    println("resultSet | .pageSize =>\(rs.pageSize)")
+                    print("resultSet | .pageSize =>\(rs.pageSize)")
                     
                     if let items = rs.items {
                         // do something after retrieving all versions of a document
-                        println("items | .count =>\(items.count)")
+                        print("items | .count =>\(items.count)")
                         
                         for item in items {
-                            println("item | .id = \(item.id), .name = \(item.name), .isFolder = \(item.isFolder), .versionStatus = \(item.versionStatus?.description)")
+                            print("item | .id = \(item.id), .name = \(item.name), .isFolder = \(item.isFolder), .versionStatus = \(item.versionStatus?.description)")
                         }
                     }
                 }
@@ -91,10 +91,10 @@ class ApiUsage {
         desktop.retrieveMyPersonalFolder({
             (favorite: IBMECMFavorite?, error: NSError?) -> Void in
             
-            if let err = error {
+            if let _ = error {
                 // error while retrieving personal folder
             } else {
-                if let fav = favorite {
+                if let _ = favorite {
                     // personal folder retrived successfully
                 } else {
                     // no personal folder exists for user (very uncommon)
@@ -134,19 +134,19 @@ class ApiUsage {
             onComplete:
             {
                 (resultSet: IBMECMResultSet?, error: NSError?) -> Void in
-                if let err = error {
+                if let _ = error {
                     // error retrieving folder contents
                 }
                 
                 if let rs = resultSet {
-                    println("resultSet | .pageSize =>\(rs.pageSize)")
+                    print("resultSet | .pageSize =>\(rs.pageSize)")
                     
                     if let items = rs.items {
                         // do something after retrieving contents of a folder
-                        println("items | .count =>\(items.count)")
+                        print("items | .count =>\(items.count)")
                         
                         for item in items {
-                            println("item | .id = \(item.id), .name = \(item.name), .isFolder = \(item.isFolder)")
+                            print("item | .id = \(item.id), .name = \(item.name), .isFolder = \(item.isFolder)")
                         }
                     }
                     
@@ -155,19 +155,19 @@ class ApiUsage {
                         rs.retrieveNextPage({
                             (resultSet: IBMECMResultSet?, error: NSError?) -> Void in
                             
-                            if let err = error {
+                            if let _ = error {
                                 // error retrieving folder contents
                             }
                             
                             if let rs = resultSet {
-                                println("resultSet | .pageSize =>\(rs.pageSize)")
+                                print("resultSet | .pageSize =>\(rs.pageSize)")
                                 
                                 if let items = rs.items {
                                     // do something after retrieving contents of next page for a folder
-                                    println("items | .count =>\(items.count)")
+                                    print("items | .count =>\(items.count)")
                                     
                                     for item in items {
-                                        println("item | .id = \(item.id), .name = \(item.name), .isFolder = \(item.isFolder)")
+                                        print("item | .id = \(item.id), .name = \(item.name), .isFolder = \(item.isFolder)")
                                     }
                                 }
                             }
@@ -203,33 +203,33 @@ class ApiUsage {
         repository.searchAdHoc(searchFolderId, teamspaceId: teamspaceId, searchClasses: searchClasses, objectType: IBMECMObjectType.Document, searchPredicates: searchPredicates, textSearchPredicate: textSearchPredicate, orderBy: nil, descending: nil, pageSize: pageSize, onComplete: {
             (resultSet: IBMECMResultSet?, error: NSError?) -> Void in
             
-            if let error = error {
+            if let _ = error {
                 // handle the error once failure to search
             } else {
                 if let resultSet = resultSet {
                     // do something as will after searching sucessfully
-                    println("resultSet | id =>\(resultSet.id), pageSize =>\(resultSet.pageSize)")
+                    print("resultSet | id =>\(resultSet.id), pageSize =>\(resultSet.pageSize)")
                     
                     if let items = resultSet.items {
                         for item in items {
-                            println("item | .id = \(item.id), .name = \(item.name), .isFolder = \(item.isFolder)")                        }
+                            print("item | .id = \(item.id), .name = \(item.name), .isFolder = \(item.isFolder)")                        }
                         
                         if resultSet.hasMore() { // can fetch next page
                             resultSet.pageSize = 2
                             resultSet.retrieveNextPage({
                                 (resultSet, error) -> Void in
                                 
-                                if let err = error {
+                                if let _ = error {
                                     // handle error on failure to fetch next page
                                 }
                                 
                                 if let resultSet = resultSet {
                                     // do something as will after fetching next page sucessfully
-                                    println("resultSet | id =>\(resultSet.id), pageSize =>\(resultSet.pageSize)")
+                                    print("resultSet | id =>\(resultSet.id), pageSize =>\(resultSet.pageSize)")
                                     
                                     if let items = resultSet.items {
                                         for item in items {
-                                            println("item | .id = \(item.id), .name = \(item.name), .isFolder = \(item.isFolder)")
+                                            print("item | .id = \(item.id), .name = \(item.name), .isFolder = \(item.isFolder)")
                                             
                                         }
                                     }
@@ -280,7 +280,7 @@ class ApiUsage {
             addAsMinorVersion: asMinorVersion,
             onComplete: {
                 (contentItem: IBMECMContentItem?, error: NSError?) -> Void in
-                if let err = error {
+                if let _ = error {
                     // error adding document
                 } else {
                     // document was added successfully
@@ -307,7 +307,7 @@ class ApiUsage {
         
         repository.addFolderItem(folderClass, parentFolderId: parentFolder.id, teamspaceId: teamspace?.id, properties: properties, onComplete: {
             (contentItem: IBMECMContentItem?, error: NSError?) -> Void in
-            if let err = error {
+            if let _ = error {
                 // error addind folder
             } else {
                 // folder was added successfully
@@ -325,7 +325,7 @@ class ApiUsage {
             {
                 (contentItem: IBMECMContentItem?, error: NSError?) -> Void in
                 
-                if let err = error {
+                if let _ = error {
                     // error checking out
                 } else {
                     // checkout succeeded
@@ -382,7 +382,7 @@ class ApiUsage {
             {
                 (contentItem: IBMECMContentItem?, error: NSError?) -> Void in
                 
-                if let err = error {
+                if let _ = error {
                     // error checking in document
                 } else {
                     // checkin succeeded
@@ -403,7 +403,7 @@ class ApiUsage {
         document.addRecommendation()
             {
                 (error: NSError?) -> Void in
-                if let err = error {
+                if let _ = error {
                     // save document like failed
                 }
         }
@@ -418,18 +418,18 @@ class ApiUsage {
         document.retrieveRecommendations {
             (resultSet: IBMECMRecommendationResultSet?, error: NSError?) -> Void in
             
-            if let err = error {
+            if let _ = error {
                 // retrieve document recommendations failed
             }
             
             if let recommendationItems = resultSet {
                 if let items = recommendationItems.items {
-                    for item: IBMECMSocialItem in items {
+                    for _: IBMECMSocialItem in items {
                         // iterate through document likes
                     }
                 }
                 
-                if let item = recommendationItems.myRecommendation {
+                if let _ = recommendationItems.myRecommendation {
                     // determine whether this user has liked the document
                 }
             }
@@ -446,7 +446,7 @@ class ApiUsage {
         document.addComment(comment, onComplete: {
             (icnResult: IBMECMComment?, error: NSError?) -> Void in
             
-            if let err = error {
+            if let _ = error {
                 // adding a comment to a document failed
             } else {
                 // adding a comment succeeded
@@ -463,18 +463,19 @@ class ApiUsage {
         document.retrieveComments {
             (resultSet: IBMECMCommentsResultSet?, error: NSError?) -> Void in
             
-            if let err = error {
+            if let _ = error {
                 // retrieving documents failed
             }
             
             if let commentsResultSet = resultSet {
                 if let items = commentsResultSet.items {
-                    for item: IBMECMComment in items {
-                        let text = item.comment
-                        let id = item.id
-                        let commentor = item.originatorDisplayValue
+                    print("items.count = \(items.count)")
+//                    for item: IBMECMComment in items {
+//                        let text = item.comment
+//                        let id = item.id
+//                        let commentor = item.originatorDisplayValue
                     }
-                }
+//                }
             }
         }
     }
