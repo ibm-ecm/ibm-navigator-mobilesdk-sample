@@ -2,7 +2,7 @@ platform :ios, '8.4'
 
 def corekit_pods
     pod 'CocoaLumberjack', '1.9.2'
-    pod 'Alamofire', '1.2.3'
+    pod 'Alamofire',  '~> 2.0'
     pod 'Mantle', '2.0.2'
     pod 'MTLManagedObjectAdapter', '1.0.0.1'
 end

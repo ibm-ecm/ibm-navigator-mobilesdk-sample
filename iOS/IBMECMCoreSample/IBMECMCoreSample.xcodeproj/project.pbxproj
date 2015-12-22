@@ -61,7 +61,7 @@
 		0A7D52C31BD9915F00B0EEBE /* SamplePreviewItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SamplePreviewItem.swift; sourceTree = "<group>"; };
 		0AB0B7F61BD852110088344C /* MenuOptionsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuOptionsTableViewController.swift; sourceTree = "<group>"; };
 		0AC7E12A1BDA9D1400337245 /* SearchRepositoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchRepositoryViewController.swift; sourceTree = "<group>"; };
-		0ACBEBF31B62DF6400479F56 /* .app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = .app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0ACBEBF31B62DF6400479F56 /* IBMECMCoreSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IBMECMCoreSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ACBEBF61B62DF6400479F56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0ACBEBF71B62DF6400479F56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0ACBEC011B62DF6400479F56 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -161,7 +161,7 @@
 		A77261741B595F280077E80E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0ACBEBF31B62DF6400479F56 /* .app */,
+				0ACBEBF31B62DF6400479F56 /* IBMECMCoreSampleApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -187,7 +187,7 @@
 			);
 			name = IBMECMCoreSampleApp;
 			productName = IBMECMCoreSampleApp;
-			productReference = 0ACBEBF31B62DF6400479F56 /* .app */;
+			productReference = 0ACBEBF31B62DF6400479F56 /* IBMECMCoreSampleApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -197,7 +197,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0640;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = IBM;
 				TargetAttributes = {
 					0ACBEBF21B62DF6400479F56 = {
@@ -345,6 +345,7 @@
 				);
 				INFOPLIST_FILE = IBMECMCoreSampleApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ibm.ecm.$(PRODUCT_NAME:rfc1034identifier)";
 			};
 			name = Debug;
 		};
@@ -360,6 +361,7 @@
 				);
 				INFOPLIST_FILE = IBMECMCoreSampleApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ibm.ecm.$(PRODUCT_NAME:rfc1034identifier)";
 			};
 			name = Release;
 		};
@@ -383,6 +385,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;

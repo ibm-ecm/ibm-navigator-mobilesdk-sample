@@ -49,7 +49,7 @@ class SearchRepositoryViewController : UIViewController, UITableViewDataSource, 
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         if(self.hasMore && indexPath.row == self.contentItems.count) {
-            var cell = tableView.dequeueReusableCellWithIdentifier("SearchMore") as? UITableViewCell
+            let cell = tableView.dequeueReusableCellWithIdentifier("SearchMore") //as? UITableViewCell
             
             return cell!
         }
@@ -62,7 +62,7 @@ class SearchRepositoryViewController : UIViewController, UITableViewDataSource, 
             return cell
         }
         
-        var cell: RepositoryObjectTableViewCell? = tableView.dequeueReusableCellWithIdentifier("SearchDocumentTableViewCell") as? RepositoryObjectTableViewCell
+        let cell: RepositoryObjectTableViewCell? = tableView.dequeueReusableCellWithIdentifier("SearchDocumentTableViewCell") as? RepositoryObjectTableViewCell
         
         cell!.contentItem = self.contentItems[indexPath.row] as! IBMECMContentItem
         
@@ -78,7 +78,7 @@ class SearchRepositoryViewController : UIViewController, UITableViewDataSource, 
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        var selectedCell = self.tableView.cellForRowAtIndexPath(indexPath) as? RepositoryObjectTableViewCell
+        let selectedCell = self.tableView.cellForRowAtIndexPath(indexPath) as? RepositoryObjectTableViewCell
         
         if let cell = selectedCell {
             if(!cell.contentItem.isFolder) {
@@ -100,17 +100,17 @@ class SearchRepositoryViewController : UIViewController, UITableViewDataSource, 
     @IBAction func submitTapped(sender: UIButton) {
         self.contentItems.removeAllObjects()
         
-        if let repos = self.repository {
+        if let _ = self.repository {
             var searchPredicates: [IBMECMSearchPredicate] = []
             
-            if count(self.txtDocumentTitle.text) > 0 {
-                let docTitlePredicate = IBMECMSearchPredicate.Like(propertyId: "DocumentTitle", dataType: IBMECMPropertyDataType.String, values: [self.txtDocumentTitle.text])
+            if self.txtDocumentTitle.text!.characters.count > 0 {
+                let docTitlePredicate = IBMECMSearchPredicate.Like(propertyId: "DocumentTitle", dataType: IBMECMPropertyDataType.String, values: [self.txtDocumentTitle.text!])
                 
                 searchPredicates.append(docTitlePredicate)
             }
             
-            if count(self.txtDateCreated.text) > 0 {
-                let dateAddedPredicate = IBMECMSearchPredicate.GreaterOrEqual(propertyId: "DateCreated", dataType: IBMECMPropertyDataType.Date, values: [self.txtDateCreated.text])
+            if self.txtDateCreated.text!.characters.count > 0 {
+                let dateAddedPredicate = IBMECMSearchPredicate.GreaterOrEqual(propertyId: "DateCreated", dataType: IBMECMPropertyDataType.Date, values: [self.txtDateCreated.text!])
                 
                 searchPredicates.append(dateAddedPredicate)
             }
@@ -119,7 +119,7 @@ class SearchRepositoryViewController : UIViewController, UITableViewDataSource, 
                 [weak self] (resultSet: IBMECMResultSet?, error: NSError?) -> Void in
                 
                 if let weakSelf = self {
-                    if let error = error {
+                    if let _ = error {
                         Util.showError("Error", message: "Could not search repository, please login and retry", vc: weakSelf)
                         
                         weakSelf.tableView.reloadData()
@@ -151,7 +151,7 @@ class SearchRepositoryViewController : UIViewController, UITableViewDataSource, 
             [weak self] (results: IBMECMResultSet?, error: NSError?) -> Void in
             
             if let weakSelf = self {
-                if let error = error {
+                if let _ = error {
                     Util.showError("Error", message: "Could not next page, please login and retry", vc: weakSelf)
                     
                     return
