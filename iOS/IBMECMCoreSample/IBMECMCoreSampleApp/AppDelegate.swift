@@ -59,10 +59,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     private func searchonRepos(repos: IBMECMRepository){
         
-        let criterion1: IBMECMSearchPredicate = IBMECMSearchPredicate.Greater(propertyId: "DateLastModified", dataType: IBMECMPropertyDataType.Timestamp, values: ["2015-06-18T10:00:00.000Z"])
+        let criterion1: IBMECMSearchPredicate = IBMECMSearchPredicate.Greater(propertyId: "DateLastModified", dataType: IBMECMPropertyDataType.Timestamp, cardinality:IBMECMPropertyCardinality.Single, values: ["2015-06-18T10:00:00.000Z"])
         
         // dataType should map to property type in ICN system, you should consult with admin for it
-        let criterion2: IBMECMSearchPredicate = IBMECMSearchPredicate.Like(propertyId: "DocumentTitle", dataType: IBMECMPropertyDataType.String, values: ["error \(index)"])
+//        let criterion2: IBMECMSearchPredicate = IBMECMSearchPredicate.Like(propertyId: "DocumentTitle", dataType: IBMECMPropertyDataType.String, cardinality:IBMECMPropertyCardinality.Single, values: ["error \(index)"])
         
         repos.searchAdHoc(
             nil,
@@ -309,14 +309,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 
                 if let rootFolder: IBMECMContentItem = contentItem {
                     print("the root folder's id is: \(rootFolder.id), the name is \(rootFolder.name)")
+                    let properties = IBMECMFactory.sharedInstance.getIBMECMItemProperties()
+                    properties.add("name", value: "FolderName")
+                    properties.add("value", value: "my new folder \(AppDelegate.randomStringWithLength(8))")
                     
-                    var properties = [[String : AnyObject]]()
-                    properties.append([
-                        "name": "FolderName",
-                        "value": "my new folder \(AppDelegate.randomStringWithLength(8))"])
-                    
-                    // SEE: ADD NEW FOLDER (with properties)
-                    repository.addFolderItem("Folder", parentFolderId: rootFolder.id, teamspaceId: nil, properties: properties, onComplete: {
+                    repository .addFolderItem("Folder", parentFolderId: rootFolder.id, teamspaceId: nil, properties: properties, onComplete: {
                         (contentItem: IBMECMContentItem?, error: NSError?) -> Void in
                         
                         if let err = error {
@@ -332,11 +329,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                         if let folderAdded: IBMECMContentItem = contentItem {
                             print("the new folder's id is: \(folderAdded.id) and folder name is: \(folderAdded.name)")
                             
-                            var properties = [[String : AnyObject]]()
-                            properties.append([
-                                "name": "DocumentTitle",
-                                "value": "my new document"])
-                            
+                            let properties = IBMECMFactory.sharedInstance.getIBMECMItemProperties()
+                            properties.add("name", value: "DocumentTitle")
+                            properties.add("value", value: "my new document")
+
                             // SEE: ADD DOCUMENT WITH PROPERTIES
                             repository.addDocumentItem(
                                 folderAdded.id,
@@ -371,13 +367,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     private func checkIn(contentItem: IBMECMContentItem, onComplete: OnCompleteBlock){
-        var properties: [[String : AnyObject]] = [[String : AnyObject]]()
-        properties.append(["name" : "DocumentTitle",
-            "value" : contentItem.name,
-            "dataType" : "xs:string",
-            "label" : "Document Title",
-            "displayValue" : contentItem.name
-            ])
+        let properties = IBMECMFactory.sharedInstance.getIBMECMItemProperties()
+        properties.add("name", value: "DocumentTitle")
+        properties.add("value", value: contentItem.name)
+        properties.add("dataType", value: "xs:string")
+        properties.add("label", value: "Document Title")
+        properties.add("displayValue", value: contentItem.name)
+
         let asMinorVersion = false
         
 //        var error: NSError?
@@ -417,11 +413,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     //Adds a new document by specifying data to a local file and providing property values
     private func addDocumentItem(repository: IBMECMRepository?, parentFolder: IBMECMContentItem, teamspace: IBMECMTeamspace?, onComplete: OnCompleteBlock?){
-        var properties = [[String : AnyObject]]()
-        properties.append([
-            "name": "DocumentTitle",
-            "value": "New Document \(AppDelegate.randomStringWithLength(8))"])
-        
+        let properties = IBMECMFactory.sharedInstance.getIBMECMItemProperties()
+        properties.add("name", value: "DocumentTitle")
+        properties.add("value", value: "New Document \(AppDelegate.randomStringWithLength(8))")
+
 //        var error: NSError?
         do {
 
@@ -451,12 +446,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     //Adds a new folder by providing property values
     private func addFolderItem(repository: IBMECMRepository?, parentFolder: IBMECMContentItem, teamspace: IBMECMTeamspace?, onComplete: OnCompleteBlock?) {
-        var properties = [[String : AnyObject]]()
         let randomNum = Int(arc4random_uniform(99))
         let folderName = "NewFolder" + String(randomNum)
-        properties.append([
-            "name": "FolderName",
-            "value": folderName])
+        let properties = IBMECMFactory.sharedInstance.getIBMECMItemProperties()
+        properties.add("name", value: "FolderName")
+        properties.add("value", value: folderName)
+
         
         repository?.addFolderItem("Folder", parentFolderId: parentFolder.id, teamspaceId: teamspace?.id, properties: properties, onComplete: {
             (contentItem: IBMECMContentItem?, error: NSError?) -> Void in
