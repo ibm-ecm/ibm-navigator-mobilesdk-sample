@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>IBMECMCore  Reference</title>
+    <title>Typealiases  Reference</title>
     <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="css/highlight.css" />
     <meta charset='utf-8'>
@@ -10,7 +10,7 @@
     
   </head>
   <body>
-    <a title="IBMECMCore  Reference"></a>
+    <a title="Typealiases  Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="index.html">IBMECMCore Docs</a> (65% documented)</p>
@@ -20,7 +20,7 @@
       <p id="breadcrumbs">
         <a href="index.html">IBMECMCore Reference</a>
         <img id="carat" src="img/carat.png" />
-        IBMECMCore  Reference
+        Typealiases  Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -293,71 +293,42 @@
       <article class="main-content">
         <section>
           <section class="section">
-            
-            <a href='#ibmecmcore-sdk' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h1 id='ibmecmcore-sdk'>IBMECMCore SDK</h1>
+            <h1>Typealiases</h1>
+            <p>The following typealiases are available globally.</p>
 
-<p>This SDK is a manifestation of the IBM Content Navigator mid-tier API, written exclusively in Swift.</p>
-<a href='#features' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='features'>Features</h2>
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10IBMECMCore15OnCompleteBlock"></a>
+                    <a name="//apple_ref/swift/Alias/OnCompleteBlock" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10IBMECMCore15OnCompleteBlock">OnCompleteBlock</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An alias for a completion code block.</p>
 
-<p>Some of the goals of this framework are:</p>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">typealias</span> <span class="kt">OnCompleteBlock</span> <span class="o">=</span> <span class="p">(</span><span class="nv">error</span><span class="p">:</span> <span class="kt">NSError</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span></code></pre>
 
-<ul>
-<li>Simple sync and async requests to any IBM Content Navigator back end</li>
-<li>Native object model to consume</li>
-</ul>
-<a href='#requirements' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='requirements'>Requirements</h2>
-
-<ul>
-<li>iOS 9</li>
-<li>Xcode 7.3</li>
-</ul>
-<a href='#installation' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='installation'>Installation</h2>
-
-<p>The easiest way to install this framework is to manually drag it into your project&rsquo;s Frameworks group. If your project does not have a Frameworks group, create one. Set the <code>Embedded Code contains Swift Code</code> of your target to <code>YES</code>. The SDK requires the following libraries in order to build successfully: CocoaLumberjack version 1.9.2, Alamofire version 2.0, Mantle version 2.0.2, and MTLManagedObjectAdapter version 1.0. You can either link those libraries directly into your Xcode project or indirectly by using Cocoapods or Carthage.</p>
-
-<p>As an example, here is a Podfile that we can be used to build a sample project utilizing the Core SDK (suitable for Cocoapods 1.0).</p>
-<pre class="highlight plaintext"><code>platform :ios, '8.4'
-use_frameworks!
-
-def corekit_pods
-    pod 'CocoaLumberjack', '1.9.2'
-    pod 'Alamofire', '~&gt; 2.0'
-    pod 'Mantle', '2.0.2'
-    pod 'MTLManagedObjectAdapter', '~&gt; 1.0'
-end
-
-target 'SampleApp' do
-    project 'SampleApp.xcodeproj'
-
-    corekit_pods
-
-    target 'SampleAppTests' do
-        inherit! :search_paths
-    end
-end
-
-workspace 'myworkspace'
-</code></pre>
-<a href='#usage' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='usage'>Usage</h2>
-
-<p>This framework is based on a common factory pattern to obtain references to ECM objects. One place to start might be at the IBMECMFactory.sharedInstance, and obtain the top-level IBMECMApplication object by passing in the IBM Content Navigator URL. The URL is usually in the form of <code>http://server:port/navigator</code>.  </p>
-
-<p><code>let ibmecmapp: IBMECMApplication = IBMECMFactory.sharedInstance.getApplication(&quot;http://server:port/navigator&quot;)</code></p>
-
-<p>After the IBMECMApplication object is obtained, you can log in to IBM Content Navigator, and then subsequently obtain references to IBMECMDesktop, IBECMRepository, and other objects.  </p>
-
-<p><code>ibmecmapp.login(&quot;XXX&quot;, password: &quot;XXX&quot;, completionBlock: ())</code></p>
-
-<p>From there on, you can follow the API documentation to do general functionalities such as:
-repository.retrieveItem(contentId: String, completionBlock: ((contentItem: IBMECMContentItem?, error: NSError?) -&gt; Void)?)</p>
-
-<p><code>addDocumentItem(parentFolderId: String, templateName: String, properties: [[String : AnyObject]], mimeType: String, fileName: String, addAsMinorVersion: Bool?, content: NSData, completionBlock: ((contentItem: IBMECMContentItem?, error: NSError?) -&gt; Void)?)</code></p>
-
-<p><code>addFolderItem(templateName: String, parentFolderId: String, properties: [[String : AnyObject]], completionBlock: ((contentItem: IBMECMContentItem?, error: NSError?) -&gt; Void)?)</code></p>
-<a href='#contact' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='contact'>Contact</h2>
-
-<p>Kosta Tachtevrenidis - <a href="mailto:tachtevrenidis@us.ibm.com">tachtevrenidis@us.ibm.com</a> - @tachtevrenidis</p>
-
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </section>
         </section>
         <section id="footer">

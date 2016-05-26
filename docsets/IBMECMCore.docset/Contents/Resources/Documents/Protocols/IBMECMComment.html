@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>IBMECMComment Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Protocol/IBMECMComment" class="dashAnchor"></a>
+    <a title="IBMECMComment Protocol Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">IBMECMCore Docs</a> (65% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">IBMECMCore Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        IBMECMComment Protocol Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/IBMECMFactory.html">IBMECMFactory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:C10IBMECMCore21IBMECMItemPermissions">IBMECMItemPermissions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IBMECMItemProperties.html">IBMECMItemProperties</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IBMECMPersistenceFactory.html">IBMECMPersistenceFactory</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums.html#/s:O10IBMECMCore25IBMECMAccessControlSource">IBMECMAccessControlSource</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums.html#/s:O10IBMECMCore23IBMECMAccessControlType">IBMECMAccessControlType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums.html#/s:O10IBMECMCore23IBMECMAccessGranteeType">IBMECMAccessGranteeType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums.html#/s:O10IBMECMCore28IBMECMAccessInheritableDepth">IBMECMAccessInheritableDepth</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums.html#/s:O10IBMECMCore24IBMECMCommentsCapability">IBMECMCommentsCapability</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums.html#/s:O10IBMECMCore32IBMECMContentClassClassification">IBMECMContentClassClassification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums.html#/s:O10IBMECMCore28IBMECMContentClassFilterType">IBMECMContentClassFilterType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums.html#/s:O10IBMECMCore30IBMECMContentItemVersionOption">IBMECMContentItemVersionOption</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums.html#/s:O10IBMECMCore30IBMECMContentItemVersionStatus">IBMECMContentItemVersionStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums.html#/s:O10IBMECMCore23IBMECMContentSourceType">IBMECMContentSourceType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/IBMECMErrorCode.html">IBMECMErrorCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums.html#/s:O10IBMECMCore16IBMECMObjectType">IBMECMObjectType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums.html#/s:O10IBMECMCore15IBMECMPrivilege">IBMECMPrivilege</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums.html#/s:O10IBMECMCore25IBMECMPropertyCardinality">IBMECMPropertyCardinality</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums.html#/s:O10IBMECMCore22IBMECMPropertyDataType">IBMECMPropertyDataType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums.html#/s:O10IBMECMCore25IBMECMPropertySettability">IBMECMPropertySettability</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums.html#/s:O10IBMECMCore20IBMECMRepositoryType">IBMECMRepositoryType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums.html#/s:O10IBMECMCore20IBMECMSearchOperator">IBMECMSearchOperator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums.html#/s:O10IBMECMCore21IBMECMSearchPredicate">IBMECMSearchPredicate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums.html#/s:O10IBMECMCore30IBMECMSearchPredicatesRelation">IBMECMSearchPredicatesRelation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums.html#/s:O10IBMECMCore29IBMECMSearchTemplateMimeTypes">IBMECMSearchTemplateMimeTypes</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums.html#/s:O10IBMECMCore25IBMECMSearchVersionOption">IBMECMSearchVersionOption</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums.html#/s:O10IBMECMCore20IBMECMSocialItemType">IBMECMSocialItemType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums.html#/s:O10IBMECMCore20IBMECMTeamspaceState">IBMECMTeamspaceState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums.html#/s:O10IBMECMCore19IBMECMTeamspaceType">IBMECMTeamspaceType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums.html#/s:O10IBMECMCore24IBMECMTextSearchOperator">IBMECMTextSearchOperator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums.html#/s:O10IBMECMCore25IBMECMTextSearchPredicate">IBMECMTextSearchPredicate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums.html#/s:O10IBMECMCore20IBMECMTextSearchType">IBMECMTextSearchType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/IBMECMAccessControlEntry.html">IBMECMAccessControlEntry</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IBMECMAccessControlList.html">IBMECMAccessControlList</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IBMECMApplication.html">IBMECMApplication</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IBMECMAttributeDefinition.html">IBMECMAttributeDefinition</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IBMECMAttributeDefinitionList.html">IBMECMAttributeDefinitionList</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IBMECMAuthenticator.html">IBMECMAuthenticator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IBMECMAuthenticatorDataSource.html">IBMECMAuthenticatorDataSource</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IBMECMBaseObject.html">IBMECMBaseObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IBMECMBaseUser.html">IBMECMBaseUser</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IBMECMComment.html">IBMECMComment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IBMECMCommentsResultSet.html">IBMECMCommentsResultSet</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IBMECMContentClass.html">IBMECMContentClass</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IBMECMContentItem.html">IBMECMContentItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IBMECMDesktop.html">IBMECMDesktop</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IBMECMDirectoriesList.html">IBMECMDirectoriesList</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IBMECMDirectory.html">IBMECMDirectory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IBMECMFavorite.html">IBMECMFavorite</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IBMECMFavoriteList.html">IBMECMFavoriteList</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IBMECMFavoritesResultSet.html">IBMECMFavoritesResultSet</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IBMECMRecentItemList.html">IBMECMRecentItemList</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IBMECMRecommendationResultSet.html">IBMECMRecommendationResultSet</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IBMECMRepository.html">IBMECMRepository</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IBMECMRequestCall.html">IBMECMRequestCall</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IBMECMResultSet.html">IBMECMResultSet</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IBMECMSearchCriteriaList.html">IBMECMSearchCriteriaList</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IBMECMSearchResultSet.html">IBMECMSearchResultSet</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IBMECMSearchTemplate.html">IBMECMSearchTemplate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IBMECMSearchTemplateBuilder.html">IBMECMSearchTemplateBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IBMECMSearchTemplateList.html">IBMECMSearchTemplateList</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IBMECMSocialItem.html">IBMECMSocialItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IBMECMSocialItemResultSet.html">IBMECMSocialItemResultSet</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IBMECMSyncChangesList.html">IBMECMSyncChangesList</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IBMECMSyncItem.html">IBMECMSyncItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IBMECMSyncItemList.html">IBMECMSyncItemList</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IBMECMSyncItemResultSet.html">IBMECMSyncItemResultSet</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IBMECMTeamspace.html">IBMECMTeamspace</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IBMECMTeamspaceResultSet.html">IBMECMTeamspaceResultSet</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IBMECMUser.html">IBMECMUser</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IBMECMUserGroup.html">IBMECMUserGroup</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IBMECMUserGroupsList.html">IBMECMUserGroupsList</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IBMECMUserPermissions.html">IBMECMUserPermissions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IBMECMUserRole.html">IBMECMUserRole</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IBMECMUsersList.html">IBMECMUsersList</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structs</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/IBMECMItemProperty.html">IBMECMItemProperty</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/IBMECMSearchCriteria.html">IBMECMSearchCriteria</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs.html#/s:V10IBMECMCore24IBMECMTextSearchCriteria">IBMECMTextSearchCriteria</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Typealiases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:10IBMECMCore15OnCompleteBlock">OnCompleteBlock</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>IBMECMComment</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">IBMECMComment</span> <span class="p">:</span> <span class="kt">IBMECMSocialItem</span></code></pre>
+
+                </div>
+              </div>
+            <p>Represents a single comment that is associated with a content item.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vP10IBMECMCore13IBMECMComment7commentGSqSS_"></a>
+                    <a name="//apple_ref/swift/Property/comment" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vP10IBMECMCore13IBMECMComment7commentGSqSS_">comment</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The comment text.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">comment</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span><span class="k">get</span> <span class="k">set</span><span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FP10IBMECMCore13IBMECMComment4saveFGSqFT7commentGSqPS0___5errorGSqCSo7NSError__T__T_"></a>
+                    <a name="//apple_ref/swift/Method/save(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FP10IBMECMCore13IBMECMComment4saveFGSqFT7commentGSqPS0___5errorGSqCSo7NSError__T__T_">save(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Saves this comment for a content item.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">save</span><span class="p">(</span><span class="nv">onComplete</span><span class="p">:</span> <span class="p">((</span><span class="nv">comment</span><span class="p">:</span> <span class="kt">IBMECMComment</span><span class="p">?,</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">NSError</span><span class="p">?)</span><span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>onComplete</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the completion callback that returns comment that has been saved</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FP10IBMECMCore13IBMECMComment6removeFGSqFT5errorGSqCSo7NSError__T__T_"></a>
+                    <a name="//apple_ref/swift/Method/remove(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FP10IBMECMCore13IBMECMComment6removeFGSqFT5errorGSqCSo7NSError__T__T_">remove(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Removes this comment associated with a content item.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">remove</span><span class="p">(</span><span class="nv">onComplete</span><span class="p">:</span> <span class="kt">OnCompleteBlock</span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>onComplete</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the completion callback that returns true if the comment is removed</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2016 <a class="link" href="" target="_blank" rel="external">International Business Machines Corporation</a>. All rights reserved. (Last updated: 2016-05-26)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.6.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

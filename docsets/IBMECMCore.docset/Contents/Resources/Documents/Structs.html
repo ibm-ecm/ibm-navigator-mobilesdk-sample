@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>IBMECMCore  Reference</title>
+    <title>Structs  Reference</title>
     <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="css/highlight.css" />
     <meta charset='utf-8'>
@@ -10,7 +10,7 @@
     
   </head>
   <body>
-    <a title="IBMECMCore  Reference"></a>
+    <a title="Structs  Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="index.html">IBMECMCore Docs</a> (65% documented)</p>
@@ -20,7 +20,7 @@
       <p id="breadcrumbs">
         <a href="index.html">IBMECMCore Reference</a>
         <img id="carat" src="img/carat.png" />
-        IBMECMCore  Reference
+        Structs  Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -293,71 +293,112 @@
       <article class="main-content">
         <section>
           <section class="section">
-            
-            <a href='#ibmecmcore-sdk' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h1 id='ibmecmcore-sdk'>IBMECMCore SDK</h1>
+            <h1>Structs</h1>
+            <p>The following structs are available globally.</p>
 
-<p>This SDK is a manifestation of the IBM Content Navigator mid-tier API, written exclusively in Swift.</p>
-<a href='#features' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='features'>Features</h2>
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:V10IBMECMCore20IBMECMSearchCriteria"></a>
+                    <a name="//apple_ref/swift/Struct/IBMECMSearchCriteria" class="dashAnchor"></a>
+                    <a class="token" href="#/s:V10IBMECMCore20IBMECMSearchCriteria">IBMECMSearchCriteria</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Represents a search criteria object.</p>
 
-<p>Some of the goals of this framework are:</p>
+                        <a href="Structs/IBMECMSearchCriteria.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">IBMECMSearchCriteria</span></code></pre>
 
-<ul>
-<li>Simple sync and async requests to any IBM Content Navigator back end</li>
-<li>Native object model to consume</li>
-</ul>
-<a href='#requirements' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='requirements'>Requirements</h2>
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:V10IBMECMCore24IBMECMTextSearchCriteria"></a>
+                    <a name="//apple_ref/swift/Struct/IBMECMTextSearchCriteria" class="dashAnchor"></a>
+                    <a class="token" href="#/s:V10IBMECMCore24IBMECMTextSearchCriteria">IBMECMTextSearchCriteria</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Represents a text search criteria object.</p>
 
-<ul>
-<li>iOS 9</li>
-<li>Xcode 7.3</li>
-</ul>
-<a href='#installation' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='installation'>Installation</h2>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">IBMECMTextSearchCriteria</span></code></pre>
 
-<p>The easiest way to install this framework is to manually drag it into your project&rsquo;s Frameworks group. If your project does not have a Frameworks group, create one. Set the <code>Embedded Code contains Swift Code</code> of your target to <code>YES</code>. The SDK requires the following libraries in order to build successfully: CocoaLumberjack version 1.9.2, Alamofire version 2.0, Mantle version 2.0.2, and MTLManagedObjectAdapter version 1.0. You can either link those libraries directly into your Xcode project or indirectly by using Cocoapods or Carthage.</p>
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:V10IBMECMCore18IBMECMItemProperty"></a>
+                    <a name="//apple_ref/swift/Struct/IBMECMItemProperty" class="dashAnchor"></a>
+                    <a class="token" href="#/s:V10IBMECMCore18IBMECMItemProperty">IBMECMItemProperty</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Represents a single property value that is a member of a IBMECMItemProperties collection.
+</p></p>
 
-<p>As an example, here is a Podfile that we can be used to build a sample project utilizing the Core SDK (suitable for Cocoapods 1.0).</p>
-<pre class="highlight plaintext"><code>platform :ios, '8.4'
-use_frameworks!
+<p>An IBMECMItemProperty instance can only be acquired as a member of its parent IBMECMItemProperties collection.
+</p></p>
 
-def corekit_pods
-    pod 'CocoaLumberjack', '1.9.2'
-    pod 'Alamofire', '~&gt; 2.0'
-    pod 'Mantle', '2.0.2'
-    pod 'MTLManagedObjectAdapter', '~&gt; 1.0'
-end
+<p>A new IBMECMItemProperty instance is created using the IBMECMItemProperties.add(IBMECMItemProperty)
+</p></p>
 
-target 'SampleApp' do
-    project 'SampleApp.xcodeproj'
+<p>An existing IBMECMItemProperty instance can be removed from its corresponding parent collection using the
+IBMECMItemProperties.remove() method.</p></p>
 
-    corekit_pods
+                        <a href="Structs/IBMECMItemProperty.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">IBMECMItemProperty</span><span class="o">&lt;</span><span class="kt">T</span><span class="p">:</span> <span class="kt">AnyObject</span><span class="o">&gt;</span></code></pre>
 
-    target 'SampleAppTests' do
-        inherit! :search_paths
-    end
-end
-
-workspace 'myworkspace'
-</code></pre>
-<a href='#usage' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='usage'>Usage</h2>
-
-<p>This framework is based on a common factory pattern to obtain references to ECM objects. One place to start might be at the IBMECMFactory.sharedInstance, and obtain the top-level IBMECMApplication object by passing in the IBM Content Navigator URL. The URL is usually in the form of <code>http://server:port/navigator</code>.  </p>
-
-<p><code>let ibmecmapp: IBMECMApplication = IBMECMFactory.sharedInstance.getApplication(&quot;http://server:port/navigator&quot;)</code></p>
-
-<p>After the IBMECMApplication object is obtained, you can log in to IBM Content Navigator, and then subsequently obtain references to IBMECMDesktop, IBECMRepository, and other objects.  </p>
-
-<p><code>ibmecmapp.login(&quot;XXX&quot;, password: &quot;XXX&quot;, completionBlock: ())</code></p>
-
-<p>From there on, you can follow the API documentation to do general functionalities such as:
-repository.retrieveItem(contentId: String, completionBlock: ((contentItem: IBMECMContentItem?, error: NSError?) -&gt; Void)?)</p>
-
-<p><code>addDocumentItem(parentFolderId: String, templateName: String, properties: [[String : AnyObject]], mimeType: String, fileName: String, addAsMinorVersion: Bool?, content: NSData, completionBlock: ((contentItem: IBMECMContentItem?, error: NSError?) -&gt; Void)?)</code></p>
-
-<p><code>addFolderItem(templateName: String, parentFolderId: String, properties: [[String : AnyObject]], completionBlock: ((contentItem: IBMECMContentItem?, error: NSError?) -&gt; Void)?)</code></p>
-<a href='#contact' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='contact'>Contact</h2>
-
-<p>Kosta Tachtevrenidis - <a href="mailto:tachtevrenidis@us.ibm.com">tachtevrenidis@us.ibm.com</a> - @tachtevrenidis</p>
-
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </section>
         </section>
         <section id="footer">
