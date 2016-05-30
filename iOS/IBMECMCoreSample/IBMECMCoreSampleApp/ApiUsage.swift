@@ -263,11 +263,10 @@ class ApiUsage {
             asMinorVersion = !major
         }
         
-        var properties = [[String : AnyObject]]()
-        properties.append([
-            "name": "DocumentTitle",
-            "value": documentTitle])
-        
+        let properties = IBMECMFactory.sharedInstance.getIBMECMItemProperties()
+        properties.add("name", value: "DocumentTitle")
+        properties.add("value", value: documentTitle)
+
         repository.addDocumentItem(
             parentFolder.id,
             teamspaceId: teamspace?.id,
@@ -300,10 +299,9 @@ class ApiUsage {
     :param: repository   the repository to add the folder in
     */
     func addFolder(folderName: String, folderClass: String, parentFolder: IBMECMContentItem, teamspace: IBMECMTeamspace?, repository: IBMECMRepository) {
-        var properties = [[String : AnyObject]]()
-        properties.append([
-            "name": "FolderName",
-            "value": folderName])
+        let properties = IBMECMFactory.sharedInstance.getIBMECMItemProperties()
+        properties.add("name", value: "FolderName")
+        properties.add("value", value: folderName)
         
         repository.addFolderItem(folderClass, parentFolderId: parentFolder.id, teamspaceId: teamspace?.id, properties: properties, onComplete: {
             (contentItem: IBMECMContentItem?, error: NSError?) -> Void in
@@ -362,8 +360,9 @@ class ApiUsage {
             className = checkedOutDocument.templateName!
         }
         
-        var properties = [[String : AnyObject]]()
-        properties.append(["name": "DocumentTitle", "value": docName])
+        let properties = IBMECMFactory.sharedInstance.getIBMECMItemProperties()
+        properties.add("name", value: "DocumentTitle")
+        properties.add("value", value: docName)
         
         var asMinorVersion: Bool = false
         if let major = isMajor {
