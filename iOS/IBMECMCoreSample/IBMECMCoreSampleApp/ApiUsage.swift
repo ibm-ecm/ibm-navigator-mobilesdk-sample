@@ -256,7 +256,7 @@ class ApiUsage {
     :param: teamspace         the teamspace to put the document in (optional)
     :param: repository        the repository to add the document into
     */
-    func addDocumentItem(documentTitle: String, documentClassName: String, contentSourceType: IBMECMContentSourceType, contentMimeType: String, contentData: NSData?, contentFileName: String?, isMajor: Bool?, parentFolder: IBMECMContentItem, teamspace: IBMECMTeamspace?, repository: IBMECMRepository){
+    func addDocumentItem(documentTitle: String, documentClassName: String, contentSourceType: IBMECMContentSourceType, contentMimeType: String, contentData: Data?, contentFileName: String?, isMajor: Bool?, parentFolder: IBMECMContentItem, teamspace: IBMECMTeamspace?, repository: IBMECMRepository){
         
         var asMinorVersion: Bool = false
         if let major = isMajor {
@@ -264,9 +264,9 @@ class ApiUsage {
         }
         
         let properties = IBMECMFactory.sharedInstance.getIBMECMItemProperties()
-        properties.add("name", value: "DocumentTitle")
-        properties.add("value", value: documentTitle)
-
+        properties.add("name", value: "DocumentTitle" as AnyObject)
+        properties.add("value", value: documentTitle as AnyObject)
+        
         repository.addDocumentItem(
             parentFolder.id,
             teamspaceId: teamspace?.id,
@@ -284,7 +284,7 @@ class ApiUsage {
                 } else {
                     // document was added successfully
                 }
-            }, progress: { (bytesWritten, totalBytesWritten, totalBytesExpectedToWrite) -> Void in
+            }, progress: { (_ theProgress: Progress) -> Void in
                 // progress
         })
     }
@@ -300,8 +300,8 @@ class ApiUsage {
     */
     func addFolder(folderName: String, folderClass: String, parentFolder: IBMECMContentItem, teamspace: IBMECMTeamspace?, repository: IBMECMRepository) {
         let properties = IBMECMFactory.sharedInstance.getIBMECMItemProperties()
-        properties.add("name", value: "FolderName")
-        properties.add("value", value: folderName)
+        properties.add("name", value: "FolderName" as AnyObject)
+        properties.add("value", value: folderName as AnyObject)
         
         repository.addFolderItem(folderClass, parentFolderId: parentFolder.id, teamspaceId: teamspace?.id, properties: properties, onComplete: {
             (contentItem: IBMECMContentItem?, error: NSError?) -> Void in
@@ -344,7 +344,7 @@ class ApiUsage {
     :param: isMajor            true for major false otherwise
     :param: checkedOutDocument the document to checkin (must be checked out)
     */
-    func checkInDocument(documentTitle: String?, documentClassName: String?, contentSourceType: IBMECMContentSourceType,contentMimeType: String, contentData: NSData?, contentFileName: String?, isMajor: Bool?, checkedOutDocument: IBMECMContentItem) {
+    func checkInDocument(documentTitle: String?, documentClassName: String?, contentSourceType: IBMECMContentSourceType,contentMimeType: String, contentData: Data?, contentFileName: String?, isMajor: Bool?, checkedOutDocument: IBMECMContentItem) {
         
         var docName: String
         if let docTitle = documentTitle {
@@ -361,8 +361,8 @@ class ApiUsage {
         }
         
         let properties = IBMECMFactory.sharedInstance.getIBMECMItemProperties()
-        properties.add("name", value: "DocumentTitle")
-        properties.add("value", value: docName)
+        properties.add("name", value: "DocumentTitle" as AnyObject)
+        properties.add("value", value: docName as AnyObject)
         
         var asMinorVersion: Bool = false
         if let major = isMajor {
@@ -386,7 +386,7 @@ class ApiUsage {
                 } else {
                     // checkin succeeded
                 }
-            }, progress: { (bytesWritten, totalBytesWritten, totalBytesExpectedToWrite) -> Void in
+            }, progress: { (_ theProgress: Progress) -> Void in
                 // progress
             }
         )

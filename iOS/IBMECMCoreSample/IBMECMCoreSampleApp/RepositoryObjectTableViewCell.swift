@@ -20,7 +20,7 @@ class RepositoryObjectTableViewCell: UITableViewCell {
         set {
             self._contentItem = newValue
             
-            updateCellState(self._contentItem)
+            updateCellState(cItem: self._contentItem)
         }
     }
     
@@ -36,7 +36,7 @@ class RepositoryObjectTableViewCell: UITableViewCell {
         if(self.contentItem.isFolder) {
             self.imageView?.image = UIImage(named: "folderIcon")
         } else {
-            self.imageView?.image = loadThumbnail(cItem)
+            self.imageView?.image = loadThumbnail(cItem: cItem)
             
             if(self.imageView?.image == nil) {
                 self.imageView?.image = UIImage(named: "fileIcon")

@@ -8,23 +8,27 @@ import QuickLook
 
 import IBMECMCore
 
-class SamplePreviewItem: NSObject, QLPreviewItem {
-    
+open class SamplePreviewItem: NSObject, QLPreviewItem {
     var document: IBMECMContentItem
-    
-    init(document: IBMECMContentItem) {
+
+    /*!
+     * @abstract The URL of the item to preview.
+     * @discussion The URL must be a file URL.
+     */
+//    public var previewItemURL: URL?
+ init(document: IBMECMContentItem) {
         self.document = document
 
         super.init()
     }
     
-    var previewItemURL: NSURL {
+   public  var previewItemURL: URL? {
         get {
-            return self.document.previewItemURL
+            return self.document.previewItemURL as URL
         }
     }
     
-    var previewItemTitle: String? {
+    public var previewItemTitle: String? {
         get {
             return self.document.name.characters.count == 0 ? "undefined" : self.document.name
         }

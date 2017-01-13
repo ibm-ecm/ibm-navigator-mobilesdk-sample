@@ -9,6 +9,7 @@ import QuickLook
 import IBMECMCore
 
 class DocumentViewerController: QLPreviewController, QLPreviewControllerDataSource {
+
     
     var contentItem: IBMECMContentItem?
     
@@ -22,7 +23,7 @@ class DocumentViewerController: QLPreviewController, QLPreviewControllerDataSour
         }
     }
     
-    func numberOfPreviewItemsInPreviewController(controller: QLPreviewController) -> Int{
+    public func numberOfPreviewItems(in controller: QLPreviewController) -> Int {
         if let _ = self.contentItem {
             return 1
         } else {
@@ -30,14 +31,14 @@ class DocumentViewerController: QLPreviewController, QLPreviewControllerDataSour
         }
     }
     
-    func previewController(controller: QLPreviewController, previewItemAtIndex index: Int) -> QLPreviewItem {
+    func previewController(_ controller: QLPreviewController, previewItemAt index: Int) -> QLPreviewItem {
         let previewItem = SamplePreviewItem(document: self.contentItem!)
         
         return previewItem
     }
     
     private func downloadDocument() {
-        let onComplete : (error: NSError?)-> Void =  {
+        let onComplete : (_ error: NSError?)-> Void =  {
             [weak self] (error) -> Void in
             
             if let weakSelf = self {
@@ -45,15 +46,16 @@ class DocumentViewerController: QLPreviewController, QLPreviewControllerDataSour
             }
         }
         
-        let progress : (bytesRead:Int64, totalBytesRead:Int64, totalBytesExpectedToRead:Int64) -> Void = {
-           /* [weak self] */(bytesRead, totalBytesRead, totalBytesExpectedToRead ) -> Void in
+        let progress : ((_ theProgress: Progress) -> Void) = {
+           /* [weak self] */(_ theProgress: Progress) -> Void in
             // unused
         }
         
         let previewItem = SamplePreviewItem(document: self.contentItem!)
         
-        if let filePath = previewItem.previewItemURL.path {
-            dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), {
+        if let previewItemURL = previewItem.previewItemURL {
+            let filePath = previewItemURL.path
+            DispatchQueue.main.async(execute: {
                 previewItem.document.retrieveDocumentItem(filePath, onComplete: onComplete, progress: progress)
             })
         }

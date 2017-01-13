@@ -90,6 +90,12 @@ extern const NSInteger MTLJSONAdapterErrorInvalidJSONDictionary;
 /// does not actually exist in +propertyKeys.
 extern const NSInteger MTLJSONAdapterErrorInvalidJSONMapping;
 
+/// An exception was thrown and caught.
+extern const NSInteger MTLJSONAdapterErrorExceptionThrown;
+
+/// Associated with the NSException that was caught.
+extern NSString * const MTLJSONAdapterThrownExceptionErrorKey;
+
 /// Converts a MTLModel object to and from a JSON dictionary.
 @interface MTLJSONAdapter : NSObject
 
@@ -256,6 +262,10 @@ extern const NSInteger MTLJSONAdapterErrorInvalidJSONMapping;
 /// NSURL properties to JSON strings and vice versa.
 + (NSValueTransformer *)NSURLJSONTransformer;
 
+/// This value transformer is used by MTLJSONAdapter to automatically convert
+/// NSUUID properties to JSON strings and vice versa.
++ (NSValueTransformer *)NSUUIDJSONTransformer;
+
 @end
 
 @class MTLModel;
@@ -264,14 +274,14 @@ extern const NSInteger MTLJSONAdapterErrorInvalidJSONMapping;
 
 @property (nonatomic, strong, readonly) id<MTLJSONSerializing> model __attribute__((unavailable("Replaced by -modelFromJSONDictionary:error:")));
 
-+ (NSArray *)JSONArrayFromModels:(NSArray *)models __attribute__((deprecated("Replaced by +JSONArrayFromModels:error:")));
++ (NSArray *)JSONArrayFromModels:(NSArray *)models __attribute__((deprecated("Replaced by +JSONArrayFromModels:error:"))) NS_SWIFT_UNAVAILABLE("Replaced by +JSONArrayFromModels:error:");
 
-+ (NSDictionary *)JSONDictionaryFromModel:(MTLModel<MTLJSONSerializing> *)model __attribute__((deprecated("Replaced by +JSONDictionaryFromModel:error:")));
++ (NSDictionary *)JSONDictionaryFromModel:(MTLModel<MTLJSONSerializing> *)model __attribute__((deprecated("Replaced by +JSONDictionaryFromModel:error:"))) NS_SWIFT_UNAVAILABLE("Replaced by +JSONDictionaryFromModel:error:");
 
-- (NSDictionary *)JSONDictionary __attribute__((unavailable("Replaced by -JSONDictionaryFromModel:error:")));
+- (NSDictionary *)JSONDictionary __attribute__((unavailable("Replaced by -JSONDictionaryFromModel:error:"))) NS_SWIFT_UNAVAILABLE("Replaced by -JSONDictionaryFromModel:error:");
 - (NSString *)JSONKeyPathForPropertyKey:(NSString *)key __attribute__((unavailable("Replaced by -serializablePropertyKeys:forModel:")));
 - (id)initWithJSONDictionary:(NSDictionary *)JSONDictionary modelClass:(Class)modelClass error:(NSError **)error __attribute__((unavailable("Replaced by -initWithModelClass:")));
-- (id)initWithModel:(id<MTLJSONSerializing>)model __attribute__((unavailable("Replaced by -initWithModelClass:")));
-- (NSDictionary *)serializeToJSONDictionary:(NSError **)error __attribute__((unavailable("Replaced by -JSONDictionaryFromModel:error:")));
+- (id)initWithModel:(id<MTLJSONSerializing>)model __attribute__((unavailable("Replaced by -initWithModelClass:"))) NS_SWIFT_UNAVAILABLE("Replaced by -initWithModelClass:");
+- (NSDictionary *)serializeToJSONDictionary:(NSError **)error __attribute__((unavailable("Replaced by -JSONDictionaryFromModel:error:"))) NS_SWIFT_UNAVAILABLE("Replaced by -JSONDictionaryFromModel:error:");
 
 @end

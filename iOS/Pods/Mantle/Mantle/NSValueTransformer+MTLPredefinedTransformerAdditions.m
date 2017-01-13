@@ -12,6 +12,7 @@
 #import "MTLValueTransformer.h"
 
 NSString * const MTLURLValueTransformerName = @"MTLURLValueTransformerName";
+NSString * const MTLUUIDValueTransformerName = @"MTLUUIDValueTransformerName";
 NSString * const MTLBooleanValueTransformerName = @"MTLBooleanValueTransformerName";
 
 @implementation NSValueTransformer (MTLPredefinedTransformerAdditions)
@@ -77,6 +78,59 @@ NSString * const MTLBooleanValueTransformerName = @"MTLBooleanValueTransformerNa
 
 		[NSValueTransformer setValueTransformer:URLValueTransformer forName:MTLURLValueTransformerName];
 
+		MTLValueTransformer *UUIDValueTransformer = [MTLValueTransformer
+				transformerUsingForwardBlock:^id(NSString *string, BOOL *success, NSError **error) {
+					if (string == nil) return nil;
+					
+					if (![string isKindOfClass:NSString.class]) {
+						if (error) {
+							NSDictionary *userInfo = @{
+								NSLocalizedDescriptionKey: NSLocalizedString(@"Could not convert string to UUID", @""),
+								NSLocalizedFailureReasonErrorKey: [NSString stringWithFormat:NSLocalizedString(@"Expected an NSString, got: %@.", @""), string],
+								MTLTransformerErrorHandlingInputValueErrorKey : string
+							};
+							*error = [NSError errorWithDomain:MTLTransformerErrorHandlingErrorDomain code:MTLTransformerErrorHandlingErrorInvalidInput userInfo:userInfo];
+						}
+						*success = NO;
+						return nil;
+					}
+					
+					NSUUID *result = [[NSUUID alloc] initWithUUIDString:string];
+					
+					if (result == nil) {
+						if (error) {
+							NSDictionary *userInfo = @{
+								NSLocalizedDescriptionKey: NSLocalizedString(@"Could not convert string to UUID", @""),
+								NSLocalizedFailureReasonErrorKey: [NSString stringWithFormat:NSLocalizedString(@"Input UUID string %@ was malformed", @""), string],
+													   MTLTransformerErrorHandlingInputValueErrorKey : string
+							};
+							*error = [NSError errorWithDomain:MTLTransformerErrorHandlingErrorDomain code:MTLTransformerErrorHandlingErrorInvalidInput userInfo:userInfo];
+						}
+						*success = NO;
+						return nil;
+					}
+					
+					return result;
+				}
+				reverseBlock:^id(NSUUID *uuid, BOOL *success, NSError **error) {
+					if (uuid == nil) return nil;
+					
+					if (![uuid isKindOfClass:NSUUID.class]) {
+						if (error != NULL) {
+							NSDictionary *userInfo = @{NSLocalizedDescriptionKey: NSLocalizedString(@"Could not convert UUID to string", @""),
+													   NSLocalizedFailureReasonErrorKey: [NSString stringWithFormat:NSLocalizedString(@"Expected an NSUUID, got: %@.", @""), uuid],
+													   MTLTransformerErrorHandlingInputValueErrorKey : uuid};
+							*error = [NSError errorWithDomain:MTLTransformerErrorHandlingErrorDomain code:MTLTransformerErrorHandlingErrorInvalidInput userInfo:userInfo];
+						}
+						*success = NO;
+						return nil;
+					}
+					
+					return uuid.UUIDString;
+				}];
+		
+		[NSValueTransformer setValueTransformer:UUIDValueTransformer forName:MTLUUIDValueTransformerName];
+		
 		MTLValueTransformer *booleanValueTransformer = [MTLValueTransformer
 			transformerUsingReversibleBlock:^ id (NSNumber *boolean, BOOL *success, NSError **error) {
 				if (boolean == nil) return nil;
@@ -273,6 +327,108 @@ NSString * const MTLBooleanValueTransformerName = @"MTLBooleanValueTransformerNa
 
 + (NSValueTransformer *)mtl_valueMappingTransformerWithDictionary:(NSDictionary *)dictionary {
 	return [self mtl_valueMappingTransformerWithDictionary:dictionary defaultValue:nil reverseDefaultValue:nil];
+}
+
++ (NSValueTransformer<MTLTransformerErrorHandling> *)mtl_dateTransformerWithDateFormat:(NSString *)dateFormat calendar:(NSCalendar *)calendar locale:(NSLocale *)locale timeZone:(NSTimeZone *)timeZone defaultDate:(NSDate *)defaultDate {
+	NSParameterAssert(dateFormat.length);
+
+	NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+	dateFormatter.dateFormat = dateFormat;
+	dateFormatter.calendar = calendar;
+	dateFormatter.locale = locale;
+	dateFormatter.timeZone = timeZone;
+	dateFormatter.defaultDate = defaultDate;
+
+	return [NSValueTransformer mtl_transformerWithFormatter:dateFormatter forObjectClass:NSDate.class];
+}
+
+
++ (NSValueTransformer<MTLTransformerErrorHandling> *)mtl_dateTransformerWithDateFormat:(NSString *)dateFormat locale:(NSLocale *)locale {
+	return [self mtl_dateTransformerWithDateFormat:dateFormat calendar:nil locale:locale timeZone:nil defaultDate:nil];
+}
+
++ (NSValueTransformer<MTLTransformerErrorHandling> *)mtl_numberTransformerWithNumberStyle:(NSNumberFormatterStyle)numberStyle locale:(NSLocale *)locale {
+	NSNumberFormatter *numberFormatter = [[NSNumberFormatter alloc] init];
+	numberFormatter.numberStyle = numberStyle;
+	numberFormatter.locale = locale;
+
+	return [self mtl_transformerWithFormatter:numberFormatter forObjectClass:NSNumber.class];
+}
+
++ (NSValueTransformer<MTLTransformerErrorHandling> *)mtl_transformerWithFormatter:(NSFormatter *)formatter forObjectClass:(Class)objectClass {
+	NSParameterAssert(formatter != nil);
+	NSParameterAssert(objectClass != nil);
+	return [MTLValueTransformer
+			transformerUsingForwardBlock:^ id (NSString *str, BOOL *success, NSError *__autoreleasing *error) {
+				if (str == nil) return nil;
+
+				if (![str isKindOfClass:NSString.class]) {
+					if (error != NULL) {
+						NSDictionary *userInfo = @{
+						    NSLocalizedDescriptionKey: [NSString stringWithFormat:NSLocalizedString(@"Could not convert string to %@", @""), objectClass],
+							NSLocalizedFailureReasonErrorKey: [NSString stringWithFormat:NSLocalizedString(@"Expected an NSString as input, got: %@.", @""), str],
+							MTLTransformerErrorHandlingInputValueErrorKey : str
+						};
+						
+						*error = [NSError errorWithDomain:MTLTransformerErrorHandlingErrorDomain code:MTLTransformerErrorHandlingErrorInvalidInput userInfo:userInfo];
+					}
+					*success = NO;
+					return nil;
+				}
+
+				id object = nil;
+				NSString *errorDescription = nil;
+				*success = [formatter getObjectValue:&object forString:str errorDescription:&errorDescription];
+
+				if (errorDescription != nil) {
+					if (error != NULL) {
+						NSDictionary *userInfo = @{
+							NSLocalizedDescriptionKey: [NSString stringWithFormat:NSLocalizedString(@"Could not convert string to %@", @""), objectClass],
+							NSLocalizedFailureReasonErrorKey: errorDescription,
+							MTLTransformerErrorHandlingInputValueErrorKey : str
+						};
+						
+						*error = [NSError errorWithDomain:MTLTransformerErrorHandlingErrorDomain code:MTLTransformerErrorHandlingErrorInvalidInput userInfo:userInfo];
+					}
+					*success = NO;
+					return nil;
+				}
+
+				if (![object isKindOfClass:objectClass]) {
+					if (error != NULL) {
+						NSDictionary *userInfo = @{
+							NSLocalizedDescriptionKey: [NSString stringWithFormat:NSLocalizedString(@"Could not convert string to %@", @""), objectClass],
+							NSLocalizedFailureReasonErrorKey: [NSString stringWithFormat:NSLocalizedString(@"Expected an %@ as output from the formatter, got: %@.", @""), objectClass, object],
+						};
+
+						*error = [NSError errorWithDomain:NSCocoaErrorDomain code:NSFormattingError userInfo:userInfo];
+					}
+					*success = NO;
+					return nil;
+				}
+
+				return object;
+			} reverseBlock:^id(id object, BOOL *success, NSError *__autoreleasing *error) {
+				if (object == nil) return nil;
+
+				if (![object isKindOfClass:objectClass]) {
+					if (error != NULL) {
+						NSDictionary *userInfo = @{
+						   NSLocalizedDescriptionKey: [NSString stringWithFormat:NSLocalizedString(@"Could not convert %@ to string", @""), objectClass],
+						   NSLocalizedFailureReasonErrorKey: [NSString stringWithFormat:NSLocalizedString(@"Expected an %@ as input, got: %@.", @""), objectClass, object],
+						   MTLTransformerErrorHandlingInputValueErrorKey : object
+						};
+
+						*error = [NSError errorWithDomain:MTLTransformerErrorHandlingErrorDomain code:MTLTransformerErrorHandlingErrorInvalidInput userInfo:userInfo];
+					}
+					*success = NO;
+					return nil;
+				}
+
+				NSString *string = [formatter stringForObjectValue:object];
+				*success = (string != nil);
+				return string;
+			}];
 }
 
 #pragma clang diagnostic push

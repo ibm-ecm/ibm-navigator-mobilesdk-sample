@@ -19,15 +19,17 @@ class MenuOptionsTableViewController : UITableViewController {
         self.title = "'\(ibmecmapp.currentDesktop!.name)' Desktop"
     }
     
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 2
     }
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCellWithIdentifier("MenuOptionTableViewCell") //as? UITableViewCell
+
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        var cell = tableView.dequeueReusableCell(withIdentifier: "MenuOptionTableViewCell") //as? UITableViewCell
         
         if cell == nil {
-            cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "MenuOptionTableViewCell")
+            cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "MenuOptionTableViewCell")
         }
         
         switch(indexPath.row) {
@@ -41,15 +43,16 @@ class MenuOptionsTableViewController : UITableViewController {
         
         return cell!
     }
+
     
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch(indexPath.row) {
         case 0:
             /* browse repository */
-            self.performSegueWithIdentifier("transitionToBrowse", sender: self)
+            self.performSegue(withIdentifier: "transitionToBrowse", sender: self)
         case 1:
             /* search repository */
-            self.performSegueWithIdentifier("transitionToSearch", sender: self)
+            self.performSegue(withIdentifier: "transitionToSearch", sender: self)
         default:
             return
         }

@@ -16,22 +16,49 @@ class LoginViewController : UIViewController {
     
     var ibmecmapp: IBMECMApplication?
     
-    @IBAction func submitTapped(sender: UIButton) {
+    @IBAction func submitTapped(_ sender: Any) {
+
         print("username: \(usernameTxt.text)")
         print("password: you kidding?")
         print("username: \(navigatorUrlTxt.text)")
+        usernameTxt.text = "p8admin"
+        passwordTxt.text = "filenet"
+        navigatorUrlTxt.text = "http://9.110.94.129:9080/navigator/?desktop=icn"
         
-        if let user: String = usernameTxt.text, password = passwordTxt.text, url = navigatorUrlTxt.text {
+        if let user: String = usernameTxt.text, let password = passwordTxt.text, let url = navigatorUrlTxt.text {
             if( user.characters.count < 1 || password.characters.count < 1 || url.characters.count < 1) {
-                Util.showError("Error", message: "Username, password and navigator url are all required for login.", vc: self)
+                Util.showError(title: "Error", message: "Username, password and navigator url are all required for login.", vc: self)
                 
                 return
             }
             
             /* let's login */
             ibmecmapp = IBMECMFactory.sharedInstance.getApplication(url)
-            
-            ibmecmapp!.login(user, password: password, onComplete: {
+            DispatchQueue.main.async(execute: {
+                
+            self.ibmecmapp?.login(user, password: password, onComplete: { (error: NSError?) in
+                if let loginError = error {
+                    // login failed
+                    var title = "Login error"
+                    if let detailTitle = loginError.localizedFailureReason {
+                        title = detailTitle
+                    }
+                    
+                    var message = "Enter the right username/password/url and try again"
+                    if let detailMessage = loginError.localizedRecoverySuggestion {
+                        message = detailMessage
+                    }
+                    
+                    if let ibmecmapp = self.ibmecmapp, (IBMECMFactory.sharedInstance.getCurrentRepository(ibmecmapp) == nil) {
+                        Util.showError(title: title, message: message, vc: self)
+                        
+                        return
+                    }
+                }
+            })
+            })
+            /*
+            ibmecmapp?.login(user, password: password,deviceId: "DummyID", onComplete: {
                 [weak self, weak ibmecmapp] (error: NSError?) -> Void in
                 
                 if let weakSelf = self {
@@ -47,28 +74,30 @@ class LoginViewController : UIViewController {
                             message = detailMessage
                         }
                         
-                        if let ibmecmapp = ibmecmapp where (IBMECMFactory.sharedInstance.getCurrentRepository(ibmecmapp) == nil) {
-                            Util.showError(title, message: message, vc: weakSelf)
+                        if let ibmecmapp = ibmecmapp, (IBMECMFactory.sharedInstance.getCurrentRepository(ibmecmapp) == nil) {
+                            Util.showError(title: title, message: message, vc: weakSelf)
                         
                             return
                         }
                     }
                     
                     if let _ = ibmecmapp {                        
-                        weakSelf.performSegueWithIdentifier("transitionToMainMenu", sender: weakSelf)
+                        weakSelf.performSegue(withIdentifier: "transitionToMainMenu", sender: weakSelf)
                     }
                 }
                 })
+            
+            */
         } else {
-            Util.showError("Error", message: "Username, password and navigator url are all required for login.", vc: self)
+            Util.showError(title: "Error", message: "Username, password and navigator url are all required for login.", vc: self)
         }
     }
         
     @IBAction func unwindSegue(segue: UIStoryboardSegue) {
         print("unwindSegue: LoginViewController")
         
-        let svc = segue.sourceViewController
+        let svc = segue.source
         self.ibmecmapp?.logoff(nil)
-        svc.dismissViewControllerAnimated(true, completion: nil)
+        svc.dismiss(animated: true, completion: nil)
     }
 }
