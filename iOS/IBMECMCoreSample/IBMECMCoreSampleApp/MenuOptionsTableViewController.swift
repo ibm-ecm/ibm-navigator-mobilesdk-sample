@@ -23,8 +23,6 @@ class MenuOptionsTableViewController : UITableViewController {
         return 2
     }
     
-
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCell(withIdentifier: "MenuOptionTableViewCell") //as? UITableViewCell
         
@@ -43,7 +41,6 @@ class MenuOptionsTableViewController : UITableViewController {
         
         return cell!
     }
-
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch(indexPath.row) {

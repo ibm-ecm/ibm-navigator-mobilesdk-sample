@@ -9,7 +9,7 @@ import IBMECMCore
 
 class RepositoryObjectTableViewCell: UITableViewCell {
     
-    private var _contentItem: IBMECMContentItem!
+    fileprivate var _contentItem: IBMECMContentItem!
     
     var isFavorite: Bool = false
     
@@ -20,11 +20,11 @@ class RepositoryObjectTableViewCell: UITableViewCell {
         set {
             self._contentItem = newValue
             
-            updateCellState(cItem: self._contentItem)
+            updateCellState(self._contentItem)
         }
     }
     
-    private func updateCellState(cItem: IBMECMContentItem) {
+    fileprivate func updateCellState(_ cItem: IBMECMContentItem) {
         self.textLabel?.text = cItem.name
         
         if let created: String = cItem.properties["DateCreated"] as? String {
@@ -36,7 +36,7 @@ class RepositoryObjectTableViewCell: UITableViewCell {
         if(self.contentItem.isFolder) {
             self.imageView?.image = UIImage(named: "folderIcon")
         } else {
-            self.imageView?.image = loadThumbnail(cItem: cItem)
+            self.imageView?.image = loadThumbnail(cItem)
             
             if(self.imageView?.image == nil) {
                 self.imageView?.image = UIImage(named: "fileIcon")
@@ -46,7 +46,7 @@ class RepositoryObjectTableViewCell: UITableViewCell {
         self.isFavorite = cItem.isFavoriteEnabled
     }
     
-    private func loadThumbnail(cItem: IBMECMContentItem) -> UIImage? {
+    fileprivate func loadThumbnail(_ cItem: IBMECMContentItem) -> UIImage? {
         if let imagedata = cItem.getThumbnail() {
             return UIImage(data: imagedata)
         }

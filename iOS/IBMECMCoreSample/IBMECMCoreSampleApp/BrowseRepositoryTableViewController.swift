@@ -35,13 +35,13 @@ class BrowseRepositoryTableViewController : UITableViewController {
             
             loadContainees()
         } else {
-            Util.showError(title: "Error", message: "No repository available, please login and retry", vc: self)
+            Util.showError("Error", message: "No repository available, please login and retry", vc: self)
         }
         
-        setTitle(contentItem: folderBrowsed)
+        setTitle(folderBrowsed)
     }
     
-    func setTitle(contentItem: IBMECMContentItem?) {
+    func setTitle(_ contentItem: IBMECMContentItem?) {
         if let cItem = contentItem {
             self.title = cItem.name
         } else {
@@ -58,7 +58,6 @@ class BrowseRepositoryTableViewController : UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-
         if(self.hasMore && indexPath.row == self.contentItems.count) {
             let cell = tableView.dequeueReusableCell(withIdentifier: "BrowseMore")// as? UITableViewCell
             
@@ -88,7 +87,6 @@ class BrowseRepositoryTableViewController : UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-
         if(cell.reuseIdentifier == "BrowseMore") {
             // load next page
             if(self.resultSet != nil) {
@@ -96,10 +94,8 @@ class BrowseRepositoryTableViewController : UITableViewController {
             }
         }
     }
-
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-
         let selectedCell = self.tableView.cellForRow(at: indexPath) as? RepositoryObjectTableViewCell
         
         if let cell = selectedCell {
@@ -120,7 +116,6 @@ class BrowseRepositoryTableViewController : UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-   
         
     }
     
@@ -128,8 +123,8 @@ class BrowseRepositoryTableViewController : UITableViewController {
 //        code
 //    }
     
+    
     override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
-      
         if(self.hasMore && indexPath.row == self.contentItems.count) {
             return nil
         }
@@ -153,14 +148,13 @@ class BrowseRepositoryTableViewController : UITableViewController {
         
         if (!contentItem!.isFolder) {
             let deleteAction = UITableViewRowAction(style: UITableViewRowActionStyle.default, title: "Delete", handler: {
-                [weak contentItem, weak self] (action: UITableViewRowAction!, indexPath:
-                IndexPath!) -> Void in
+                [weak contentItem, weak self] (action: UITableViewRowAction!, indexPath: IndexPath!) -> Void in
                 
                 if let weakSelf = self, let weakCitem = contentItem {
                     let confirmation = UIAlertController(title: "Confirm", message: "Are you sure you want to delete this?", preferredStyle: UIAlertControllerStyle.alert)
                     
                     confirmation.addAction(UIAlertAction(title: "Delete", style: UIAlertActionStyle.destructive, handler: { (action: UIAlertAction!) in
-                        weakSelf.deleteObject(cItem: weakCitem, indexPath: indexPath)
+                        weakSelf.deleteObject(weakCitem, indexPath: indexPath)
                     }))
                     
                     confirmation.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel, handler: { (action: UIAlertAction!) in
@@ -177,12 +171,12 @@ class BrowseRepositoryTableViewController : UITableViewController {
         return actions
     }
     
-    private func deleteObject(cItem: IBMECMContentItem, indexPath: IndexPath) {
+    fileprivate func deleteObject(_ cItem: IBMECMContentItem, indexPath: IndexPath) {
         self.repository.deleteItems([cItem], onComplete: {
             (error: NSError?) -> Void in
             
             if let _ = error {
-                Util.showError(title: "Error", message: "Could not delete repository object, please login and retry", vc: self)
+                Util.showError("Error", message: "Could not delete repository object, please login and retry", vc: self)
             } else {
                 self.contentItems.removeObject(at: indexPath.row)
                 self.tableView.deleteRows(at: [indexPath], with: UITableViewRowAnimation.automatic)
@@ -191,34 +185,34 @@ class BrowseRepositoryTableViewController : UITableViewController {
         
     }
     
-    private func loadFolderBrowsed() {
+    fileprivate func loadFolderBrowsed() {
         self.repository.retrieveItem("/", onComplete: {
             [weak self] (contentItem: IBMECMContentItem?, error: NSError?) -> Void in
             
             if let weakSelf = self {
                 if let _ = error {
-                    Util.showError(title: "Error", message: "Could not fetch repository objects, please login and retry", vc: weakSelf)
+                    Util.showError("Error", message: "Could not fetch repository objects, please login and retry", vc: weakSelf)
                     
                     return
                 }
                 
                 weakSelf.folderBrowsed = contentItem
                 
-                weakSelf.setTitle(contentItem: weakSelf.folderBrowsed)
+                weakSelf.setTitle(weakSelf.folderBrowsed)
                 
                 weakSelf.loadContainees()
             }
             })
     }
     
-    private func loadContainees() {
+    fileprivate func loadContainees() {
         if let folderToBrowse = self.folderBrowsed {
-            folderToBrowse.retrieveFolderContent(false , orderBy: nil, descending: false, pageSize: pageSize as NSNumber?, teamspaceId: nil, onComplete: {
+            folderToBrowse.retrieveFolderContent(false , orderBy: nil, descending: false, pageSize: pageSize as NSNumber, teamspaceId: nil, onComplete: {
                 [weak self] (resultSet: IBMECMResultSet?, error: NSError?) -> Void in
                 
                 if let weakSelf = self {
                     if let _ = error {
-                        Util.showError(title: "Error", message: "Could not fetch repository objects, please login and retry", vc: weakSelf)
+                        Util.showError("Error", message: "Could not fetch repository objects, please login and retry", vc: weakSelf)
                         
                         weakSelf.tableView.reloadData()
                         
@@ -244,13 +238,13 @@ class BrowseRepositoryTableViewController : UITableViewController {
         }
     }
     
-    private func getNextPage() {
+    fileprivate func getNextPage() {
         self.resultSet!.retrieveNextPage({
             [weak self](results: IBMECMResultSet?, error: NSError?) -> Void in
             
             if let weakSelf = self {
                 if let _ = error {
-                    Util.showError(title: "Error", message: "Could not next page, please login and retry", vc: weakSelf)
+                    Util.showError("Error", message: "Could not next page, please login and retry", vc: weakSelf)
                     
                     return
                 }

@@ -108,53 +108,16 @@ open class SessionDelegate: NSObject {
 #if !os(watchOS)
 
     /// Overrides default behavior for URLSessionStreamDelegate method `urlSession(_:readClosedFor:)`.
-    @available(iOS 9.0, macOS 10.11, tvOS 9.0, *)
-    open var streamTaskReadClosed: ((URLSession, URLSessionStreamTask) -> Void)? {
-        get {
-            return _streamTaskReadClosed as? (URLSession, URLSessionStreamTask) -> Void
-        }
-        set {
-            _streamTaskReadClosed = newValue
-        }
-    }
+    open var streamTaskReadClosed: ((URLSession, URLSessionStreamTask) -> Void)?
 
     /// Overrides default behavior for URLSessionStreamDelegate method `urlSession(_:writeClosedFor:)`.
-    @available(iOS 9.0, macOS 10.11, tvOS 9.0, *)
-    open var streamTaskWriteClosed: ((URLSession, URLSessionStreamTask) -> Void)? {
-        get {
-            return _streamTaskWriteClosed as? (URLSession, URLSessionStreamTask) -> Void
-        }
-        set {
-            _streamTaskWriteClosed = newValue
-        }
-    }
+    open var streamTaskWriteClosed: ((URLSession, URLSessionStreamTask) -> Void)?
 
     /// Overrides default behavior for URLSessionStreamDelegate method `urlSession(_:betterRouteDiscoveredFor:)`.
-    @available(iOS 9.0, macOS 10.11, tvOS 9.0, *)
-    open var streamTaskBetterRouteDiscovered: ((URLSession, URLSessionStreamTask) -> Void)? {
-        get {
-            return _streamTaskBetterRouteDiscovered as? (URLSession, URLSessionStreamTask) -> Void
-        }
-        set {
-            _streamTaskBetterRouteDiscovered = newValue
-        }
-    }
+    open var streamTaskBetterRouteDiscovered: ((URLSession, URLSessionStreamTask) -> Void)?
 
     /// Overrides default behavior for URLSessionStreamDelegate method `urlSession(_:streamTask:didBecome:outputStream:)`.
-    @available(iOS 9.0, macOS 10.11, tvOS 9.0, *)
-    open var streamTaskDidBecomeInputAndOutputStreams: ((URLSession, URLSessionStreamTask, InputStream, OutputStream) -> Void)? {
-        get {
-            return _streamTaskDidBecomeInputStream as? (URLSession, URLSessionStreamTask, InputStream, OutputStream) -> Void
-        }
-        set {
-            _streamTaskDidBecomeInputStream = newValue
-        }
-    }
-
-    var _streamTaskReadClosed: Any?
-    var _streamTaskWriteClosed: Any?
-    var _streamTaskBetterRouteDiscovered: Any?
-    var _streamTaskDidBecomeInputStream: Any?
+    open var streamTaskDidBecomeInputAndOutputStreams: ((URLSession, URLSessionStreamTask, InputStream, OutputStream) -> Void)?
 
 #endif
 
@@ -196,26 +159,24 @@ open class SessionDelegate: NSObject {
     ///
     /// - returns: `true` if the receiver implements or inherits a method that can respond to selector, otherwise `false`.
     open override func responds(to selector: Selector) -> Bool {
-        #if !os(macOS)
+        #if !os(OSX)
             if selector == #selector(URLSessionDelegate.urlSessionDidFinishEvents(forBackgroundURLSession:)) {
                 return sessionDidFinishEventsForBackgroundURLSession != nil
             }
         #endif
 
         #if !os(watchOS)
-            if #available(iOS 9.0, macOS 10.11, tvOS 9.0, *) {
-                switch selector {
-                case #selector(URLSessionStreamDelegate.urlSession(_:readClosedFor:)):
-                    return streamTaskReadClosed != nil
-                case #selector(URLSessionStreamDelegate.urlSession(_:writeClosedFor:)):
-                    return streamTaskWriteClosed != nil
-                case #selector(URLSessionStreamDelegate.urlSession(_:betterRouteDiscoveredFor:)):
-                    return streamTaskBetterRouteDiscovered != nil
-                case #selector(URLSessionStreamDelegate.urlSession(_:streamTask:didBecome:outputStream:)):
-                    return streamTaskDidBecomeInputAndOutputStreams != nil
-                default:
-                    break
-                }
+            switch selector {
+            case #selector(URLSessionStreamDelegate.urlSession(_:readClosedFor:)):
+                return streamTaskReadClosed != nil
+            case #selector(URLSessionStreamDelegate.urlSession(_:writeClosedFor:)):
+                return streamTaskWriteClosed != nil
+            case #selector(URLSessionStreamDelegate.urlSession(_:betterRouteDiscoveredFor:)):
+                return streamTaskBetterRouteDiscovered != nil
+            case #selector(URLSessionStreamDelegate.urlSession(_:streamTask:didBecome:outputStream:)):
+                return streamTaskDidBecomeInputAndOutputStreams != nil
+            default:
+                break
             }
         #endif
 
@@ -286,7 +247,7 @@ extension SessionDelegate: URLSessionDelegate {
         completionHandler(disposition, credential)
     }
 
-#if !os(macOS)
+#if !os(OSX)
 
     /// Tells the delegate that all messages enqueued for a session have been delivered.
     ///
@@ -676,7 +637,6 @@ extension SessionDelegate: URLSessionDownloadDelegate {
 
 #if !os(watchOS)
 
-@available(iOS 9.0, macOS 10.11, tvOS 9.0, *)
 extension SessionDelegate: URLSessionStreamDelegate {
     /// Tells the delegate that the read side of the connection has been closed.
     ///

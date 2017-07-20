@@ -9,7 +9,6 @@ import QuickLook
 import IBMECMCore
 
 class DocumentViewerController: QLPreviewController, QLPreviewControllerDataSource {
-
     
     var contentItem: IBMECMContentItem?
     
@@ -23,7 +22,7 @@ class DocumentViewerController: QLPreviewController, QLPreviewControllerDataSour
         }
     }
     
-    public func numberOfPreviewItems(in controller: QLPreviewController) -> Int {
+    func numberOfPreviewItems(in controller: QLPreviewController) -> Int{
         if let _ = self.contentItem {
             return 1
         } else {
@@ -37,7 +36,7 @@ class DocumentViewerController: QLPreviewController, QLPreviewControllerDataSour
         return previewItem
     }
     
-    private func downloadDocument() {
+    fileprivate func downloadDocument() {
         let onComplete : (_ error: NSError?)-> Void =  {
             [weak self] (error) -> Void in
             
@@ -47,7 +46,7 @@ class DocumentViewerController: QLPreviewController, QLPreviewControllerDataSour
         }
         
         let progress : ((_ theProgress: Progress) -> Void) = {
-           /* [weak self] */(_ theProgress: Progress) -> Void in
+            /* [weak self] */(_ theProgress: Progress) -> Void in
             // unused
         }
         

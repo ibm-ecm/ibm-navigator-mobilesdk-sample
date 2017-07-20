@@ -8,7 +8,6 @@ import UIKit
 import IBMECMCore
 
 class SearchRepositoryViewController : UIViewController, UITableViewDataSource, UITableViewDelegate {
-
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var txtDocumentTitle: UITextField!
@@ -48,7 +47,7 @@ class SearchRepositoryViewController : UIViewController, UITableViewDataSource, 
         }
     }
     
-    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if(self.hasMore && indexPath.row == self.contentItems.count) {
             let cell = tableView.dequeueReusableCell(withIdentifier: "SearchMore") //as? UITableViewCell
             
@@ -70,7 +69,7 @@ class SearchRepositoryViewController : UIViewController, UITableViewDataSource, 
         return cell!
     }
     
-    func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         if(cell.reuseIdentifier == "SearchMore") {
             if(self.resultSet != nil) {
                 self.getNextPage()
@@ -78,8 +77,8 @@ class SearchRepositoryViewController : UIViewController, UITableViewDataSource, 
         }
     }
     
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let selectedCell = self.tableView.cellForRow(at: indexPath as IndexPath) as? RepositoryObjectTableViewCell
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let selectedCell = self.tableView.cellForRow(at: indexPath) as? RepositoryObjectTableViewCell
         
         if let cell = selectedCell {
             if(!cell.contentItem.isFolder) {
@@ -98,7 +97,7 @@ class SearchRepositoryViewController : UIViewController, UITableViewDataSource, 
         }
     }
     
-    @IBAction func submitTapped(sender: UIButton) {
+    @IBAction func submitTapped(_ sender: UIButton) {
         self.contentItems.removeAllObjects()
         
         if let _ = self.repository {
@@ -116,12 +115,12 @@ class SearchRepositoryViewController : UIViewController, UITableViewDataSource, 
                 searchPredicates.append(dateAddedPredicate)
             }
             
-            self.repository.searchAdHoc(nil, teamspaceId: nil, searchClasses: [ "Document" ], objectType: IBMECMObjectType.Document, searchPredicates: searchPredicates, textSearchPredicate: nil, orderBy: nil, descending: nil, pageSize: pageSize as NSNumber?, onComplete: {
+            self.repository.searchAdHoc(nil, teamspaceId: nil, searchClasses: [ "Document" ], objectType: IBMECMObjectType.Document, searchPredicates: searchPredicates, textSearchPredicate: nil, orderBy: nil, descending: nil, pageSize: pageSize as NSNumber, onComplete: {
                 [weak self] (resultSet: IBMECMResultSet?, error: NSError?) -> Void in
                 
                 if let weakSelf = self {
                     if let _ = error {
-                        Util.showError(title: "Error", message: "Could not search repository, please login and retry", vc: weakSelf)
+                        Util.showError("Error", message: "Could not search repository, please login and retry", vc: weakSelf)
                         
                         weakSelf.tableView.reloadData()
                         
@@ -143,17 +142,17 @@ class SearchRepositoryViewController : UIViewController, UITableViewDataSource, 
                 }
                 })
         } else {
-            Util.showError(title: "Error", message: "No repository available, please login and retry", vc: self)
+            Util.showError("Error", message: "No repository available, please login and retry", vc: self)
         }
     }
     
-    private func getNextPage() {
+    fileprivate func getNextPage() {
         self.resultSet!.retrieveNextPage({
             [weak self] (results: IBMECMResultSet?, error: NSError?) -> Void in
             
             if let weakSelf = self {
                 if let _ = error {
-                    Util.showError(title: "Error", message: "Could not next page, please login and retry", vc: weakSelf)
+                    Util.showError("Error", message: "Could not next page, please login and retry", vc: weakSelf)
                     
                     return
                 }

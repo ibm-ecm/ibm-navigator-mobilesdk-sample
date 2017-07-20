@@ -18,12 +18,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
     
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
-  
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
         AppLog.initializeLoger()
         AppLog.logInfo("======================== Application Startup  ========================")
-        
-        openSearchTemplate()
         // scenario 1: add folder to root then add document under new folder
         // addFolderThenDocument_Scenario()
         
@@ -39,47 +37,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
     
-    private func openSearchTemplate() {
-        let ibmecmapp: IBMECMApplication = IBMECMFactory.sharedInstance.getApplication("http://rainier.usca.ibm.com/navigator")
-        
-        let username: String = "suser"
-        let password: String  = "Genius1"
-        // SEE: LOGIN
-        ibmecmapp.login(username, password: password, onComplete: {
-            (error: NSError?) -> Void in
-            
-            if let loginError = error {
-                // login failed
-                
-                print("login failed for user \(username). The error was: \(loginError.description)")
-                
-                return
-            }
-            let repository: IBMECMRepository = IBMECMFactory.sharedInstance.getCurrentRepository(ibmecmapp)!
-            
-            // cm-hobbesvm8.usca.ibm.com or cm-richmondvm20.usca.ibm.com
-            //            let id = "StoredSearch,{336211AE-4EB8-4DB3-8E95-BD40317C20BA},{D365D06F-0696-434A-A6FF-A9336ADDFC10}"
-            let vsId = "{44EC2FD5-0486-448C-A507-AF94691FF086}"
-            // retrieve the search template with the id and vsId
-            repository.retrieveReleasedSearchTemplate(vsId, onComplete: { (_searchTemplate, error) -> Void in
-                if error != nil {
-                    // retrieve search template faild
-                    
-                }else if let searchTemplate = _searchTemplate {
-                    AppLog.logInfo("The searchTemplate | .id = \(searchTemplate.id), .name = \(searchTemplate.name)")
-                    if let searchCriterias = searchTemplate.searchCriterias {
-                        AppLog.logInfo("The searchTemplate (name = \(searchTemplate.name)) has \(searchCriterias.count) criteria. ")
-                        for criteria in searchCriterias {
-                            AppLog.logInfo("Search criteria: id = \(criteria.id); name = \(criteria.name); description = \(criteria.description); defaultOperator = \(criteria.defaultOperator); selectedOperator = \(criteria.selectedOperator); hasDependentAttributes = \(criteria.hasDependentAttributes); values = \(criteria.values) ")
-                        }
-                    }
-                }
-            })
-        })
-    }
-    
-    
-    private func searchDocumentsWithCriteria() {
+    fileprivate func searchDocumentsWithCriteria() {
         let ibmecmapp: IBMECMApplication = IBMECMFactory.sharedInstance.getApplication(SERVER_URL)
         
         // SEE: LOGIN
@@ -94,12 +52,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 return
             }
             let repository: IBMECMRepository = IBMECMFactory.sharedInstance.getCurrentRepository(ibmecmapp)!
-            self.searchonRepos(repos: repository)
+            self.searchonRepos(repository)
         })
         
     }
     
-    private func searchonRepos(repos: IBMECMRepository){
+    fileprivate func searchonRepos(_ repos: IBMECMRepository){
         
         let criterion1: IBMECMSearchPredicate = IBMECMSearchPredicate.greater(propertyId: "DateLastModified", dataType: IBMECMPropertyDataType.Timestamp, cardinality:IBMECMPropertyCardinality.Single, values: ["2015-06-18T10:00:00.000Z" as AnyObject])
         
@@ -139,7 +97,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         })
     }
     
-    private func retrieveDocumentCheckOutThenInThenLike() {
+    fileprivate func retrieveDocumentCheckOutThenInThenLike() {
         let ibmecmapp: IBMECMApplication = IBMECMFactory.sharedInstance.getApplication(SERVER_URL)
     
         // SEE: LOGIN
@@ -189,7 +147,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                             if let items = recommendationItems.items {
                                 for item: IBMECMSocialItem in items {
                                     // iterate through document likes
-                                    print("document like by user: \(item.originator)")
+                                    print("document like by user: \(String(describing: item.originator))")
                                 }
                             }
                             
@@ -203,7 +161,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         })
     }
     
-    private func retrieveFolderThenGetFolderContaineesThenGetDocument_Scenario() {
+    fileprivate func retrieveFolderThenGetFolderContaineesThenGetDocument_Scenario() {
         //Create a top level IBMECMApplication object with a Content Navigator desktop URL
         let ibmecmapp: IBMECMApplication = IBMECMFactory.sharedInstance.getApplication(SERVER_URL)
         
@@ -317,7 +275,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         })
     }
     
-    private func addFolderThenDocument_Scenario() {
+    fileprivate func addFolderThenDocument_Scenario() {
         let ibmecmapp: IBMECMApplication = IBMECMFactory.sharedInstance.getApplication(SERVER_URL)
         
         // SEE: LOGIN
@@ -353,7 +311,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     print("the root folder's id is: \(rootFolder.id), the name is \(rootFolder.name)")
                     let properties = IBMECMFactory.sharedInstance.getIBMECMItemProperties()
                     properties.add("name", value: "FolderName" as AnyObject)
-                    properties.add("value", value: "my new folder \(AppDelegate.randomStringWithLength(len: 8))" as AnyObject)
+                    properties.add("value", value: "my new folder \(AppDelegate.randomStringWithLength(8))" as AnyObject)
                     
                     repository .addFolderItem("Folder", parentFolderId: rootFolder.id, teamspaceId: nil, properties: properties, onComplete: {
                         (contentItem: IBMECMContentItem?, error: NSError?) -> Void in
@@ -408,7 +366,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         })
     }
     
-    private func checkIn(contentItem: IBMECMContentItem, onComplete: @escaping OnCompleteBlock){
+    fileprivate func checkIn(_ contentItem: IBMECMContentItem, onComplete: @escaping OnCompleteBlock){
         let properties = IBMECMFactory.sharedInstance.getIBMECMItemProperties()
         properties.add("name", value: "DocumentTitle" as AnyObject)
         properties.add("value", value: contentItem.name as AnyObject)
@@ -420,13 +378,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
 //        var error: NSError?
         do {
-        let content:NSData? = try NSString(contentsOfFile: "SAMPLE/PATH/SAMPLE.txt", encoding: String.Encoding.utf8.rawValue).data(using: String.Encoding.utf8.rawValue, allowLossyConversion: false) as NSData?
+        let content:Data? = try NSString(contentsOfFile: "SAMPLE/PATH/SAMPLE.txt", encoding: String.Encoding.utf8.rawValue).data(using: String.Encoding.utf8.rawValue, allowLossyConversion: false)
         
-        contentItem.checkIn(contentItem.name, templateName: contentItem.templateName!, contentSourceType: IBMECMContentSourceType.Document, mimetype: contentItem.mimetype!, data: content! as Data, properties: properties, asMinorVersion: asMinorVersion, onComplete:
+        contentItem.checkIn(contentItem.name, templateName: contentItem.templateName!, contentSourceType: IBMECMContentSourceType.Document, mimetype: contentItem.mimetype!, data: content!, properties: properties, asMinorVersion: asMinorVersion, onComplete:
             {
                 (contentItem, error) -> Void in
                 if let err = error {
-                    self.displayError(error: err)
+                    self.displayError(err)
                 }
                 else {
                     onComplete(contentItem!)
@@ -442,7 +400,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     //Retrieve the parent folder by calling the repository.retrieveItem API.  The ID/PATH allows you to retrieve any folder.
     //The single slash is the root folder for the repository.
-    private func retrieveParentFolder(repository: IBMECMRepository?, onComplete: @escaping OnCompleteBlock){
+    fileprivate func retrieveParentFolder(_ repository: IBMECMRepository?, onComplete: @escaping OnCompleteBlock){
         repository?.retrieveItem("/", onComplete: {
             (contentItem: IBMECMContentItem?, error: NSError?) -> Void in
             
@@ -454,21 +412,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     //Adds a new document by specifying data to a local file and providing property values
-    private func addDocumentItem(repository: IBMECMRepository?, parentFolder: IBMECMContentItem, teamspace: IBMECMTeamspace?, onComplete: OnCompleteBlock?){
+    fileprivate func addDocumentItem(_ repository: IBMECMRepository?, parentFolder: IBMECMContentItem, teamspace: IBMECMTeamspace?, onComplete: OnCompleteBlock?){
         let properties = IBMECMFactory.sharedInstance.getIBMECMItemProperties()
         properties.add("name", value: "DocumentTitle" as AnyObject)
-        properties.add("value", value: "New Document \(AppDelegate.randomStringWithLength(len: 8))" as AnyObject)
+        properties.add("value", value: "New Document \(AppDelegate.randomStringWithLength(8))" as AnyObject)
 
 //        var error: NSError?
         do {
 
-        let content:NSData? = try NSString(contentsOfFile: "SAMPLE/PATH/SAMPLE.txt", encoding: String.Encoding.utf8.rawValue).data(using: String.Encoding.utf8.rawValue, allowLossyConversion: false) as NSData?
+        let content:Data? = try NSString(contentsOfFile: "SAMPLE/PATH/SAMPLE.txt", encoding: String.Encoding.utf8.rawValue).data(using: String.Encoding.utf8.rawValue, allowLossyConversion: false)
         
-        repository?.addDocumentItem(parentFolder.id, teamspaceId: teamspace?.id, templateName: "Document", contentSourceType: IBMECMContentSourceType.Document, properties: properties, mimeType: "text/plain", fileName: "NewDocument.txt", content: content! as Data, addAsMinorVersion: false, onComplete:
+        repository?.addDocumentItem(parentFolder.id, teamspaceId: teamspace?.id, templateName: "Document", contentSourceType: IBMECMContentSourceType.Document, properties: properties, mimeType: "text/plain", fileName: "NewDocument.txt", content: content!, addAsMinorVersion: false, onComplete:
             {
                 (contentItem: IBMECMContentItem?, error: NSError?) -> Void in
                 if let err = error {
-                    self.displayError(error: err)
+                    self.displayError(err)
                 }
                 else {
                     print("Finished adding new document")
@@ -487,7 +445,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     //Adds a new folder by providing property values
-    private func addFolderItem(repository: IBMECMRepository?, parentFolder: IBMECMContentItem, teamspace: IBMECMTeamspace?, onComplete: OnCompleteBlock?) {
+    fileprivate func addFolderItem(_ repository: IBMECMRepository?, parentFolder: IBMECMContentItem, teamspace: IBMECMTeamspace?, onComplete: OnCompleteBlock?) {
         let randomNum = Int(arc4random_uniform(99))
         let folderName = "NewFolder" + String(randomNum)
         let properties = IBMECMFactory.sharedInstance.getIBMECMItemProperties()
@@ -498,7 +456,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         repository?.addFolderItem("Folder", parentFolderId: parentFolder.id, teamspaceId: teamspace?.id, properties: properties, onComplete: {
             (contentItem: IBMECMContentItem?, error: NSError?) -> Void in
             if let err = error{
-                self.displayError(error: err)
+                self.displayError(err)
             }
             else {
                 print("Finished adding new folder")
@@ -509,15 +467,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         })
     }
     
-    private func displayError(error: NSError?){
+    fileprivate func displayError(_ error: NSError?){
         if let userInfo = error?.userInfo {
             for (key, value) in userInfo {
                 print("Error Key: \(key) - Error Message: \(value)")
             }
         }
     }
-    
-  
     
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -541,7 +497,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
     
-    class func randomStringWithLength (len : Int) -> NSString {
+    class func randomStringWithLength (_ len : Int) -> NSString {
         let letters : NSString = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
         
         let randomString : NSMutableString = NSMutableString(capacity: len)

@@ -10,8 +10,8 @@
 
 #import "NSDictionary+MTLJSONKeyPath.h"
 
-#import <Mantle/EXTRuntimeExtensions.h>
-#import <Mantle/EXTScope.h>
+#import "EXTRuntimeExtensions.h"
+#import "EXTScope.h"
 #import "MTLJSONAdapter.h"
 #import "MTLModel.h"
 #import "MTLTransformerErrorHandling.h"
@@ -28,7 +28,7 @@ const NSInteger MTLJSONAdapterErrorInvalidJSONMapping = 4;
 const NSInteger MTLJSONAdapterErrorExceptionThrown = 1;
 
 // Associated with the NSException that was caught.
-NSString * const MTLJSONAdapterThrownExceptionErrorKey = @"MTLJSONAdapterThrownException";
+static NSString * const MTLJSONAdapterThrownExceptionErrorKey = @"MTLJSONAdapterThrownException";
 
 @interface MTLJSONAdapter ()
 
@@ -294,7 +294,7 @@ NSString * const MTLJSONAdapterThrownExceptionErrorKey = @"MTLJSONAdapterThrownE
 			NSMutableDictionary *dictionary = [NSMutableDictionary dictionary];
 
 			for (NSString *keyPath in JSONKeyPaths) {
-				BOOL success = NO;
+				BOOL success;
 				id value = [JSONDictionary mtl_valueForJSONKeyPath:keyPath success:&success error:error];
 
 				if (!success) return nil;
@@ -304,7 +304,7 @@ NSString * const MTLJSONAdapterThrownExceptionErrorKey = @"MTLJSONAdapterThrownE
 
 			value = dictionary;
 		} else {
-			BOOL success = NO;
+			BOOL success;
 			value = [JSONDictionary mtl_valueForJSONKeyPath:JSONKeyPaths success:&success error:error];
 
 			if (!success) return nil;
@@ -343,8 +343,7 @@ NSString * const MTLJSONAdapterThrownExceptionErrorKey = @"MTLJSONAdapterThrownE
 			#else
 			if (error != NULL) {
 				NSDictionary *userInfo = @{
-					NSLocalizedDescriptionKey: [NSString stringWithFormat:@"Caught exception parsing JSON key path \"%@\" for model class: %@", JSONKeyPaths, self.modelClass],
-					NSLocalizedRecoverySuggestionErrorKey: ex.description,
+					NSLocalizedDescriptionKey: ex.description,
 					NSLocalizedFailureReasonErrorKey: ex.reason,
 					MTLJSONAdapterThrownExceptionErrorKey: ex
 				};
@@ -383,10 +382,9 @@ NSString * const MTLJSONAdapterThrownExceptionErrorKey = @"MTLJSONAdapterThrownE
 		if ([modelClass respondsToSelector:@selector(JSONTransformerForKey:)]) {
 			NSValueTransformer *transformer = [modelClass JSONTransformerForKey:key];
 
-			if (transformer != nil) {
-				result[key] = transformer;
-				continue;
-			}
+			if (transformer != nil) result[key] = transformer;
+
+			continue;
 		}
 
 		objc_property_t property = class_getProperty(modelClass, key.UTF8String);
@@ -407,13 +405,7 @@ NSString * const MTLJSONAdapterThrownExceptionErrorKey = @"MTLJSONAdapterThrownE
 				transformer = [self transformerForModelPropertiesOfClass:propertyClass];
 			}
 
-
-			// For user-defined MTLModel, try parse it with dictionaryTransformer.
-			if (nil == transformer && [propertyClass conformsToProtocol:@protocol(MTLJSONSerializing)]) {
-				transformer = [self dictionaryTransformerWithModelClass:propertyClass];
-			}
-			
-			if (transformer == nil) transformer = [NSValueTransformer mtl_validatingTransformerForClass:propertyClass ?: NSObject.class];
+			if (transformer == nil) transformer = [NSValueTransformer mtl_validatingTransformerForClass:NSObject.class];
 		} else {
 			transformer = [self transformerForModelPropertiesOfObjCType:attributes->type] ?: [NSValueTransformer mtl_validatingTransformerForClass:NSValue.class];
 		}
@@ -433,7 +425,7 @@ NSString * const MTLJSONAdapterThrownExceptionErrorKey = @"MTLJSONAdapterThrownE
 
 		if (result != nil) return result;
 
-		result = [[self.class alloc] initWithModelClass:modelClass];
+		result = [[MTLJSONAdapter alloc] initWithModelClass:modelClass];
 
 		if (result != nil) {
 			[self.JSONAdaptersByModelClass setObject:result forKey:modelClass];
@@ -475,9 +467,8 @@ NSString * const MTLJSONAdapterThrownExceptionErrorKey = @"MTLJSONAdapterThrownE
 @implementation MTLJSONAdapter (ValueTransformers)
 
 + (NSValueTransformer<MTLTransformerErrorHandling> *)dictionaryTransformerWithModelClass:(Class)modelClass {
-	NSParameterAssert([modelClass conformsToProtocol:@protocol(MTLModel)]);
+	NSParameterAssert([modelClass isSubclassOfClass:MTLModel.class]);
 	NSParameterAssert([modelClass conformsToProtocol:@protocol(MTLJSONSerializing)]);
-	__block MTLJSONAdapter *adapter;
 	
 	return [MTLValueTransformer
 		transformerUsingForwardBlock:^ id (id JSONDictionary, BOOL *success, NSError **error) {
@@ -496,11 +487,8 @@ NSString * const MTLJSONAdapterThrownExceptionErrorKey = @"MTLJSONAdapterThrownE
 				*success = NO;
 				return nil;
 			}
-
-			if (!adapter) {
-				adapter = [[self alloc] initWithModelClass:modelClass];
-			}
-			id model = [adapter modelFromJSONDictionary:JSONDictionary error:error];
+			
+			id model = [self modelOfClass:modelClass fromJSONDictionary:JSONDictionary error:error];
 			if (model == nil) {
 				*success = NO;
 			}
@@ -510,7 +498,7 @@ NSString * const MTLJSONAdapterThrownExceptionErrorKey = @"MTLJSONAdapterThrownE
 		reverseBlock:^ NSDictionary * (id model, BOOL *success, NSError **error) {
 			if (model == nil) return nil;
 			
-			if (![model conformsToProtocol:@protocol(MTLModel)] || ![model conformsToProtocol:@protocol(MTLJSONSerializing)]) {
+			if (![model isKindOfClass:MTLModel.class] || ![model conformsToProtocol:@protocol(MTLJSONSerializing)]) {
 				if (error != NULL) {
 					NSDictionary *userInfo = @{
 						NSLocalizedDescriptionKey: NSLocalizedString(@"Could not convert model object to JSON dictionary", @""),
@@ -523,11 +511,8 @@ NSString * const MTLJSONAdapterThrownExceptionErrorKey = @"MTLJSONAdapterThrownE
 				*success = NO;
 				return nil;
 			}
-
-			if (!adapter) {
-				adapter = [[self alloc] initWithModelClass:modelClass];
-			}
-			NSDictionary *result = [adapter JSONDictionaryFromModel:model error:error];
+			
+			NSDictionary *result = [self JSONDictionaryFromModel:model error:error];
 			if (result == nil) {
 				*success = NO;
 			}
@@ -642,10 +627,6 @@ NSString * const MTLJSONAdapterThrownExceptionErrorKey = @"MTLJSONAdapterThrownE
 
 + (NSValueTransformer *)NSURLJSONTransformer {
 	return [NSValueTransformer valueTransformerForName:MTLURLValueTransformerName];
-}
-
-+ (NSValueTransformer *)NSUUIDJSONTransformer {
-	return [NSValueTransformer valueTransformerForName:MTLUUIDValueTransformerName];
 }
 
 @end
