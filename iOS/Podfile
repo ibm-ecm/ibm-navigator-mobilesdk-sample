@@ -1,17 +1,19 @@
-platform :ios, '8.4'
+platform :ios, '9.0'
+use_frameworks!
 
 def corekit_pods
     pod 'CocoaLumberjack', '1.9.2'
-    pod 'Alamofire',  '~> 2.0'
+    pod 'Alamofire', '4.0'
     pod 'Mantle', '2.0.2'
     pod 'MTLManagedObjectAdapter', '1.0.0.1'
 end
 
-xcodeproj 'IBMECMCoreSample/IBMECMCoreSample.xcodeproj'
+    project 'IBMECMCoreSample/IBMECMCoreSample.xcodeproj'
+
 target :'IBMECMCoreSampleApp' do
+    project 'IBMECMCoreSample/IBMECMCoreSample.xcodeproj'
+
     corekit_pods
-    use_frameworks!
-    xcodeproj 'IBMECMCoreSample/IBMECMCoreSample.xcodeproj'
 end
 
 workspace 'navigatorMobileSDK'

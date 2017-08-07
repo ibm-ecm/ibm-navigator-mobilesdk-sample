@@ -7,10 +7,10 @@ import UIKit
 
 class Util {
     
-    class func showError(title: String, message: String, vc: UIViewController) {
-        let alert: UIAlertController = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.Alert)
-        alert.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default, handler: nil))
+    class func showError(_ title: String, message: String, vc: UIViewController) {
+        let alert: UIAlertController = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default, handler: nil))
         
-        vc.presentViewController(alert, animated: true, completion: nil)
+        vc.present(alert, animated: true, completion: nil)
     }
 }

@@ -19,7 +19,7 @@ class ApiUsage {
     :param: username user to login as
     :param: password username's corresponding password
     */
-    func login(username: String, password: String) {
+    func login(_ username: String, password: String) {
         ibmecmapp.login(username, password: password, onComplete: {
             (error: NSError?) -> Void in
             
@@ -42,7 +42,7 @@ class ApiUsage {
     :param: path       the item's path (for example '/' for root folder, or Guid to retrieve by Id)
     :param: repository the repository to fetch from
     */
-    func retrieveRepositoryItemByPathOrId(pathOrId: String, repository: IBMECMRepository) {
+    func retrieveRepositoryItemByPathOrId(_ pathOrId: String, repository: IBMECMRepository) {
         repository.retrieveItem(pathOrId, onComplete: {
             (contentItem: IBMECMContentItem?, error: NSError?) -> Void in
             
@@ -58,7 +58,7 @@ class ApiUsage {
     :param: itemId     the item's Guid
     :param: repository the repository to fetch from
     */
-    func retrieveRepostioryItemAllVersions(itemId: String, repository: IBMECMRepository) {
+    func retrieveRepostioryItemAllVersions(_ itemId: String, repository: IBMECMRepository) {
         repository.retrieveContentItemAllVersions(itemId, onComplete: {
             (resultSet: IBMECMResultSet?, error: NSError?) -> Void in
             
@@ -74,7 +74,7 @@ class ApiUsage {
                         print("items | .count =>\(items.count)")
                         
                         for item in items {
-                            print("item | .id = \(item.id), .name = \(item.name), .isFolder = \(item.isFolder), .versionStatus = \(item.versionStatus?.description)")
+                            print("item | .id = \(item.id), .name = \(item.name), .isFolder = \(item.isFolder), .versionStatus = \(String(describing: item.versionStatus?.description))")
                         }
                     }
                 }
@@ -87,7 +87,7 @@ class ApiUsage {
     
     :param: desktop desktop to retrieve from
     */
-    func retrievePersonalFolder(desktop: IBMECMDesktop) {
+    func retrievePersonalFolder(_ desktop: IBMECMDesktop) {
         desktop.retrieveMyPersonalFolder({
             (favorite: IBMECMFavorite?, error: NSError?) -> Void in
             
@@ -119,7 +119,7 @@ class ApiUsage {
     :param: teamspaceId  team space id if the current folder is a folder within team space
     :param: folder       folder object to be operated
     */
-    func retrieveFolderContents(foldersOnly: Bool, orderBy: String?, descending: Bool, teamspaceId: String?, folder: IBMECMContentItem) {
+    func retrieveFolderContents(_ foldersOnly: Bool, orderBy: String?, descending: Bool, teamspaceId: String?, folder: IBMECMContentItem) {
         if !folder.isFolder {
             // you can only get contents of folders
             return
@@ -191,7 +191,7 @@ class ApiUsage {
     :param: repository          The IBMECMRepository object
     :param: onComplete          The completion block for call back
     */
-    func searchDocuments(searchFolderId: String?, teamspaceId: String?, searchClasses: [String], searchPredicates: [IBMECMSearchPredicate]?, textSearchPredicate: IBMECMTextSearchPredicate?, pageSize: NSNumber?, repository: IBMECMRepository) {
+    func searchDocuments(_ searchFolderId: String?, teamspaceId: String?, searchClasses: [String], searchPredicates: [IBMECMSearchPredicate]?, textSearchPredicate: IBMECMTextSearchPredicate?, pageSize: NSNumber?, repository: IBMECMRepository) {
         
         // Already done the following TODO, please check it
         // TODO: ALL parameters have to be filtered up to the method declaration above
@@ -256,16 +256,16 @@ class ApiUsage {
     :param: teamspace         the teamspace to put the document in (optional)
     :param: repository        the repository to add the document into
     */
-    func addDocumentItem(documentTitle: String, documentClassName: String, contentSourceType: IBMECMContentSourceType, contentMimeType: String, contentData: NSData?, contentFileName: String?, isMajor: Bool?, parentFolder: IBMECMContentItem, teamspace: IBMECMTeamspace?, repository: IBMECMRepository){
+    func addDocumentItem(_ documentTitle: String, documentClassName: String, contentSourceType: IBMECMContentSourceType, contentMimeType: String, contentData: Data?, contentFileName: String?, isMajor: Bool?, parentFolder: IBMECMContentItem, teamspace: IBMECMTeamspace?, repository: IBMECMRepository){
         
         var asMinorVersion: Bool = false
         if let major = isMajor {
             asMinorVersion = !major
         }
         
-        let properties = IBMECMFactory.sharedInstance.getIBMECMItemProperties()
-        properties.add("name", value: "DocumentTitle")
-        properties.add("value", value: documentTitle)
+        let properties:IBMECMItemProperties = IBMECMFactory.sharedInstance.getIBMECMItemProperties()
+        properties.add("name", value: "DocumentTitle" as AnyObject)
+        properties.add("value", value: documentTitle as AnyObject)
 
         repository.addDocumentItem(
             parentFolder.id,
@@ -284,8 +284,8 @@ class ApiUsage {
                 } else {
                     // document was added successfully
                 }
-            }, progress: { (bytesWritten, totalBytesWritten, totalBytesExpectedToWrite) -> Void in
-                // progress
+        }, progress: { (_ theProgress: Progress) -> Void in
+            // progress
         })
     }
     
@@ -298,10 +298,10 @@ class ApiUsage {
     :param: teamspace    the teamspace to put the new folder into (optional)
     :param: repository   the repository to add the folder in
     */
-    func addFolder(folderName: String, folderClass: String, parentFolder: IBMECMContentItem, teamspace: IBMECMTeamspace?, repository: IBMECMRepository) {
+    func addFolder(_ folderName: String, folderClass: String, parentFolder: IBMECMContentItem, teamspace: IBMECMTeamspace?, repository: IBMECMRepository) {
         let properties = IBMECMFactory.sharedInstance.getIBMECMItemProperties()
-        properties.add("name", value: "FolderName")
-        properties.add("value", value: folderName)
+        properties.add("name", value: "FolderName" as AnyObject)
+        properties.add("value", value: folderName as AnyObject)
         
         repository.addFolderItem(folderClass, parentFolderId: parentFolder.id, teamspaceId: teamspace?.id, properties: properties, onComplete: {
             (contentItem: IBMECMContentItem?, error: NSError?) -> Void in
@@ -318,7 +318,7 @@ class ApiUsage {
     
     :param: document the document to checkout
     */
-    func checkOutDocument(document: IBMECMContentItem) {
+    func checkOutDocument(_ document: IBMECMContentItem) {
         document.checkout(
             {
                 (contentItem: IBMECMContentItem?, error: NSError?) -> Void in
@@ -344,7 +344,7 @@ class ApiUsage {
     :param: isMajor            true for major false otherwise
     :param: checkedOutDocument the document to checkin (must be checked out)
     */
-    func checkInDocument(documentTitle: String?, documentClassName: String?, contentSourceType: IBMECMContentSourceType,contentMimeType: String, contentData: NSData?, contentFileName: String?, isMajor: Bool?, checkedOutDocument: IBMECMContentItem) {
+    func checkInDocument(_ documentTitle: String?, documentClassName: String?, contentSourceType: IBMECMContentSourceType,contentMimeType: String, contentData: Data?, contentFileName: String?, isMajor: Bool?, checkedOutDocument: IBMECMContentItem) {
         
         var docName: String
         if let docTitle = documentTitle {
@@ -361,8 +361,8 @@ class ApiUsage {
         }
         
         let properties = IBMECMFactory.sharedInstance.getIBMECMItemProperties()
-        properties.add("name", value: "DocumentTitle")
-        properties.add("value", value: docName)
+        properties.add("name", value: "DocumentTitle" as AnyObject)
+        properties.add("value", value: docName as AnyObject)
         
         var asMinorVersion: Bool = false
         if let major = isMajor {
@@ -386,9 +386,9 @@ class ApiUsage {
                 } else {
                     // checkin succeeded
                 }
-            }, progress: { (bytesWritten, totalBytesWritten, totalBytesExpectedToWrite) -> Void in
-                // progress
-            }
+        }, progress: { (_ theProgress: Progress) -> Void in
+            // progress
+        }
         )
     }
     
@@ -397,7 +397,7 @@ class ApiUsage {
     
     :param: document the document to like
     */
-    func likeDocument(document: IBMECMContentItem)
+    func likeDocument(_ document: IBMECMContentItem)
     {
         document.addRecommendation()
             {
@@ -413,7 +413,7 @@ class ApiUsage {
     
     :param: document the document whose likes to retrieve
     */
-    func retrieveDocumentLikes(document: IBMECMContentItem) {
+    func retrieveDocumentLikes(_ document: IBMECMContentItem) {
         document.retrieveRecommendations {
             (resultSet: IBMECMRecommendationResultSet?, error: NSError?) -> Void in
             
@@ -441,7 +441,7 @@ class ApiUsage {
     :param: comment   the comment text
     :param: document  the document which the comment is on
     */
-    func commentOnDocument(comment: String, document: IBMECMContentItem) {
+    func commentOnDocument(_ comment: String, document: IBMECMContentItem) {
         document.addComment(comment, onComplete: {
             (icnResult: IBMECMComment?, error: NSError?) -> Void in
             
@@ -458,7 +458,7 @@ class ApiUsage {
     
     :param: document document whose comments to retrieve
     */
-    func retrieveDocumentComments(document: IBMECMContentItem) {
+    func retrieveDocumentComments(_ document: IBMECMContentItem) {
         document.retrieveComments {
             (resultSet: IBMECMCommentsResultSet?, error: NSError?) -> Void in
             

@@ -8,7 +8,7 @@ import QuickLook
 
 import IBMECMCore
 
-class SamplePreviewItem: NSObject, QLPreviewItem {
+open class SamplePreviewItem: NSObject, QLPreviewItem {
     
     var document: IBMECMContentItem
     
@@ -18,13 +18,13 @@ class SamplePreviewItem: NSObject, QLPreviewItem {
         super.init()
     }
     
-    var previewItemURL: NSURL {
+    public var previewItemURL: URL? {
         get {
-            return self.document.previewItemURL
+            return self.document.previewItemURL as URL
         }
     }
     
-    var previewItemTitle: String? {
+    public var previewItemTitle: String? {
         get {
             return self.document.name.characters.count == 0 ? "undefined" : self.document.name
         }

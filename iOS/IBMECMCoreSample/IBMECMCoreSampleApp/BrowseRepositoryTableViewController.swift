@@ -41,7 +41,7 @@ class BrowseRepositoryTableViewController : UITableViewController {
         setTitle(folderBrowsed)
     }
     
-    func setTitle(contentItem: IBMECMContentItem?) {
+    func setTitle(_ contentItem: IBMECMContentItem?) {
         if let cItem = contentItem {
             self.title = cItem.name
         } else {
@@ -49,7 +49,7 @@ class BrowseRepositoryTableViewController : UITableViewController {
         }
     }
     
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if(self.hasMore) {
             return self.contentItems.count + 1
         } else {
@@ -57,17 +57,17 @@ class BrowseRepositoryTableViewController : UITableViewController {
         }
     }
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if(self.hasMore && indexPath.row == self.contentItems.count) {
-            let cell = tableView.dequeueReusableCellWithIdentifier("BrowseMore")// as? UITableViewCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "BrowseMore")// as? UITableViewCell
             
             return cell!
         }
         
         if(indexPath.row > self.contentItems.count) {
-            let cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "hidden")
+            let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "hidden")
             
-            cell.hidden = true
+            cell.isHidden = true
             
             return cell
         }
@@ -76,9 +76,9 @@ class BrowseRepositoryTableViewController : UITableViewController {
         
         var cell: RepositoryObjectTableViewCell? = nil
         if(cItem.isFolder) {
-            cell = tableView.dequeueReusableCellWithIdentifier("BrowseFolderTableViewCell") as? RepositoryObjectTableViewCell
+            cell = tableView.dequeueReusableCell(withIdentifier: "BrowseFolderTableViewCell") as? RepositoryObjectTableViewCell
         } else {
-            cell = tableView.dequeueReusableCellWithIdentifier("BrowseDocumentTableViewCell") as? RepositoryObjectTableViewCell
+            cell = tableView.dequeueReusableCell(withIdentifier: "BrowseDocumentTableViewCell") as? RepositoryObjectTableViewCell
         }
         
         cell!.contentItem = cItem
@@ -86,7 +86,7 @@ class BrowseRepositoryTableViewController : UITableViewController {
         return cell!
     }
     
-    override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         if(cell.reuseIdentifier == "BrowseMore") {
             // load next page
             if(self.resultSet != nil) {
@@ -95,18 +95,18 @@ class BrowseRepositoryTableViewController : UITableViewController {
         }
     }
     
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let selectedCell = self.tableView.cellForRowAtIndexPath(indexPath) as? RepositoryObjectTableViewCell
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let selectedCell = self.tableView.cellForRow(at: indexPath) as? RepositoryObjectTableViewCell
         
         if let cell = selectedCell {
             if(!cell.contentItem.isFolder) {
                 let qlp = DocumentViewerController()
                 qlp.contentItem = cell.contentItem
                 
-                self.showViewController(qlp, sender: self)
+                self.show(qlp, sender: self)
             } else {
                 let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-                let destinationVC: BrowseRepositoryTableViewController = storyBoard.instantiateViewControllerWithIdentifier("BrowseRepositoryScene") as! BrowseRepositoryTableViewController
+                let destinationVC: BrowseRepositoryTableViewController = storyBoard.instantiateViewController(withIdentifier: "BrowseRepositoryScene") as! BrowseRepositoryTableViewController
                 
                 destinationVC.folderBrowsed = cell.contentItem
                 
@@ -115,7 +115,7 @@ class BrowseRepositoryTableViewController : UITableViewController {
         }
     }
     
-    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         
     }
     
@@ -124,12 +124,12 @@ class BrowseRepositoryTableViewController : UITableViewController {
 //    }
     
     
-    override func tableView(tableView: UITableView, editActionsForRowAtIndexPath indexPath: NSIndexPath) -> [UITableViewRowAction]? {
+    override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
         if(self.hasMore && indexPath.row == self.contentItems.count) {
             return nil
         }
         
-        let selectedCell = self.tableView.cellForRowAtIndexPath(indexPath) as? RepositoryObjectTableViewCell
+        let selectedCell = self.tableView.cellForRow(at: indexPath) as? RepositoryObjectTableViewCell
         let contentItem = selectedCell?.contentItem
         
         var favLabel = "Favorite"
@@ -137,33 +137,33 @@ class BrowseRepositoryTableViewController : UITableViewController {
             favLabel = "Unfavorite"
         }
         
-        let favoriteAction = UITableViewRowAction(style: UITableViewRowActionStyle.Default, title: favLabel , handler: {
-            (action:UITableViewRowAction!, indexPath:NSIndexPath!) -> Void in
+        let favoriteAction = UITableViewRowAction(style: UITableViewRowActionStyle.default, title: favLabel , handler: {
+            (action:UITableViewRowAction!, indexPath:IndexPath!) -> Void in
             
         })
         
-        favoriteAction.backgroundColor = UIColor.grayColor()
+        favoriteAction.backgroundColor = UIColor.gray
         
         var actions: [UITableViewRowAction] = [favoriteAction]
         
         if (!contentItem!.isFolder) {
-            let deleteAction = UITableViewRowAction(style: UITableViewRowActionStyle.Default, title: "Delete", handler: {
-                [weak contentItem, weak self] (action: UITableViewRowAction!, indexPath: NSIndexPath!) -> Void in
+            let deleteAction = UITableViewRowAction(style: UITableViewRowActionStyle.default, title: "Delete", handler: {
+                [weak contentItem, weak self] (action: UITableViewRowAction!, indexPath: IndexPath!) -> Void in
                 
                 if let weakSelf = self, let weakCitem = contentItem {
-                    let confirmation = UIAlertController(title: "Confirm", message: "Are you sure you want to delete this?", preferredStyle: UIAlertControllerStyle.Alert)
+                    let confirmation = UIAlertController(title: "Confirm", message: "Are you sure you want to delete this?", preferredStyle: UIAlertControllerStyle.alert)
                     
-                    confirmation.addAction(UIAlertAction(title: "Delete", style: UIAlertActionStyle.Destructive, handler: { (action: UIAlertAction!) in
+                    confirmation.addAction(UIAlertAction(title: "Delete", style: UIAlertActionStyle.destructive, handler: { (action: UIAlertAction!) in
                         weakSelf.deleteObject(weakCitem, indexPath: indexPath)
                     }))
                     
-                    confirmation.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Cancel, handler: { (action: UIAlertAction!) in
+                    confirmation.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel, handler: { (action: UIAlertAction!) in
                     }))
                     
-                    weakSelf.presentViewController(confirmation, animated: true, completion: nil)
+                    weakSelf.present(confirmation, animated: true, completion: nil)
                 }
                 })
-            deleteAction.backgroundColor = UIColor.redColor()
+            deleteAction.backgroundColor = UIColor.red
             
             actions.append(deleteAction)
         }
@@ -171,21 +171,21 @@ class BrowseRepositoryTableViewController : UITableViewController {
         return actions
     }
     
-    private func deleteObject(cItem: IBMECMContentItem, indexPath: NSIndexPath) {
+    fileprivate func deleteObject(_ cItem: IBMECMContentItem, indexPath: IndexPath) {
         self.repository.deleteItems([cItem], onComplete: {
             (error: NSError?) -> Void in
             
             if let _ = error {
                 Util.showError("Error", message: "Could not delete repository object, please login and retry", vc: self)
             } else {
-                self.contentItems.removeObjectAtIndex(indexPath.row)
-                self.tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Automatic)
+                self.contentItems.removeObject(at: indexPath.row)
+                self.tableView.deleteRows(at: [indexPath], with: UITableViewRowAnimation.automatic)
             }
         })
         
     }
     
-    private func loadFolderBrowsed() {
+    fileprivate func loadFolderBrowsed() {
         self.repository.retrieveItem("/", onComplete: {
             [weak self] (contentItem: IBMECMContentItem?, error: NSError?) -> Void in
             
@@ -205,9 +205,9 @@ class BrowseRepositoryTableViewController : UITableViewController {
             })
     }
     
-    private func loadContainees() {
+    fileprivate func loadContainees() {
         if let folderToBrowse = self.folderBrowsed {
-            folderToBrowse.retrieveFolderContent(false , orderBy: nil, descending: false, pageSize: pageSize, teamspaceId: nil, onComplete: {
+            folderToBrowse.retrieveFolderContent(false , orderBy: nil, descending: false, pageSize: pageSize as NSNumber, teamspaceId: nil, onComplete: {
                 [weak self] (resultSet: IBMECMResultSet?, error: NSError?) -> Void in
                 
                 if let weakSelf = self {
@@ -222,7 +222,7 @@ class BrowseRepositoryTableViewController : UITableViewController {
                     if let result = resultSet {
                         if let items = result.items {
                             for item in items {
-                                weakSelf.contentItems.addObject(item)
+                                weakSelf.contentItems.add(item)
                             }
                             
                             weakSelf.resultSet = result
@@ -238,7 +238,7 @@ class BrowseRepositoryTableViewController : UITableViewController {
         }
     }
     
-    private func getNextPage() {
+    fileprivate func getNextPage() {
         self.resultSet!.retrieveNextPage({
             [weak self](results: IBMECMResultSet?, error: NSError?) -> Void in
             
@@ -252,7 +252,7 @@ class BrowseRepositoryTableViewController : UITableViewController {
                 if let result = results {
                     if let items = result.items {
                         for item in items {
-                            weakSelf.contentItems.addObject(item)
+                            weakSelf.contentItems.add(item)
                         }
                         
                         weakSelf.resultSet = result

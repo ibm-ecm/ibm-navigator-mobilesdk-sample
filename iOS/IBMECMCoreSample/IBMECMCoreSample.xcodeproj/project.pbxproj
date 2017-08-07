@@ -173,12 +173,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0ACBEC121B62DF6400479F56 /* Build configuration list for PBXNativeTarget "IBMECMCoreSampleApp" */;
 			buildPhases = (
-				0A6D04892F717FB7FF1BC78E /* Check Pods Manifest.lock */,
+				0A6D04892F717FB7FF1BC78E /* [CP] Check Pods Manifest.lock */,
 				0ACBEBEF1B62DF6400479F56 /* Sources */,
 				0ACBEBF01B62DF6400479F56 /* Frameworks */,
 				0ACBEBF11B62DF6400479F56 /* Resources */,
-				F8434D7E6D70870A15B81561 /* Embed Pods Frameworks */,
-				1990C6F64BB0C104B2BEA575 /* Copy Pods Resources */,
+				F8434D7E6D70870A15B81561 /* [CP] Embed Pods Frameworks */,
+				1990C6F64BB0C104B2BEA575 /* [CP] Copy Pods Resources */,
 				A7CE71461B6DB1940077ED69 /* Embed Frameworks */,
 			);
 			buildRules = (
@@ -197,11 +197,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = IBM;
 				TargetAttributes = {
 					0ACBEBF21B62DF6400479F56 = {
 						CreatedOnToolsVersion = 6.4;
+						LastSwiftMigration = 0830;
 					};
 				};
 			};
@@ -241,29 +242,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0A6D04892F717FB7FF1BC78E /* Check Pods Manifest.lock */ = {
+		0A6D04892F717FB7FF1BC78E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		1990C6F64BB0C104B2BEA575 /* Copy Pods Resources */ = {
+		1990C6F64BB0C104B2BEA575 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,14 +272,14 @@
 			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-IBMECMCoreSampleApp/Pods-IBMECMCoreSampleApp-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F8434D7E6D70870A15B81561 /* Embed Pods Frameworks */ = {
+		F8434D7E6D70870A15B81561 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -346,6 +347,7 @@
 				INFOPLIST_FILE = IBMECMCoreSampleApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ibm.ecm.$(PRODUCT_NAME:rfc1034identifier)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -362,6 +364,7 @@
 				INFOPLIST_FILE = IBMECMCoreSampleApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ibm.ecm.$(PRODUCT_NAME:rfc1034identifier)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -378,8 +381,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
@@ -401,7 +406,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = IBMECMCoreSampleApp;
@@ -425,8 +430,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
@@ -441,10 +448,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = IBMECMCoreSampleApp;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "";
