@@ -5,7 +5,7 @@ def corekit_pods
     pod 'CocoaLumberjack', '1.9.2'
     pod 'Alamofire', '4.0'
     pod 'Mantle', '2.0.2'
-    pod 'MTLManagedObjectAdapter', '1.0.0.1'
+    pod 'MTLManagedObjectAdapter', '1.0.2'
 end
 
     project 'IBMECMCoreSample/IBMECMCoreSample.xcodeproj'
