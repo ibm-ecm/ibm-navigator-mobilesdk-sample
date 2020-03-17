@@ -65,7 +65,7 @@ class BrowseRepositoryTableViewController : UITableViewController {
         }
         
         if(indexPath.row > self.contentItems.count) {
-            let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "hidden")
+            let cell = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: "hidden")
             
             cell.isHidden = true
             
@@ -115,7 +115,7 @@ class BrowseRepositoryTableViewController : UITableViewController {
         }
     }
     
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         
     }
     
@@ -137,7 +137,7 @@ class BrowseRepositoryTableViewController : UITableViewController {
             favLabel = "Unfavorite"
         }
         
-        let favoriteAction = UITableViewRowAction(style: UITableViewRowActionStyle.default, title: favLabel , handler: {
+        let favoriteAction = UITableViewRowAction(style: UITableViewRowAction.Style.default, title: favLabel , handler: {
             (action:UITableViewRowAction!, indexPath:IndexPath!) -> Void in
             
         })
@@ -147,17 +147,17 @@ class BrowseRepositoryTableViewController : UITableViewController {
         var actions: [UITableViewRowAction] = [favoriteAction]
         
         if (!contentItem!.isFolder) {
-            let deleteAction = UITableViewRowAction(style: UITableViewRowActionStyle.default, title: "Delete", handler: {
+            let deleteAction = UITableViewRowAction(style: UITableViewRowAction.Style.default, title: "Delete", handler: {
                 [weak contentItem, weak self] (action: UITableViewRowAction!, indexPath: IndexPath!) -> Void in
                 
                 if let weakSelf = self, let weakCitem = contentItem {
-                    let confirmation = UIAlertController(title: "Confirm", message: "Are you sure you want to delete this?", preferredStyle: UIAlertControllerStyle.alert)
+                    let confirmation = UIAlertController(title: "Confirm", message: "Are you sure you want to delete this?", preferredStyle: UIAlertController.Style.alert)
                     
-                    confirmation.addAction(UIAlertAction(title: "Delete", style: UIAlertActionStyle.destructive, handler: { (action: UIAlertAction!) in
+                    confirmation.addAction(UIAlertAction(title: "Delete", style: UIAlertAction.Style.destructive, handler: { (action: UIAlertAction!) in
                         weakSelf.deleteObject(weakCitem, indexPath: indexPath)
                     }))
                     
-                    confirmation.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel, handler: { (action: UIAlertAction!) in
+                    confirmation.addAction(UIAlertAction(title: "Cancel", style: UIAlertAction.Style.cancel, handler: { (action: UIAlertAction!) in
                     }))
                     
                     weakSelf.present(confirmation, animated: true, completion: nil)
@@ -179,7 +179,7 @@ class BrowseRepositoryTableViewController : UITableViewController {
                 Util.showError("Error", message: "Could not delete repository object, please login and retry", vc: self)
             } else {
                 self.contentItems.removeObject(at: indexPath.row)
-                self.tableView.deleteRows(at: [indexPath], with: UITableViewRowAnimation.automatic)
+                self.tableView.deleteRows(at: [indexPath], with: UITableView.RowAnimation.automatic)
             }
         })
         

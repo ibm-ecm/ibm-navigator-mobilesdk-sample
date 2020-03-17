@@ -55,7 +55,7 @@ class SearchRepositoryViewController : UIViewController, UITableViewDataSource, 
         }
         
         if(indexPath.row > self.contentItems.count) {
-            let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "hidden")
+            let cell = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: "hidden")
             
             cell.isHidden = true
             

@@ -27,7 +27,7 @@ class MenuOptionsTableViewController : UITableViewController {
         var cell = tableView.dequeueReusableCell(withIdentifier: "MenuOptionTableViewCell") //as? UITableViewCell
         
         if cell == nil {
-            cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "MenuOptionTableViewCell")
+            cell = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: "MenuOptionTableViewCell")
         }
         
         switch(indexPath.row) {

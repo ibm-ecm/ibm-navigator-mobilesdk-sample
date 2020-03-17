@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
     
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         AppLog.initializeLoger()
         AppLog.logInfo("======================== Application Startup  ========================")
@@ -229,7 +229,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                                         print("Property Name '\(propName)' - Property Value '\(propValue)'")
                                     }
                                     //TODO
-                                    let tempFilePath: String = String (stringInterpolation: "\(NSTemporaryDirectory())txt") //.stringByAppendingPathExtension("txt")!
+                                    let tempFilePath: String = "\(NSTemporaryDirectory())txt" 
                                     
                                     // Remove exising file in tempFilePath
 //                                    var error:NSError?
