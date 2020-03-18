@@ -1,38 +1,36 @@
 PODS:
-  - Alamofire (4.0.0)
-  - CocoaLumberjack (1.9.2):
-    - CocoaLumberjack/Extensions (= 1.9.2)
-  - CocoaLumberjack/Core (1.9.2)
-  - CocoaLumberjack/Extensions (1.9.2):
-    - CocoaLumberjack/Core
+  - Alamofire (4.8.2)
+  - CocoaLumberjack (3.5.3):
+    - CocoaLumberjack/Core (= 3.5.3)
+  - CocoaLumberjack/Core (3.5.3)
   - Mantle (2.0.2):
     - Mantle/extobjc (= 2.0.2)
   - Mantle/extobjc (2.0.2)
-  - MTLManagedObjectAdapter (1.0.2):
+  - MTLManagedObjectAdapter (1.0.3):
     - Mantle (~> 2.0)
-    - MTLManagedObjectAdapter/extobjc (= 1.0.2)
-  - MTLManagedObjectAdapter/extobjc (1.0.2):
+    - MTLManagedObjectAdapter/extobjc (= 1.0.3)
+  - MTLManagedObjectAdapter/extobjc (1.0.3):
     - Mantle (~> 2.0)
 
 DEPENDENCIES:
-  - Alamofire (= 4.0)
-  - CocoaLumberjack (= 1.9.2)
+  - Alamofire (= 4.8.2)
+  - CocoaLumberjack (= 3.5.3)
   - Mantle (= 2.0.2)
-  - MTLManagedObjectAdapter (= 1.0.2)
+  - MTLManagedObjectAdapter (= 1.0.3)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - Alamofire
     - CocoaLumberjack
     - Mantle
     - MTLManagedObjectAdapter
 
 SPEC CHECKSUMS:
-  Alamofire: fef59f00388f267e52d9b432aa5d93dc97190f14
-  CocoaLumberjack: 628fca2e88ef06f7cf6817309aa405f325d9a6fa
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  CocoaLumberjack: 2f44e60eb91c176d471fdba43b9e3eae6a721947
   Mantle: 967fd31ea0220890b2e76589198996b534bb3fb1
-  MTLManagedObjectAdapter: 7e9bf033525c741129912b1a80bf36fb570b8286
+  MTLManagedObjectAdapter: 631a53432675dcf03a9d90624afb3cececf54631
 
-PODFILE CHECKSUM: de6b439357a9b481c35e35fe615a7b0d9834a866
+PODFILE CHECKSUM: 979437a6e0a61b9de2bf444807d20b88a08a8404
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.9.1
