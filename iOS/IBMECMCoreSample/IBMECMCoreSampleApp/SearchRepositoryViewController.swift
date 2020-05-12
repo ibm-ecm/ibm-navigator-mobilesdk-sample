@@ -103,13 +103,13 @@ class SearchRepositoryViewController : UIViewController, UITableViewDataSource, 
         if let _ = self.repository {
             var searchPredicates: [IBMECMSearchPredicate] = []
             
-            if self.txtDocumentTitle.text!.characters.count > 0 {
+            if self.txtDocumentTitle.text!.count > 0 {
                 let docTitlePredicate = IBMECMSearchPredicate.like(propertyId: "DocumentTitle", dataType: IBMECMPropertyDataType.String, cardinality:IBMECMPropertyCardinality.Single, values: [self.txtDocumentTitle.text!])
                 
                 searchPredicates.append(docTitlePredicate)
             }
             
-            if self.txtDateCreated.text!.characters.count > 0 {
+            if self.txtDateCreated.text!.count > 0 {
                 let dateAddedPredicate = IBMECMSearchPredicate.greaterOrEqual(propertyId: "DateCreated", dataType: IBMECMPropertyDataType.Date, cardinality:IBMECMPropertyCardinality.Single, values: [self.txtDateCreated.text! as AnyObject])
                 
                 searchPredicates.append(dateAddedPredicate)

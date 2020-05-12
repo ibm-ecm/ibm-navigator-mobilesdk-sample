@@ -22,7 +22,7 @@ class LoginViewController : UIViewController {
         print("username: \(String(describing: navigatorUrlTxt.text))")
         
         if let user: String = usernameTxt.text, let password = passwordTxt.text, let url = navigatorUrlTxt.text {
-            if( user.characters.count < 1 || password.characters.count < 1 || url.characters.count < 1) {
+            if( user.count < 1 || password.count < 1 || url.count < 1) {
                 Util.showError("Error", message: "Username, password and navigator url are all required for login.", vc: self)
                 
                 return
