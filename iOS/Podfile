@@ -2,8 +2,8 @@ platform :ios, '9.0'
 use_frameworks!
 
 def corekit_pods
-    pod 'CocoaLumberjack', '3.5.3'
-    pod 'Alamofire', '4.8.2'
+    pod 'CocoaLumberjack', '3.6.1'
+    pod 'Alamofire', '4.9.1'
     pod 'Mantle', '2.0.2'
     pod 'MTLManagedObjectAdapter', '1.0.3'
 end
