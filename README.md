@@ -9,7 +9,7 @@ Sample Application to demonstrate the features of IBM Navigator Mobile SDK for i
 Simply place IBMECMCore.framework in the same folder as the workspace file (not the project file,) build and run on simulator. You can connect only to IBM Content Navigator V2.0.3.5 or later (more information [here](https://www.ibm.com/us-en/marketplace/content-navigator))
 
 ## Documention
-The latest SDK Documentation is included in the SDK. Please refer to the [README pdf](/IBMNavigatorMobileSDK_3.4.0.3_Readme.pdf) for detailed instructions on how to obtain the SDK.
+The latest SDK Documentation can be found here: http://ibm-ecm.github.io/ibm-navigator-mobilesdk-sample/ 
 
 ## Screenshots
 
