@@ -1,1 +1,2392 @@
-{"warnings":[{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMRecentItem.swift","line":11,"symbol":"IBMECMRecentItem","symbol_kind":"source.lang.swift.decl.protocol","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplateUserAction.swift","line":11,"symbol":"IBMECMSearchTemplateUserAction","symbol_kind":"source.lang.swift.decl.protocol","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSocialItem.swift","line":21,"symbol":"Recommendation","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSocialItem.swift","line":22,"symbol":"DownloadRecord","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSocialItem.swift","line":23,"symbol":"Comment","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSocialItem.swift","line":24,"symbol":"Tag","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSocialItem.swift","line":25,"symbol":"ShareRecord","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Model/IBMECMErrorCode.swift","line":71,"symbol":"CONNECTION_TIME_OUT_1001","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Model/IBMECMErrorCode.swift","line":72,"symbol":"HOST_NOTFOUND_1003","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Model/IBMECMErrorCode.swift","line":73,"symbol":"HOST_NOTFOUND_1004","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Model/IBMECMErrorCode.swift","line":74,"symbol":"CONNECTION_LOST_1005","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Model/IBMECMErrorCode.swift","line":75,"symbol":"DEVICE_IS_NOT_CONNECTED_TO_INTERNET","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Model/IBMECMErrorCode.swift","line":76,"symbol":"CONNECTION_TO_HTTS_NOT_ESTABLISHED_310","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Model/IBMECMErrorCode.swift","line":79,"symbol":"ICN_DESKTOP_CANNOT_OPENED","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Model/IBMECMErrorCode.swift","line":80,"symbol":"ICN_SESSION_EXPIRED","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Model/IBMECMErrorCode.swift","line":81,"symbol":"ICN_PASSWORD_EXPIRED","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Model/IBMECMErrorCode.swift","line":82,"symbol":"ICN_INVALID_USER_PASSWORD","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Model/IBMECMErrorCode.swift","line":83,"symbol":"ICN_REPOSITORY_NOT_AVAILABLE","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Model/IBMECMErrorCode.swift","line":84,"symbol":"ICN_REPOS_NOT_CONNECTED","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Model/IBMECMErrorCode.swift","line":85,"symbol":"ICN_PLUGIN_NOT_CONFIGURED_CORRECTLY","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Model/IBMECMErrorCode.swift","line":86,"symbol":"ICN_ITEM_CANNOT_CHECKOUT","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Model/IBMECMErrorCode.swift","line":87,"symbol":"ICN_ITEM_CANNOT_DOWNLOAD","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Model/IBMECMErrorCode.swift","line":88,"symbol":"ICN_FOLDER_CANNOT_OPENED","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Model/IBMECMErrorCode.swift","line":89,"symbol":"ICN_ITEM_CANNOT_MOVED","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Model/IBMECMErrorCode.swift","line":90,"symbol":"ICN_ITEMS_CANNOT_DELETED","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Model/IBMECMErrorCode.swift","line":91,"symbol":"ICN_ITEM_CANNOT_CHECK_IN","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Model/IBMECMErrorCode.swift","line":92,"symbol":"ICN_ITEM_CANNOT_FOUND_1","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Model/IBMECMErrorCode.swift","line":93,"symbol":"ICN_ITEM_CANNOT_FOUND_2","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Model/IBMECMErrorCode.swift","line":94,"symbol":"ICN_ITEM_CANNOT_FOUND_3","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Model/IBMECMErrorCode.swift","line":95,"symbol":"ICN_CROSS_REPOSITORY_SEARCH_TEMPLATE","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Model/IBMECMErrorCode.swift","line":96,"symbol":"ICN_SEARCH_TEMPLATE_NOT_FOUND","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Model/IBMECMErrorCode.swift","line":97,"symbol":"ICN_URL_CONNECTION_NOT_ESTABLISHED","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Model/IBMECMErrorCode.swift","line":98,"symbol":"ICN_SORT_VIEW_CONTROLLER_CREATED_FAILED","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Model/IBMECMErrorCode.swift","line":99,"symbol":"ICN_SORT_VIEW_MISSING_SEARCH_OBJECT","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Model/IBMECMErrorCode.swift","line":102,"symbol":"CK_DESKTOP_NOT_LOADED","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Model/IBMECMErrorCode.swift","line":103,"symbol":"CK_REPOSITORY_NOT_LOADED","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Model/IBMECMErrorCode.swift","line":104,"symbol":"CK_CREDENTIAL_NOT_EXIST","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Model/IBMECMErrorCode.swift","line":105,"symbol":"CK_INVALID_DATA_VALUE","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Model/IBMECMErrorCode.swift","line":106,"symbol":"CK_SERVICE_NOT_FOUND","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Model/IBMECMErrorCode.swift","line":107,"symbol":"CK_SERVER_NOT_SUPPORTED","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Model/IBMECMErrorCode.swift","line":108,"symbol":"CK_INVALID_CREDENTIAL","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Model/IBMECMErrorCode.swift","line":109,"symbol":"CK_MOBILE_ACCESS_NOT_ALLOWED","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Model/IBMECMErrorCode.swift","line":110,"symbol":"CK_URL_IS_NOT_AVAILABLE","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Model/IBMECMErrorCode.swift","line":111,"symbol":"CK_CANNOT_USE_ADMIN_DESKTOP","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Model/IBMECMErrorCode.swift","line":114,"symbol":"CK_Request_Cancelled","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Model/IBMECMErrorCode.swift","line":118,"symbol":"GENERAL_ERRROR_DURING_THIRD_PART_AUTHENTICATION","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Model/IBMECMErrorCode.swift","line":119,"symbol":"GENERAL_LAF_ERROR","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Model/IBMECMErrorCode.swift","line":120,"symbol":"GENERAL_PING_ERROR","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Model/IBMECMErrorCode.swift","line":121,"symbol":"GENERAL_STORAGE_ERROR","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Model/IBMECMErrorCode.swift","line":124,"symbol":"CK_UNKNOWN_ERROR","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMBaseObject.swift","line":19,"symbol":"==(_:_:)","symbol_kind":"source.lang.swift.decl.function.free","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMBaseUser.swift","line":19,"symbol":"==(_:_:)","symbol_kind":"source.lang.swift.decl.function.free","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMAttributeDefinition.swift","line":32,"symbol":"Short","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMAttributeDefinition.swift","line":33,"symbol":"Integer","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMAttributeDefinition.swift","line":34,"symbol":"Long","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMAttributeDefinition.swift","line":35,"symbol":"Double","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMAttributeDefinition.swift","line":36,"symbol":"Decimal","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMAttributeDefinition.swift","line":37,"symbol":"Boolean","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMAttributeDefinition.swift","line":38,"symbol":"String","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMAttributeDefinition.swift","line":39,"symbol":"Date","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMAttributeDefinition.swift","line":40,"symbol":"Time","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMAttributeDefinition.swift","line":41,"symbol":"Timestamp","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMAttributeDefinition.swift","line":42,"symbol":"Object","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMAttributeDefinition.swift","line":43,"symbol":"Binary","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMAttributeDefinition.swift","line":44,"symbol":"Id","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMAttributeDefinition.swift","line":45,"symbol":"User","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMAttributeDefinition.swift","line":57,"symbol":"ReadOnly","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMAttributeDefinition.swift","line":58,"symbol":"ReadWrite","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMAttributeDefinition.swift","line":59,"symbol":"OnlyBeforeCheckin","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMAttributeDefinition.swift","line":60,"symbol":"OnlyOnCreate","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMAttributeDefinition.swift","line":70,"symbol":"Single","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMAttributeDefinition.swift","line":71,"symbol":"Multi","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMAttributeDefinition.swift","line":72,"symbol":"List","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Utilities/ErrorHelper.swift","line":11,"symbol":"ErrorHelper","symbol_kind":"source.lang.swift.decl.class","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchResultSet.swift","line":18,"symbol":"IBMECMSearchResultCountType","symbol_kind":"source.lang.swift.decl.enum","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMPrivilege.swift","line":50,"symbol":"EditProperties","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMPrivilege.swift","line":51,"symbol":"EditDoc","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMPrivilege.swift","line":52,"symbol":"ViewNotes","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMPrivilege.swift","line":53,"symbol":"AddDoc","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMPrivilege.swift","line":54,"symbol":"AddItem","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMPrivilege.swift","line":55,"symbol":"EmailDoc","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMPrivilege.swift","line":56,"symbol":"Export","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMPrivilege.swift","line":57,"symbol":"AddToFolder","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMPrivilege.swift","line":58,"symbol":"RemoveFromFolder","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMPrivilege.swift","line":59,"symbol":"AddLink","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMPrivilege.swift","line":60,"symbol":"RemoveLink","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMPrivilege.swift","line":61,"symbol":"Delegate","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMPrivilege.swift","line":62,"symbol":"AddNotes","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMPrivilege.swift","line":63,"symbol":"PrintNotes","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMPrivilege.swift","line":64,"symbol":"PrintDoc","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMPrivilege.swift","line":65,"symbol":"CheckInOutDoc","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMPrivilege.swift","line":66,"symbol":"CheckInDoc","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMPrivilege.swift","line":67,"symbol":"CheckOutDoc","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMPrivilege.swift","line":68,"symbol":"CancelCheckOutDoc","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMPrivilege.swift","line":69,"symbol":"ViewAnnotations","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMPrivilege.swift","line":70,"symbol":"EditAnnotations","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMPrivilege.swift","line":71,"symbol":"ViewDoc","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMPrivilege.swift","line":72,"symbol":"Delete","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMPrivilege.swift","line":73,"symbol":"StartWorkflow","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMPrivilege.swift","line":74,"symbol":"Hold","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMPrivilege.swift","line":75,"symbol":"MoveToFolder","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMPrivilege.swift","line":76,"symbol":"ChangeClass","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMPrivilege.swift","line":77,"symbol":"MajorVersion","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMPrivilege.swift","line":78,"symbol":"MinorVersion","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMPrivilege.swift","line":79,"symbol":"IERRecordDeclare","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMPrivilege.swift","line":80,"symbol":"ModifyNotes","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMPrivilege.swift","line":81,"symbol":"ModifyPermissions","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMPrivilege.swift","line":82,"symbol":"ShareEdit","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMPrivilege.swift","line":83,"symbol":"ShareView","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Calls/AlamofireRequestExtensions.swift","line":12,"symbol":"ResponseObjectSerializable","symbol_kind":"source.lang.swift.decl.protocol","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMTeamspace.swift","line":21,"symbol":"PUBLISHED","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMTeamspace.swift","line":22,"symbol":"DELETED","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMTeamspace.swift","line":23,"symbol":"OFFLINE","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMTeamspace.swift","line":24,"symbol":"PENDING_DELETE","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMTeamspace.swift","line":26,"symbol":"description","symbol_kind":"source.lang.swift.decl.var.instance","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMTeamspace.swift","line":47,"symbol":"INSTANCE","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMTeamspace.swift","line":48,"symbol":"TEMPLATE","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMTeamspace.swift","line":165,"symbol":"setIsSyncEnabled(_:)","symbol_kind":"source.lang.swift.decl.function.method.instance","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMTeamspace.swift","line":167,"symbol":"setIsItemFavoriteEnabled(_:)","symbol_kind":"source.lang.swift.decl.function.method.instance","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMTheme.swift","line":12,"symbol":"IBMECMTheme","symbol_kind":"source.lang.swift.decl.protocol","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift","line":18,"symbol":"Cascade","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift","line":19,"symbol":"Verity","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift","line":30,"symbol":"Any","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift","line":31,"symbol":"All","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift","line":32,"symbol":"Advanced","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift","line":58,"symbol":"Contains","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift","line":59,"symbol":"StartsWith","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift","line":60,"symbol":"EndsWith","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift","line":61,"symbol":"Like","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift","line":62,"symbol":"NotLike","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift","line":63,"symbol":"Equal","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift","line":64,"symbol":"NotEqual","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift","line":65,"symbol":"Less","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift","line":66,"symbol":"LessOrEqual","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift","line":67,"symbol":"Greater","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift","line":68,"symbol":"GreaterOrEqual","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift","line":69,"symbol":"In","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift","line":70,"symbol":"InAny","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift","line":71,"symbol":"NotIn","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift","line":72,"symbol":"Null","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift","line":73,"symbol":"NotNull","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift","line":74,"symbol":"Between","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift","line":75,"symbol":"NotBetween","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift","line":101,"symbol":"Contains","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift","line":102,"symbol":"StartsWith","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift","line":103,"symbol":"EndsWith","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift","line":104,"symbol":"Like","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift","line":105,"symbol":"NotLike","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift","line":106,"symbol":"Equal","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift","line":107,"symbol":"NotEqual","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift","line":108,"symbol":"Less","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift","line":109,"symbol":"LessOrEqual","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift","line":110,"symbol":"Greater","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift","line":111,"symbol":"GreaterOrEqual","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift","line":112,"symbol":"In","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift","line":113,"symbol":"InAny","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift","line":114,"symbol":"NotIn","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift","line":115,"symbol":"Null","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift","line":116,"symbol":"NotNull","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift","line":117,"symbol":"Between","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift","line":118,"symbol":"NotBetween","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift","line":169,"symbol":"And","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift","line":170,"symbol":"Or","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift","line":180,"symbol":"AutoRun","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift","line":181,"symbol":"Default","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift","line":192,"symbol":"All","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift","line":193,"symbol":"Any","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift","line":194,"symbol":"Advanced","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift","line":216,"symbol":"CurrentVersion","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift","line":217,"symbol":"ReleasedVersion","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift","line":218,"symbol":"AllVersions","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift","line":232,"symbol":"name","symbol_kind":"source.lang.swift.decl.var.instance","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMFont.swift","line":12,"symbol":"IBMECMFont","symbol_kind":"source.lang.swift.decl.protocol","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Calls/CK_IBMECMRequestCall.swift","line":12,"symbol":"CK_IBMECMRequestCall","symbol_kind":"source.lang.swift.decl.class","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMShareRecord.swift","line":11,"symbol":"IBMECMShareRecord","symbol_kind":"source.lang.swift.decl.protocol","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Utilities/AppLog.swift","line":42,"symbol":"LogLevel","symbol_kind":"source.lang.swift.decl.struct","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Utilities/AppLog.swift","line":65,"symbol":"==(_:_:)","symbol_kind":"source.lang.swift.decl.function.free","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Utilities/AppLog.swift","line":70,"symbol":"AppLog","symbol_kind":"source.lang.swift.decl.class","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMRepository.swift","line":21,"symbol":"ECM_REPOSITORY_P8","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMRepository.swift","line":22,"symbol":"ECM_REPOSITORY_CM","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMRepository.swift","line":23,"symbol":"ECM_REPOSITORY_OD","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMRepository.swift","line":24,"symbol":"ECM_REPOSITORY_CMIS","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMRepository.swift","line":26,"symbol":"description","symbol_kind":"source.lang.swift.decl.var.instance","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMRepository.swift","line":93,"symbol":"isSharePluginEnabled","symbol_kind":"source.lang.swift.decl.var.instance","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMRepository.swift","line":215,"symbol":"addDocumentItem(_:teamspaceId:templateName:contentSourceType:properties:mimeType:fileName:fileURL:addAsMinorVersion:onComplete:progress:)","symbol_kind":"source.lang.swift.decl.function.method.instance","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMRepository.swift","line":235,"symbol":"addDocumentItem(_:teamspaceId:templateName:contentSourceType:properties:mimeType:fileName:content:addAsMinorVersion:onComplete:progress:)","symbol_kind":"source.lang.swift.decl.function.method.instance","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMRepository.swift","line":255,"symbol":"addDocumentItem(_:teamspaceId:templateName:contentSourceType:properties:mimeType:fileName:content:addAsMinorVersion:)","symbol_kind":"source.lang.swift.decl.function.method.instance","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMRepository.swift","line":275,"symbol":"addDocumentItem(_:teamspaceId:templateName:contentSourceType:properties:mimeType:fileName:fileURL:addAsMinorVersion:)","symbol_kind":"source.lang.swift.decl.function.method.instance","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMRepository.swift","line":289,"symbol":"addFolderItem(_:parentFolderId:teamspaceId:properties:onComplete:)","symbol_kind":"source.lang.swift.decl.function.method.instance","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMRepository.swift","line":303,"symbol":"addFolderItem(_:parentFolderId:teamspaceId:properties:)","symbol_kind":"source.lang.swift.decl.function.method.instance","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMRepository.swift","line":306,"symbol":"addRecentItems(_:onComplete:)","symbol_kind":"source.lang.swift.decl.function.method.instance","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMRepository.swift","line":308,"symbol":"retrieveRecentItems(_:)","symbol_kind":"source.lang.swift.decl.function.method.instance","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMRepository.swift","line":310,"symbol":"clearRecentItems(_:)","symbol_kind":"source.lang.swift.decl.function.method.instance","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMRepository.swift","line":379,"symbol":"acceptShareRecords(_:onComplete:)","symbol_kind":"source.lang.swift.decl.function.method.instance","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMRepository.swift","line":381,"symbol":"rejectShareRecords(_:onComplete:)","symbol_kind":"source.lang.swift.decl.function.method.instance","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMRepository.swift","line":383,"symbol":"retrieveItemsSharedByMe(_:orderDescending:onComplete:)","symbol_kind":"source.lang.swift.decl.function.method.instance","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMRepository.swift","line":385,"symbol":"retrieveItemsSharedWithMe(_:orderBy:orderDescending:onComplete:)","symbol_kind":"source.lang.swift.decl.function.method.instance","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMRepository.swift","line":387,"symbol":"retrievePendingItemsSharedWithMe(_:orderDescending:onComplete:)","symbol_kind":"source.lang.swift.decl.function.method.instance","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMRepository.swift","line":593,"symbol":"addSearchTemplate(_:permissions:searchFolderId:searchClasses:objectType:searchPredicates:textSearchPredicate:orderBy:descending:onComplete:)","symbol_kind":"source.lang.swift.decl.function.method.instance","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMRepository.swift","line":606,"symbol":"addSearchTemplate(_:permissions:searchTemplate:onComplete:)","symbol_kind":"source.lang.swift.decl.function.method.instance","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Collection/IBMECMShareResultSet.swift","line":11,"symbol":"IBMECMShareResultSet","symbol_kind":"source.lang.swift.decl.protocol","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Collection/IBMECMItemPermissions.swift","line":93,"symbol":"generate()","symbol_kind":"source.lang.swift.decl.function.method.instance","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Collection/IBMECMItemProperties.swift","line":85,"symbol":"generate()","symbol_kind":"source.lang.swift.decl.function.method.instance","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSyncItem.swift","line":68,"symbol":"disableSync(_:)","symbol_kind":"source.lang.swift.decl.function.method.instance","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSyncItem.swift","line":75,"symbol":"registerSyncItemForDevice(_:)","symbol_kind":"source.lang.swift.decl.function.method.instance","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSyncItem.swift","line":82,"symbol":"registerSyncItemForDevice()","symbol_kind":"source.lang.swift.decl.function.method.instance","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSyncItem.swift","line":89,"symbol":"unregisterSyncItemForDevice(_:)","symbol_kind":"source.lang.swift.decl.function.method.instance","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSyncItem.swift","line":96,"symbol":"unregisterSyncItemForDevice()","symbol_kind":"source.lang.swift.decl.function.method.instance","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentClass.swift","line":21,"symbol":"Document","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentClass.swift","line":22,"symbol":"Folder","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentClass.swift","line":23,"symbol":"Teamspace","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentClass.swift","line":24,"symbol":"Search","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentClass.swift","line":25,"symbol":"Unknown","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentClass.swift","line":26,"symbol":"All","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentClass.swift","line":37,"symbol":"Item","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentClass.swift","line":38,"symbol":"Resource","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentClass.swift","line":39,"symbol":"Document","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentClass.swift","line":51,"symbol":"FolderSearch","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentClass.swift","line":52,"symbol":"EditItem","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentClass.swift","line":53,"symbol":"Search","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentClass.swift","line":54,"symbol":"CreateDocument","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentClass.swift","line":66,"symbol":"contentClassId","symbol_kind":"source.lang.swift.decl.var.instance","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentClass.swift","line":72,"symbol":"contentClassLabel","symbol_kind":"source.lang.swift.decl.var.instance","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMDesktop.swift","line":18,"symbol":"IBMECMDefaultFeatures","symbol_kind":"source.lang.swift.decl.enum","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Utilities/Connectivity.swift","line":12,"symbol":"ReachabilityChangedNotification","symbol_kind":"source.lang.swift.decl.var.global","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Utilities/Connectivity.swift","line":14,"symbol":"Connectivity","symbol_kind":"source.lang.swift.decl.class","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMAccessControlEntry.swift","line":19,"symbol":"ALLOW","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMAccessControlEntry.swift","line":20,"symbol":"DENY","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMAccessControlEntry.swift","line":21,"symbol":"DELEGATE","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMAccessControlEntry.swift","line":31,"symbol":"USER","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMAccessControlEntry.swift","line":32,"symbol":"GROUP","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMAccessControlEntry.swift","line":34,"symbol":"description","symbol_kind":"source.lang.swift.decl.var.instance","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMAccessControlEntry.swift","line":54,"symbol":"CLASS","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMAccessControlEntry.swift","line":55,"symbol":"DIRECT","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMAccessControlEntry.swift","line":56,"symbol":"POLICY","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMAccessControlEntry.swift","line":57,"symbol":"INHERITED","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMAccessControlEntry.swift","line":58,"symbol":"SECURITY_PROXY","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMAccessControlEntry.swift","line":71,"symbol":"NO_INHERITANCE","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMAccessControlEntry.swift","line":72,"symbol":"THIS_AND_IMMEDIATE","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMAccessControlEntry.swift","line":73,"symbol":"THIS_AND_ALL_CHILDREN","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMAccessControlEntry.swift","line":74,"symbol":"ALL_CHILDREN_BUT_NOT_THIS","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMAccessControlEntry.swift","line":75,"symbol":"IMMED_CHILDREN_BUT_NOT_THIS","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift","line":21,"symbol":"Released","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift","line":22,"symbol":"InProcess","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift","line":23,"symbol":"Reservation","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift","line":24,"symbol":"Superseded","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift","line":26,"symbol":"description","symbol_kind":"source.lang.swift.decl.var.instance","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift","line":48,"symbol":"CurrentVersion","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift","line":49,"symbol":"ReleasedVersion","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift","line":50,"symbol":"None","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift","line":61,"symbol":"Document","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift","line":62,"symbol":"ExternalURL","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift","line":63,"symbol":"Item","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift","line":74,"symbol":"DocumentOnly","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift","line":75,"symbol":"DocumentAndFolder","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift","line":76,"symbol":"None","symbol_kind":"source.lang.swift.decl.enumelement","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift","line":116,"symbol":"content","symbol_kind":"source.lang.swift.decl.var.instance","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift","line":146,"symbol":"previewItemURL","symbol_kind":"source.lang.swift.decl.var.instance","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift","line":149,"symbol":"previewItemTitle","symbol_kind":"source.lang.swift.decl.var.instance","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift","line":167,"symbol":"isOfflineItem","symbol_kind":"source.lang.swift.decl.var.instance","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift","line":170,"symbol":"isConflictedItem","symbol_kind":"source.lang.swift.decl.var.instance","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift","line":176,"symbol":"isFromSearchContext","symbol_kind":"source.lang.swift.decl.var.instance","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift","line":234,"symbol":"checkIn(_:templateName:contentSourceType:mimetype:data:properties:asMinorVersion:onComplete:progress:)","symbol_kind":"source.lang.swift.decl.function.method.instance","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift","line":252,"symbol":"checkIn(_:templateName:contentSourceType:mimetype:fileURL:properties:asMinorVersion:onComplete:progress:)","symbol_kind":"source.lang.swift.decl.function.method.instance","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift","line":305,"symbol":"updateDocumentItem(_:properties:mimeType:fileName:updateAsMinorVersion:content:onComplete:progress:)","symbol_kind":"source.lang.swift.decl.function.method.instance","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift","line":322,"symbol":"updateDocumentItem(_:properties:mimeType:fileName:fileURL:updateAsMinorVersion:onComplete:progress:)","symbol_kind":"source.lang.swift.decl.function.method.instance","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift","line":338,"symbol":"updateDocumentItem(_:properties:mimeType:fileName:updateAsMinorVersion:content:)","symbol_kind":"source.lang.swift.decl.function.method.instance","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift","line":354,"symbol":"updateDocumentItem(_:properties:mimeType:fileName:fileURL:updateAsMinorVersion:)","symbol_kind":"source.lang.swift.decl.function.method.instance","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift","line":373,"symbol":"saveAttributes(_:onComplete:)","symbol_kind":"source.lang.swift.decl.function.method.instance","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift","line":439,"symbol":"addToRecentItem(_:)","symbol_kind":"source.lang.swift.decl.function.method.instance","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift","line":498,"symbol":"isMyFolder()","symbol_kind":"source.lang.swift.decl.function.method.instance","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift","line":501,"symbol":"isPersonalFolder()","symbol_kind":"source.lang.swift.decl.function.method.instance","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift","line":539,"symbol":"isContentOffline()","symbol_kind":"source.lang.swift.decl.function.method.instance","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift","line":563,"symbol":"isOfflineEnabled()","symbol_kind":"source.lang.swift.decl.function.method.instance","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift","line":566,"symbol":"setParent(_:)","symbol_kind":"source.lang.swift.decl.function.method.instance","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift","line":568,"symbol":"setName(_:)","symbol_kind":"source.lang.swift.decl.function.method.instance","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift","line":570,"symbol":"setTemplateName(_:)","symbol_kind":"source.lang.swift.decl.function.method.instance","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift","line":572,"symbol":"setProperties(_:)","symbol_kind":"source.lang.swift.decl.function.method.instance","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift","line":574,"symbol":"setPropertyTypes(_:)","symbol_kind":"source.lang.swift.decl.function.method.instance","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift","line":576,"symbol":"setPrivileges(_:)","symbol_kind":"source.lang.swift.decl.function.method.instance","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift","line":578,"symbol":"setPathName(_:)","symbol_kind":"source.lang.swift.decl.function.method.instance","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift","line":580,"symbol":"setFileName(_:)","symbol_kind":"source.lang.swift.decl.function.method.instance","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift","line":582,"symbol":"setContentClass(_:)","symbol_kind":"source.lang.swift.decl.function.method.instance","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift","line":584,"symbol":"setMimetype(_:)","symbol_kind":"source.lang.swift.decl.function.method.instance","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift","line":586,"symbol":"setIsOfflineItem(_:)","symbol_kind":"source.lang.swift.decl.function.method.instance","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift","line":588,"symbol":"setIsFromSearchContext(_:)","symbol_kind":"source.lang.swift.decl.function.method.instance","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift","line":590,"symbol":"setCommentCapability(_:)","symbol_kind":"source.lang.swift.decl.function.method.instance","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift","line":592,"symbol":"setItemCommentCount(_:)","symbol_kind":"source.lang.swift.decl.function.method.instance","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift","line":594,"symbol":"setIsItemSyncEnabled(_:)","symbol_kind":"source.lang.swift.decl.function.method.instance","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift","line":596,"symbol":"setIsItemFavoriteEnabled(_:)","symbol_kind":"source.lang.swift.decl.function.method.instance","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift","line":598,"symbol":"setIsItemOffline(_:)","symbol_kind":"source.lang.swift.decl.function.method.instance","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift","line":600,"symbol":"setIsSyncEnabled(_:)","symbol_kind":"source.lang.swift.decl.function.method.instance","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift","line":602,"symbol":"setIsFavoriteEnabled(_:)","symbol_kind":"source.lang.swift.decl.function.method.instance","warning":"undocumented"},{"file":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift","line":604,"symbol":"setRepository(_:)","symbol_kind":"source.lang.swift.decl.function.method.instance","warning":"undocumented"}],"source_directory":"/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build"}
+{
+  "warnings": [
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Collection/IBMECMShareResultSet.swift",
+      "line": 8,
+      "symbol": "IBMECMShareResultSet",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Factory/IBMECMFactory.swift",
+      "line": 302,
+      "symbol": "IBMECMFactory.getIBMECMUser(shortName:displayName:emailAddress:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Factory/IBMECMFactory.swift",
+      "line": 320,
+      "symbol": "IBMECMFactory.getIBMECMAccessControlEntry(granteeId:granteeName:granteeDisplayName:granteeEmailAddress:accessGranteeType:accessControlType:accessControlSource:inheritableDepth:accessMask:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMAccessControlEntry.swift",
+      "line": 16,
+      "symbol": "IBMECMAccessControlType.allow",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMAccessControlEntry.swift",
+      "line": 17,
+      "symbol": "IBMECMAccessControlType.deny",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMAccessControlEntry.swift",
+      "line": 18,
+      "symbol": "IBMECMAccessControlType.delegate",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMAccessControlEntry.swift",
+      "line": 28,
+      "symbol": "IBMECMAccessGranteeType.user",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMAccessControlEntry.swift",
+      "line": 29,
+      "symbol": "IBMECMAccessGranteeType.group",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMAccessControlEntry.swift",
+      "line": 31,
+      "symbol": "IBMECMAccessGranteeType.description",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMAccessControlEntry.swift",
+      "line": 51,
+      "symbol": "IBMECMAccessControlSource.class",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMAccessControlEntry.swift",
+      "line": 52,
+      "symbol": "IBMECMAccessControlSource.direct",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMAccessControlEntry.swift",
+      "line": 53,
+      "symbol": "IBMECMAccessControlSource.policy",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMAccessControlEntry.swift",
+      "line": 54,
+      "symbol": "IBMECMAccessControlSource.inherited",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMAccessControlEntry.swift",
+      "line": 55,
+      "symbol": "IBMECMAccessControlSource.security_PROXY",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMAccessControlEntry.swift",
+      "line": 68,
+      "symbol": "IBMECMAccessInheritableDepth.no_INHERITANCE",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMAccessControlEntry.swift",
+      "line": 69,
+      "symbol": "IBMECMAccessInheritableDepth.this_AND_IMMEDIATE",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMAccessControlEntry.swift",
+      "line": 70,
+      "symbol": "IBMECMAccessInheritableDepth.this_AND_ALL_CHILDREN",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMAccessControlEntry.swift",
+      "line": 71,
+      "symbol": "IBMECMAccessInheritableDepth.all_CHILDREN_BUT_NOT_THIS",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMAccessControlEntry.swift",
+      "line": 72,
+      "symbol": "IBMECMAccessInheritableDepth.immed_CHILDREN_BUT_NOT_THIS",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMAttributeDefinition.swift",
+      "line": 28,
+      "symbol": "IBMECMPropertyDataType.Short",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMAttributeDefinition.swift",
+      "line": 29,
+      "symbol": "IBMECMPropertyDataType.Integer",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMAttributeDefinition.swift",
+      "line": 30,
+      "symbol": "IBMECMPropertyDataType.Long",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMAttributeDefinition.swift",
+      "line": 31,
+      "symbol": "IBMECMPropertyDataType.Double",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMAttributeDefinition.swift",
+      "line": 32,
+      "symbol": "IBMECMPropertyDataType.Decimal",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMAttributeDefinition.swift",
+      "line": 33,
+      "symbol": "IBMECMPropertyDataType.Boolean",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMAttributeDefinition.swift",
+      "line": 34,
+      "symbol": "IBMECMPropertyDataType.String",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMAttributeDefinition.swift",
+      "line": 35,
+      "symbol": "IBMECMPropertyDataType.StringOnlyAlphaCharacters",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMAttributeDefinition.swift",
+      "line": 36,
+      "symbol": "IBMECMPropertyDataType.StringOnlyAlphaNumericCharacters",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMAttributeDefinition.swift",
+      "line": 37,
+      "symbol": "IBMECMPropertyDataType.StringClob",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMAttributeDefinition.swift",
+      "line": 38,
+      "symbol": "IBMECMPropertyDataType.StringExtendedCharacters",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMAttributeDefinition.swift",
+      "line": 39,
+      "symbol": "IBMECMPropertyDataType.StringOnlyNumericCharacters",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMAttributeDefinition.swift",
+      "line": 40,
+      "symbol": "IBMECMPropertyDataType.StringCmisId",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMAttributeDefinition.swift",
+      "line": 41,
+      "symbol": "IBMECMPropertyDataType.Date",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMAttributeDefinition.swift",
+      "line": 42,
+      "symbol": "IBMECMPropertyDataType.Time",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMAttributeDefinition.swift",
+      "line": 43,
+      "symbol": "IBMECMPropertyDataType.Timestamp",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMAttributeDefinition.swift",
+      "line": 44,
+      "symbol": "IBMECMPropertyDataType.Object",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMAttributeDefinition.swift",
+      "line": 45,
+      "symbol": "IBMECMPropertyDataType.Binary",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMAttributeDefinition.swift",
+      "line": 46,
+      "symbol": "IBMECMPropertyDataType.Id",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMAttributeDefinition.swift",
+      "line": 47,
+      "symbol": "IBMECMPropertyDataType.User",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMAttributeDefinition.swift",
+      "line": 48,
+      "symbol": "IBMECMPropertyDataType.Reference",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMAttributeDefinition.swift",
+      "line": 61,
+      "symbol": "IBMECMPropertySettability.ReadOnly",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMAttributeDefinition.swift",
+      "line": 62,
+      "symbol": "IBMECMPropertySettability.ReadWrite",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMAttributeDefinition.swift",
+      "line": 63,
+      "symbol": "IBMECMPropertySettability.OnlyBeforeCheckin",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMAttributeDefinition.swift",
+      "line": 64,
+      "symbol": "IBMECMPropertySettability.OnlyOnCreate",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMAttributeDefinition.swift",
+      "line": 74,
+      "symbol": "IBMECMPropertyCardinality.Single",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMAttributeDefinition.swift",
+      "line": 75,
+      "symbol": "IBMECMPropertyCardinality.Multi",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMAttributeDefinition.swift",
+      "line": 76,
+      "symbol": "IBMECMPropertyCardinality.List",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMAttributeDefinition.swift",
+      "line": 182,
+      "symbol": "IBMECMAttributeDefinition.clone()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMBaseObject.swift",
+      "line": 16,
+      "symbol": "==(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMBaseUser.swift",
+      "line": 16,
+      "symbol": "==(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentClass.swift",
+      "line": 17,
+      "symbol": "IBMECMObjectType.Document",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentClass.swift",
+      "line": 18,
+      "symbol": "IBMECMObjectType.Folder",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentClass.swift",
+      "line": 19,
+      "symbol": "IBMECMObjectType.Teamspace",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentClass.swift",
+      "line": 20,
+      "symbol": "IBMECMObjectType.Search",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentClass.swift",
+      "line": 21,
+      "symbol": "IBMECMObjectType.Unknown",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentClass.swift",
+      "line": 22,
+      "symbol": "IBMECMObjectType.All",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentClass.swift",
+      "line": 25,
+      "symbol": "IBMECMObjectType.description",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentClass.swift",
+      "line": 43,
+      "symbol": "IBMECMObjectType.allValues",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentClass.swift",
+      "line": 54,
+      "symbol": "IBMECMContentClassClassification.Item",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentClass.swift",
+      "line": 55,
+      "symbol": "IBMECMContentClassClassification.Resource",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentClass.swift",
+      "line": 56,
+      "symbol": "IBMECMContentClassClassification.Document",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentClass.swift",
+      "line": 68,
+      "symbol": "IBMECMContentClassFilterType.FolderSearch",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentClass.swift",
+      "line": 69,
+      "symbol": "IBMECMContentClassFilterType.EditItem",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentClass.swift",
+      "line": 70,
+      "symbol": "IBMECMContentClassFilterType.Search",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentClass.swift",
+      "line": 71,
+      "symbol": "IBMECMContentClassFilterType.CreateDocument",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentClass.swift",
+      "line": 82,
+      "symbol": "IBMECMContentItemAction.addItem",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentClass.swift",
+      "line": 83,
+      "symbol": "IBMECMContentItemAction.checkin",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentClass.swift",
+      "line": 84,
+      "symbol": "IBMECMContentItemAction.editProperties",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentClass.swift",
+      "line": 96,
+      "symbol": "IBMECMContentClass.contentClassId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentClass.swift",
+      "line": 102,
+      "symbol": "IBMECMContentClass.contentClassLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift",
+      "line": 17,
+      "symbol": "IBMECMContentItemVersionStatus.Released",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift",
+      "line": 18,
+      "symbol": "IBMECMContentItemVersionStatus.InProcess",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift",
+      "line": 19,
+      "symbol": "IBMECMContentItemVersionStatus.Reservation",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift",
+      "line": 20,
+      "symbol": "IBMECMContentItemVersionStatus.Superseded",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift",
+      "line": 45,
+      "symbol": "IBMECMContentItemVersionOption.CurrentVersion",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift",
+      "line": 46,
+      "symbol": "IBMECMContentItemVersionOption.ReleasedVersion",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift",
+      "line": 47,
+      "symbol": "IBMECMContentItemVersionOption.ReservationVersion",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift",
+      "line": 48,
+      "symbol": "IBMECMContentItemVersionOption.None",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift",
+      "line": 60,
+      "symbol": "IBMECMContentSourceType.Document",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift",
+      "line": 61,
+      "symbol": "IBMECMContentSourceType.ExternalURL",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift",
+      "line": 62,
+      "symbol": "IBMECMContentSourceType.Item",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift",
+      "line": 73,
+      "symbol": "IBMECMCommentsCapability.DocumentOnly",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift",
+      "line": 74,
+      "symbol": "IBMECMCommentsCapability.DocumentAndFolder",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift",
+      "line": 75,
+      "symbol": "IBMECMCommentsCapability.None",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift",
+      "line": 115,
+      "symbol": "IBMECMContentItem.content",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift",
+      "line": 145,
+      "symbol": "IBMECMContentItem.previewItemURL",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift",
+      "line": 148,
+      "symbol": "IBMECMContentItem.previewItemTitle",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift",
+      "line": 172,
+      "symbol": "IBMECMContentItem.isOfflineItem",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift",
+      "line": 175,
+      "symbol": "IBMECMContentItem.isConflictedItem",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift",
+      "line": 181,
+      "symbol": "IBMECMContentItem.isFromSearchContext",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift",
+      "line": 239,
+      "symbol": "IBMECMContentItem.checkIn(_:templateName:contentSourceType:mimetype:data:properties:asMinorVersion:onComplete:progress:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift",
+      "line": 257,
+      "symbol": "IBMECMContentItem.checkIn(_:templateName:contentSourceType:mimetype:fileURL:properties:asMinorVersion:onComplete:progress:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift",
+      "line": 326,
+      "symbol": "IBMECMContentItem.updateDocumentItem(_:properties:mimeType:fileName:updateAsMinorVersion:content:onComplete:progress:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift",
+      "line": 343,
+      "symbol": "IBMECMContentItem.updateDocumentItem(_:properties:mimeType:fileName:fileURL:updateAsMinorVersion:onComplete:progress:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift",
+      "line": 359,
+      "symbol": "IBMECMContentItem.updateDocumentItem(_:properties:mimeType:fileName:updateAsMinorVersion:content:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift",
+      "line": 361,
+      "symbol": "IBMECMContentItem.saveDocumentItem(_:properties:mimeType:fileName:updateAsMinorVersion:content:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift",
+      "line": 376,
+      "symbol": "IBMECMContentItem.updateDocumentItem(_:properties:mimeType:fileName:fileURL:updateAsMinorVersion:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift",
+      "line": 378,
+      "symbol": "IBMECMContentItem.saveDocumentItem(_:properties:mimeType:fileName:fileURL:updateAsMinorVersion:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift",
+      "line": 397,
+      "symbol": "IBMECMContentItem.saveAttributes(_:onComplete:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift",
+      "line": 463,
+      "symbol": "IBMECMContentItem.addToRecentItem(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift",
+      "line": 529,
+      "symbol": "IBMECMContentItem.isMyFolder()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift",
+      "line": 532,
+      "symbol": "IBMECMContentItem.isPersonalFolder()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift",
+      "line": 570,
+      "symbol": "IBMECMContentItem.isContentOffline()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift",
+      "line": 594,
+      "symbol": "IBMECMContentItem.isOfflineEnabled()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift",
+      "line": 597,
+      "symbol": "IBMECMContentItem.setParent(parent:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift",
+      "line": 599,
+      "symbol": "IBMECMContentItem.setName(name:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift",
+      "line": 601,
+      "symbol": "IBMECMContentItem.setTemplateName(templateName:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift",
+      "line": 603,
+      "symbol": "IBMECMContentItem.setProperties(properties:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift",
+      "line": 605,
+      "symbol": "IBMECMContentItem.setPropertyTypes(propertyTypes:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift",
+      "line": 607,
+      "symbol": "IBMECMContentItem.setPrivileges(privileges:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift",
+      "line": 609,
+      "symbol": "IBMECMContentItem.setPathName(pathName:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift",
+      "line": 611,
+      "symbol": "IBMECMContentItem.setFileName(fileName:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift",
+      "line": 613,
+      "symbol": "IBMECMContentItem.setContentClass(contentClass:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift",
+      "line": 615,
+      "symbol": "IBMECMContentItem.setMimetype(mimetype:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift",
+      "line": 617,
+      "symbol": "IBMECMContentItem.setIsOfflineItem(isOfflineItem:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift",
+      "line": 619,
+      "symbol": "IBMECMContentItem.setIsFromSearchContext(isFromSearchContext:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift",
+      "line": 621,
+      "symbol": "IBMECMContentItem.setCommentCapability(commentCapability:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift",
+      "line": 623,
+      "symbol": "IBMECMContentItem.setItemCommentCount(commentCount:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift",
+      "line": 625,
+      "symbol": "IBMECMContentItem.setIsItemSyncEnabled(isSyncEnabled:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift",
+      "line": 627,
+      "symbol": "IBMECMContentItem.setIsItemFavoriteEnabled(isFavoriteEnabled:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift",
+      "line": 629,
+      "symbol": "IBMECMContentItem.setIsItemOffline(isOffline:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift",
+      "line": 631,
+      "symbol": "IBMECMContentItem.setIsSyncEnabled(isSyncEnabled:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift",
+      "line": 633,
+      "symbol": "IBMECMContentItem.setIsFavoriteEnabled(isFavoriteEnabled:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift",
+      "line": 635,
+      "symbol": "IBMECMContentItem.setRepository(repository:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMDesktop.swift",
+      "line": 14,
+      "symbol": "IBMECMDefaultFeatures",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMEntryTemplate.swift",
+      "line": 16,
+      "symbol": "IBMECMEntryTemplateFilterType.Document",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMEntryTemplate.swift",
+      "line": 17,
+      "symbol": "IBMECMEntryTemplateFilterType.Folder",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMEntryTemplate.swift",
+      "line": 18,
+      "symbol": "IBMECMEntryTemplateFilterType.All",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMEntryTemplate.swift",
+      "line": 30,
+      "symbol": "IBMECMEntryTemplateType.Document",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMEntryTemplate.swift",
+      "line": 31,
+      "symbol": "IBMECMEntryTemplateType.Folder",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMEntryTemplate.swift",
+      "line": 32,
+      "symbol": "IBMECMEntryTemplateType.CustomObject",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMFavorite.swift",
+      "line": 103,
+      "symbol": "IBMECMFavorite.setIsSyncEnabled(isSyncEnabled:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMFileType.swift",
+      "line": 8,
+      "symbol": "IBMECMFileType",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMFont.swift",
+      "line": 9,
+      "symbol": "IBMECMFont",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMPrivilege.swift",
+      "line": 47,
+      "symbol": "IBMECMPrivilege.editProperties",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMPrivilege.swift",
+      "line": 48,
+      "symbol": "IBMECMPrivilege.editDoc",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMPrivilege.swift",
+      "line": 49,
+      "symbol": "IBMECMPrivilege.viewNotes",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMPrivilege.swift",
+      "line": 50,
+      "symbol": "IBMECMPrivilege.addDoc",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMPrivilege.swift",
+      "line": 51,
+      "symbol": "IBMECMPrivilege.addItem",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMPrivilege.swift",
+      "line": 52,
+      "symbol": "IBMECMPrivilege.emailDoc",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMPrivilege.swift",
+      "line": 53,
+      "symbol": "IBMECMPrivilege.export",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMPrivilege.swift",
+      "line": 54,
+      "symbol": "IBMECMPrivilege.addToFolder",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMPrivilege.swift",
+      "line": 55,
+      "symbol": "IBMECMPrivilege.removeFromFolder",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMPrivilege.swift",
+      "line": 56,
+      "symbol": "IBMECMPrivilege.addLink",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMPrivilege.swift",
+      "line": 57,
+      "symbol": "IBMECMPrivilege.removeLink",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMPrivilege.swift",
+      "line": 58,
+      "symbol": "IBMECMPrivilege.delegate",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMPrivilege.swift",
+      "line": 59,
+      "symbol": "IBMECMPrivilege.addNotes",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMPrivilege.swift",
+      "line": 60,
+      "symbol": "IBMECMPrivilege.printNotes",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMPrivilege.swift",
+      "line": 61,
+      "symbol": "IBMECMPrivilege.printDoc",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMPrivilege.swift",
+      "line": 62,
+      "symbol": "IBMECMPrivilege.checkInOutDoc",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMPrivilege.swift",
+      "line": 63,
+      "symbol": "IBMECMPrivilege.checkInDoc",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMPrivilege.swift",
+      "line": 64,
+      "symbol": "IBMECMPrivilege.checkOutDoc",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMPrivilege.swift",
+      "line": 65,
+      "symbol": "IBMECMPrivilege.cancelCheckOutDoc",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMPrivilege.swift",
+      "line": 66,
+      "symbol": "IBMECMPrivilege.viewAnnotations",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMPrivilege.swift",
+      "line": 67,
+      "symbol": "IBMECMPrivilege.editAnnotations",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMPrivilege.swift",
+      "line": 68,
+      "symbol": "IBMECMPrivilege.viewDoc",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMPrivilege.swift",
+      "line": 69,
+      "symbol": "IBMECMPrivilege.delete",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMPrivilege.swift",
+      "line": 70,
+      "symbol": "IBMECMPrivilege.startWorkflow",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMPrivilege.swift",
+      "line": 71,
+      "symbol": "IBMECMPrivilege.hold",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMPrivilege.swift",
+      "line": 72,
+      "symbol": "IBMECMPrivilege.moveToFolder",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMPrivilege.swift",
+      "line": 73,
+      "symbol": "IBMECMPrivilege.changeClass",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMPrivilege.swift",
+      "line": 74,
+      "symbol": "IBMECMPrivilege.majorVersion",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMPrivilege.swift",
+      "line": 75,
+      "symbol": "IBMECMPrivilege.minorVersion",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMPrivilege.swift",
+      "line": 76,
+      "symbol": "IBMECMPrivilege.ierRecordDeclare",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMPrivilege.swift",
+      "line": 77,
+      "symbol": "IBMECMPrivilege.modifyNotes",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMPrivilege.swift",
+      "line": 78,
+      "symbol": "IBMECMPrivilege.modifyPermissions",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMPrivilege.swift",
+      "line": 79,
+      "symbol": "IBMECMPrivilege.shareEdit",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMPrivilege.swift",
+      "line": 80,
+      "symbol": "IBMECMPrivilege.shareView",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMRecentItem.swift",
+      "line": 8,
+      "symbol": "IBMECMRecentItem",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMRepository.swift",
+      "line": 18,
+      "symbol": "IBMECMRepositoryType.ECM_REPOSITORY_P8",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMRepository.swift",
+      "line": 19,
+      "symbol": "IBMECMRepositoryType.ECM_REPOSITORY_CM",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMRepository.swift",
+      "line": 20,
+      "symbol": "IBMECMRepositoryType.ECM_REPOSITORY_OD",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMRepository.swift",
+      "line": 21,
+      "symbol": "IBMECMRepositoryType.ECM_REPOSITORY_CMIS",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMRepository.swift",
+      "line": 23,
+      "symbol": "IBMECMRepositoryType.description",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMRepository.swift",
+      "line": 93,
+      "symbol": "IBMECMRepository.isSharePluginEnabled",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMRepository.swift",
+      "line": 272,
+      "symbol": "IBMECMRepository.addDocumentItem(_:teamspaceId:templateName:contentSourceType:properties:mimeType:fileName:content:addAsMinorVersion:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMRepository.swift",
+      "line": 291,
+      "symbol": "IBMECMRepository.addDocumentItem(_:teamspaceId:templateName:contentSourceType:properties:mimeType:fileName:fileURL:addAsMinorVersion:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMRepository.swift",
+      "line": 305,
+      "symbol": "IBMECMRepository.addFolderItem(_:parentFolderId:teamspaceId:properties:onComplete:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMRepository.swift",
+      "line": 365,
+      "symbol": "IBMECMRepository.addFolderItem(_:parentFolderId:teamspaceId:properties:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMRepository.swift",
+      "line": 368,
+      "symbol": "IBMECMRepository.addRecentItems(_:onComplete:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMRepository.swift",
+      "line": 370,
+      "symbol": "IBMECMRepository.retrieveRecentItems(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMRepository.swift",
+      "line": 372,
+      "symbol": "IBMECMRepository.clearRecentItems(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMRepository.swift",
+      "line": 441,
+      "symbol": "IBMECMRepository.acceptShareRecords(_:onComplete:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMRepository.swift",
+      "line": 443,
+      "symbol": "IBMECMRepository.rejectShareRecords(_:onComplete:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMRepository.swift",
+      "line": 445,
+      "symbol": "IBMECMRepository.retrieveItemsSharedByMe(_:orderDescending:onComplete:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMRepository.swift",
+      "line": 447,
+      "symbol": "IBMECMRepository.retrieveItemsSharedWithMe(_:orderBy:orderDescending:onComplete:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMRepository.swift",
+      "line": 449,
+      "symbol": "IBMECMRepository.retrievePendingItemsSharedWithMe(_:orderDescending:onComplete:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMRepository.swift",
+      "line": 473,
+      "symbol": "IBMECMRepository.retrieveTeamspaceFolders(_:offline:pageSize:onComplete:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMRepository.swift",
+      "line": 661,
+      "symbol": "IBMECMRepository.addSearchTemplate(_:permissions:searchFolderId:searchClasses:objectType:searchPredicates:textSearchPredicate:orderBy:descending:onComplete:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMRepository.swift",
+      "line": 674,
+      "symbol": "IBMECMRepository.addSearchTemplate(_:permissions:searchTemplate:onComplete:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMRepository.swift",
+      "line": 705,
+      "symbol": "IBMECMRepository.isP8Repository()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMRepository.swift",
+      "line": 707,
+      "symbol": "IBMECMRepository.isCMRepository()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMRepository.swift",
+      "line": 709,
+      "symbol": "IBMECMRepository.getFolderTemplate()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMRepository.swift",
+      "line": 711,
+      "symbol": "IBMECMRepository.getDocumentTemplate()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchResultSet.swift",
+      "line": 15,
+      "symbol": "IBMECMSearchResultCountType",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift",
+      "line": 15,
+      "symbol": "IBMECMTextSearchType.Cascade",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift",
+      "line": 16,
+      "symbol": "IBMECMTextSearchType.Verity",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift",
+      "line": 28,
+      "symbol": "IBMECMTextSearchOperator.AnyText",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift",
+      "line": 29,
+      "symbol": "IBMECMTextSearchOperator.All",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift",
+      "line": 30,
+      "symbol": "IBMECMTextSearchOperator.Advanced",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift",
+      "line": 31,
+      "symbol": "IBMECMTextSearchOperator.Near",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift",
+      "line": 33,
+      "symbol": "IBMECMTextSearchOperator.description",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift",
+      "line": 46,
+      "symbol": "IBMECMTextSearchOperator.allValues",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift",
+      "line": 73,
+      "symbol": "IBMECMSearchOperator.Contains",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift",
+      "line": 74,
+      "symbol": "IBMECMSearchOperator.StartsWith",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift",
+      "line": 75,
+      "symbol": "IBMECMSearchOperator.EndsWith",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift",
+      "line": 76,
+      "symbol": "IBMECMSearchOperator.Like",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift",
+      "line": 77,
+      "symbol": "IBMECMSearchOperator.NotLike",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift",
+      "line": 78,
+      "symbol": "IBMECMSearchOperator.Equal",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift",
+      "line": 79,
+      "symbol": "IBMECMSearchOperator.NotEqual",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift",
+      "line": 80,
+      "symbol": "IBMECMSearchOperator.Less",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift",
+      "line": 81,
+      "symbol": "IBMECMSearchOperator.LessOrEqual",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift",
+      "line": 82,
+      "symbol": "IBMECMSearchOperator.Greater",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift",
+      "line": 83,
+      "symbol": "IBMECMSearchOperator.GreaterOrEqual",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift",
+      "line": 84,
+      "symbol": "IBMECMSearchOperator.IncludeAll",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift",
+      "line": 85,
+      "symbol": "IBMECMSearchOperator.IncludeAny",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift",
+      "line": 86,
+      "symbol": "IBMECMSearchOperator.ExcludeAll",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift",
+      "line": 87,
+      "symbol": "IBMECMSearchOperator.IsEmpty",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift",
+      "line": 88,
+      "symbol": "IBMECMSearchOperator.IsNotEmpty",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift",
+      "line": 89,
+      "symbol": "IBMECMSearchOperator.Between",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift",
+      "line": 90,
+      "symbol": "IBMECMSearchOperator.NotBetween",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift",
+      "line": 92,
+      "symbol": "IBMECMSearchOperator.description",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift",
+      "line": 133,
+      "symbol": "IBMECMSearchOperator.isRangeOperator()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift",
+      "line": 140,
+      "symbol": "IBMECMSearchOperator.allValues",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift",
+      "line": 184,
+      "symbol": "IBMECMSearchPredicate.contains(propertyId:dataType:cardinality:values:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift",
+      "line": 185,
+      "symbol": "IBMECMSearchPredicate.startsWith(propertyId:dataType:cardinality:values:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift",
+      "line": 186,
+      "symbol": "IBMECMSearchPredicate.endsWith(propertyId:dataType:cardinality:values:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift",
+      "line": 187,
+      "symbol": "IBMECMSearchPredicate.like(propertyId:dataType:cardinality:values:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift",
+      "line": 188,
+      "symbol": "IBMECMSearchPredicate.notLike(propertyId:dataType:cardinality:values:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift",
+      "line": 189,
+      "symbol": "IBMECMSearchPredicate.equal(propertyId:dataType:cardinality:values:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift",
+      "line": 190,
+      "symbol": "IBMECMSearchPredicate.notEqual(propertyId:dataType:cardinality:values:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift",
+      "line": 191,
+      "symbol": "IBMECMSearchPredicate.less(propertyId:dataType:cardinality:values:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift",
+      "line": 192,
+      "symbol": "IBMECMSearchPredicate.lessOrEqual(propertyId:dataType:cardinality:values:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift",
+      "line": 193,
+      "symbol": "IBMECMSearchPredicate.greater(propertyId:dataType:cardinality:values:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift",
+      "line": 194,
+      "symbol": "IBMECMSearchPredicate.greaterOrEqual(propertyId:dataType:cardinality:values:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift",
+      "line": 195,
+      "symbol": "IBMECMSearchPredicate.includeAll(propertyId:dataType:cardinality:values:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift",
+      "line": 196,
+      "symbol": "IBMECMSearchPredicate.includeAny(propertyId:dataType:cardinality:values:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift",
+      "line": 197,
+      "symbol": "IBMECMSearchPredicate.excludeAll(propertyId:dataType:cardinality:values:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift",
+      "line": 198,
+      "symbol": "IBMECMSearchPredicate.isEmpty(propertyId:dataType:cardinality:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift",
+      "line": 199,
+      "symbol": "IBMECMSearchPredicate.isNotEmpty(propertyId:dataType:cardinality:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift",
+      "line": 200,
+      "symbol": "IBMECMSearchPredicate.between(propertyId:dataType:cardinality:lowerValue:upperValue:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift",
+      "line": 201,
+      "symbol": "IBMECMSearchPredicate.notBetween(propertyId:dataType:cardinality:lowerValue:upperValue:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift",
+      "line": 252,
+      "symbol": "IBMECMSearchPredicatesRelation.and",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift",
+      "line": 253,
+      "symbol": "IBMECMSearchPredicatesRelation.or",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift",
+      "line": 263,
+      "symbol": "IBMECMSearchTemplateMimeTypes.AutoRun",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift",
+      "line": 264,
+      "symbol": "IBMECMSearchTemplateMimeTypes.Default",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift",
+      "line": 275,
+      "symbol": "IBMECMTextSearchPredicate.all(text:searchType:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift",
+      "line": 276,
+      "symbol": "IBMECMTextSearchPredicate.any(text:searchType:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift",
+      "line": 277,
+      "symbol": "IBMECMTextSearchPredicate.advanced(text:searchType:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift",
+      "line": 299,
+      "symbol": "IBMECMSearchVersionOption.CurrentVersion",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift",
+      "line": 300,
+      "symbol": "IBMECMSearchVersionOption.ReleasedVersion",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift",
+      "line": 301,
+      "symbol": "IBMECMSearchVersionOption.AllVersions",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift",
+      "line": 302,
+      "symbol": "IBMECMSearchVersionOption.None",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift",
+      "line": 304,
+      "symbol": "IBMECMSearchVersionOption.description",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift",
+      "line": 318,
+      "symbol": "IBMECMSearchVersionOption.allValues",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift",
+      "line": 499,
+      "symbol": "IBMECMTextSearchCriteria.proximityDistance",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift",
+      "line": 502,
+      "symbol": "IBMECMTextSearchCriteria.editProperty",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplate.swift",
+      "line": 613,
+      "symbol": "IBMECMSearchTemplate.works",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplateUserAction.swift",
+      "line": 17,
+      "symbol": "IBMECMSearchTemplateUserActionType.AddedBy",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplateUserAction.swift",
+      "line": 18,
+      "symbol": "IBMECMSearchTemplateUserActionType.ModifiedBy",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplateUserAction.swift",
+      "line": 19,
+      "symbol": "IBMECMSearchTemplateUserActionType.CheckedOut",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplateUserAction.swift",
+      "line": 21,
+      "symbol": "IBMECMSearchTemplateUserActionType.description",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplateUserAction.swift",
+      "line": 32,
+      "symbol": "IBMECMSearchTemplateUserActionType.allValues",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchTemplateUserAction.swift",
+      "line": 37,
+      "symbol": "IBMECMSearchTemplateUserAction",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMShareRecord.swift",
+      "line": 8,
+      "symbol": "IBMECMShareRecord",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSocialItem.swift",
+      "line": 18,
+      "symbol": "IBMECMSocialItemType.Recommendation",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSocialItem.swift",
+      "line": 19,
+      "symbol": "IBMECMSocialItemType.DownloadRecord",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSocialItem.swift",
+      "line": 20,
+      "symbol": "IBMECMSocialItemType.Comment",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSocialItem.swift",
+      "line": 21,
+      "symbol": "IBMECMSocialItemType.Tag",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSocialItem.swift",
+      "line": 22,
+      "symbol": "IBMECMSocialItemType.ShareRecord",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSyncItem.swift",
+      "line": 65,
+      "symbol": "IBMECMSyncItem.disableSync(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSyncItem.swift",
+      "line": 72,
+      "symbol": "IBMECMSyncItem.registerSyncItemForDevice(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSyncItem.swift",
+      "line": 79,
+      "symbol": "IBMECMSyncItem.registerSyncItemForDevice()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSyncItem.swift",
+      "line": 86,
+      "symbol": "IBMECMSyncItem.unregisterSyncItemForDevice(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSyncItem.swift",
+      "line": 93,
+      "symbol": "IBMECMSyncItem.unregisterSyncItemForDevice()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMTeamspace.swift",
+      "line": 18,
+      "symbol": "IBMECMTeamspaceState.PUBLISHED",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMTeamspace.swift",
+      "line": 19,
+      "symbol": "IBMECMTeamspaceState.DELETED",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMTeamspace.swift",
+      "line": 20,
+      "symbol": "IBMECMTeamspaceState.OFFLINE",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMTeamspace.swift",
+      "line": 21,
+      "symbol": "IBMECMTeamspaceState.PENDING_DELETE",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMTeamspace.swift",
+      "line": 59,
+      "symbol": "IBMECMTeamspaceType.INSTANCE",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMTeamspace.swift",
+      "line": 60,
+      "symbol": "IBMECMTeamspaceType.TEMPLATE",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMTeamspace.swift",
+      "line": 177,
+      "symbol": "IBMECMTeamspace.setIsSyncEnabled(isSyncEnabled:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMTeamspace.swift",
+      "line": 179,
+      "symbol": "IBMECMTeamspace.setIsItemFavoriteEnabled(isFavoriteEnabled:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMTheme.swift",
+      "line": 9,
+      "symbol": "IBMECMTheme",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMWorkItemFilter.swift",
+      "line": 8,
+      "symbol": "IBMECMWorkItemFilter",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Authentication/DownloadServiceWrapper.swift",
+      "line": 11,
+      "symbol": "DownloadServiceWrapper",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Calls/AlamofireRequestExtensions.swift",
+      "line": 79,
+      "symbol": "Alamofire.DataRequest.icnJSONResponseSerializer(options:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Calls/AlamofireRequestExtensions.swift",
+      "line": 88,
+      "symbol": "Alamofire.DataRequest.responseIcnJSON(queue:options:completionHandler:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Calls/CK_IBMECMRequestCall.swift",
+      "line": 9,
+      "symbol": "CK_IBMECMRequestCall",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Extensions/AlamofireParameterEncodingExtensions.swift",
+      "line": 10,
+      "symbol": "CuctomArrayEncodingInURL",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Model/IBMECMErrorCode.swift",
+      "line": 69,
+      "symbol": "IBMECMErrorCode.connection_TIME_OUT_1001",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Model/IBMECMErrorCode.swift",
+      "line": 70,
+      "symbol": "IBMECMErrorCode.host_NOTFOUND_1003",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Model/IBMECMErrorCode.swift",
+      "line": 71,
+      "symbol": "IBMECMErrorCode.host_NOTFOUND_1004",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Model/IBMECMErrorCode.swift",
+      "line": 72,
+      "symbol": "IBMECMErrorCode.connection_LOST_1005",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Model/IBMECMErrorCode.swift",
+      "line": 73,
+      "symbol": "IBMECMErrorCode.device_IS_NOT_CONNECTED_TO_INTERNET",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Model/IBMECMErrorCode.swift",
+      "line": 74,
+      "symbol": "IBMECMErrorCode.connection_TO_HTTS_NOT_ESTABLISHED_310",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Model/IBMECMErrorCode.swift",
+      "line": 77,
+      "symbol": "IBMECMErrorCode.icn_DESKTOP_CANNOT_OPENED",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Model/IBMECMErrorCode.swift",
+      "line": 78,
+      "symbol": "IBMECMErrorCode.icn_SESSION_EXPIRED",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Model/IBMECMErrorCode.swift",
+      "line": 79,
+      "symbol": "IBMECMErrorCode.icn_PASSWORD_EXPIRED",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Model/IBMECMErrorCode.swift",
+      "line": 80,
+      "symbol": "IBMECMErrorCode.icn_INVALID_USER_PASSWORD",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Model/IBMECMErrorCode.swift",
+      "line": 81,
+      "symbol": "IBMECMErrorCode.icn_REPOSITORY_NOT_AVAILABLE",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Model/IBMECMErrorCode.swift",
+      "line": 82,
+      "symbol": "IBMECMErrorCode.icn_REPOS_NOT_CONNECTED",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Model/IBMECMErrorCode.swift",
+      "line": 83,
+      "symbol": "IBMECMErrorCode.icn_PLUGIN_NOT_CONFIGURED_CORRECTLY",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Model/IBMECMErrorCode.swift",
+      "line": 84,
+      "symbol": "IBMECMErrorCode.icn_ITEM_CANNOT_CHECKOUT",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Model/IBMECMErrorCode.swift",
+      "line": 85,
+      "symbol": "IBMECMErrorCode.icn_ITEM_CANNOT_DOWNLOAD",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Model/IBMECMErrorCode.swift",
+      "line": 86,
+      "symbol": "IBMECMErrorCode.icn_FOLDER_CANNOT_OPENED",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Model/IBMECMErrorCode.swift",
+      "line": 87,
+      "symbol": "IBMECMErrorCode.icn_ITEM_CANNOT_MOVED",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Model/IBMECMErrorCode.swift",
+      "line": 88,
+      "symbol": "IBMECMErrorCode.icn_ITEMS_CANNOT_DELETED",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Model/IBMECMErrorCode.swift",
+      "line": 89,
+      "symbol": "IBMECMErrorCode.icn_ITEM_CANNOT_CHECK_IN",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Model/IBMECMErrorCode.swift",
+      "line": 90,
+      "symbol": "IBMECMErrorCode.icn_ITEM_CANNOT_FOUND_1",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Model/IBMECMErrorCode.swift",
+      "line": 91,
+      "symbol": "IBMECMErrorCode.icn_ITEM_CANNOT_FOUND_2",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Model/IBMECMErrorCode.swift",
+      "line": 92,
+      "symbol": "IBMECMErrorCode.icn_ITEM_CANNOT_FOUND_3",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Model/IBMECMErrorCode.swift",
+      "line": 93,
+      "symbol": "IBMECMErrorCode.icn_CROSS_REPOSITORY_SEARCH_TEMPLATE",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Model/IBMECMErrorCode.swift",
+      "line": 94,
+      "symbol": "IBMECMErrorCode.icn_SEARCH_TEMPLATE_NOT_FOUND",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Model/IBMECMErrorCode.swift",
+      "line": 95,
+      "symbol": "IBMECMErrorCode.icn_URL_CONNECTION_NOT_ESTABLISHED",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Model/IBMECMErrorCode.swift",
+      "line": 96,
+      "symbol": "IBMECMErrorCode.icn_SORT_VIEW_CONTROLLER_CREATED_FAILED",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Model/IBMECMErrorCode.swift",
+      "line": 97,
+      "symbol": "IBMECMErrorCode.icn_SORT_VIEW_MISSING_SEARCH_OBJECT",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Model/IBMECMErrorCode.swift",
+      "line": 100,
+      "symbol": "IBMECMErrorCode.ck_DESKTOP_NOT_LOADED",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Model/IBMECMErrorCode.swift",
+      "line": 101,
+      "symbol": "IBMECMErrorCode.ck_REPOSITORY_NOT_LOADED",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Model/IBMECMErrorCode.swift",
+      "line": 102,
+      "symbol": "IBMECMErrorCode.ck_CREDENTIAL_NOT_EXIST",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Model/IBMECMErrorCode.swift",
+      "line": 103,
+      "symbol": "IBMECMErrorCode.ck_INVALID_DATA_VALUE",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Model/IBMECMErrorCode.swift",
+      "line": 104,
+      "symbol": "IBMECMErrorCode.ck_SERVICE_NOT_FOUND",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Model/IBMECMErrorCode.swift",
+      "line": 105,
+      "symbol": "IBMECMErrorCode.ck_SERVER_NOT_SUPPORTED",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Model/IBMECMErrorCode.swift",
+      "line": 106,
+      "symbol": "IBMECMErrorCode.ck_INVALID_CREDENTIAL",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Model/IBMECMErrorCode.swift",
+      "line": 107,
+      "symbol": "IBMECMErrorCode.ck_MOBILE_ACCESS_NOT_ALLOWED",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Model/IBMECMErrorCode.swift",
+      "line": 108,
+      "symbol": "IBMECMErrorCode.ck_URL_IS_NOT_AVAILABLE",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Model/IBMECMErrorCode.swift",
+      "line": 109,
+      "symbol": "IBMECMErrorCode.ck_CANNOT_USE_ADMIN_DESKTOP",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Model/IBMECMErrorCode.swift",
+      "line": 110,
+      "symbol": "IBMECMErrorCode.ck_AUTHENTICATION_REPOSITORY_NOT_SUPPORTED",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Model/IBMECMErrorCode.swift",
+      "line": 113,
+      "symbol": "IBMECMErrorCode.ck_Request_Cancelled",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Model/IBMECMErrorCode.swift",
+      "line": 117,
+      "symbol": "IBMECMErrorCode.general_ERRROR_DURING_THIRD_PART_AUTHENTICATION",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Model/IBMECMErrorCode.swift",
+      "line": 118,
+      "symbol": "IBMECMErrorCode.general_LAF_ERROR",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Model/IBMECMErrorCode.swift",
+      "line": 119,
+      "symbol": "IBMECMErrorCode.general_PING_ERROR",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Model/IBMECMErrorCode.swift",
+      "line": 120,
+      "symbol": "IBMECMErrorCode.general_STORAGE_ERROR",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Model/IBMECMErrorCode.swift",
+      "line": 123,
+      "symbol": "IBMECMErrorCode.ck_UNKNOWN_ERROR",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Utilities/AppLog.swift",
+      "line": 40,
+      "symbol": "LogLevel",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Utilities/AppLog.swift",
+      "line": 63,
+      "symbol": "==(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Utilities/AppLog.swift",
+      "line": 68,
+      "symbol": "AppLog",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Utilities/Connectivity.swift",
+      "line": 9,
+      "symbol": "ReachabilityChangedNotification",
+      "symbol_kind": "source.lang.swift.decl.var.global",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Utilities/Connectivity.swift",
+      "line": 11,
+      "symbol": "Connectivity",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Utilities/ErrorHelper.swift",
+      "line": 8,
+      "symbol": "ErrorHelper",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/IMPL/Utilities/NSBundleExtension.swift",
+      "line": 10,
+      "symbol": "Bundle.localizedStringForKeyInIBMECMCore(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.class",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build"
+}

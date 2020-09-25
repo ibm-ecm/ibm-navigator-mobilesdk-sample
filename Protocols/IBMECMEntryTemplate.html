@@ -1,0 +1,1655 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>IBMECMEntryTemplate Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Protocol/IBMECMEntryTemplate" class="dashAnchor"></a>
+    <a title="IBMECMEntryTemplate Protocol Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">IBMECMCore Docs</a> (65% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">IBMECMCore Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        IBMECMEntryTemplate Protocol Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/IBMECMFactory.html">IBMECMFactory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IBMECMItemPermissions.html">IBMECMItemPermissions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IBMECMItemProperties.html">IBMECMItemProperties</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IBMECMPersistenceFactory.html">IBMECMPersistenceFactory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Request.html">Request</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums.html#/s:10IBMECMCore25IBMECMAccessControlSourceO">IBMECMAccessControlSource</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums.html#/s:10IBMECMCore23IBMECMAccessControlTypeO">IBMECMAccessControlType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums.html#/s:10IBMECMCore23IBMECMAccessGranteeTypeO">IBMECMAccessGranteeType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums.html#/s:10IBMECMCore28IBMECMAccessInheritableDepthO">IBMECMAccessInheritableDepth</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums.html#/s:10IBMECMCore24IBMECMCommentsCapabilityO">IBMECMCommentsCapability</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums.html#/s:10IBMECMCore32IBMECMContentClassClassificationO">IBMECMContentClassClassification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums.html#/s:10IBMECMCore28IBMECMContentClassFilterTypeO">IBMECMContentClassFilterType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums.html#/s:10IBMECMCore23IBMECMContentItemActionO">IBMECMContentItemAction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums.html#/s:10IBMECMCore30IBMECMContentItemVersionOptionO">IBMECMContentItemVersionOption</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/IBMECMContentItemVersionStatus.html">IBMECMContentItemVersionStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums.html#/s:10IBMECMCore23IBMECMContentSourceTypeO">IBMECMContentSourceType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums.html#/s:10IBMECMCore29IBMECMEntryTemplateFilterTypeO">IBMECMEntryTemplateFilterType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums.html#/s:10IBMECMCore23IBMECMEntryTemplateTypeO">IBMECMEntryTemplateType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/IBMECMErrorCode.html">IBMECMErrorCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums.html#/s:10IBMECMCore16IBMECMObjectTypeO">IBMECMObjectType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums.html#/s:10IBMECMCore15IBMECMPrivilegeO">IBMECMPrivilege</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums.html#/s:10IBMECMCore25IBMECMPropertyCardinalityO">IBMECMPropertyCardinality</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums.html#/s:10IBMECMCore22IBMECMPropertyDataTypeO">IBMECMPropertyDataType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums.html#/s:10IBMECMCore25IBMECMPropertySettabilityO">IBMECMPropertySettability</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums.html#/s:10IBMECMCore20IBMECMRepositoryTypeO">IBMECMRepositoryType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums.html#/s:10IBMECMCore20IBMECMSearchOperatorO">IBMECMSearchOperator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums.html#/s:10IBMECMCore21IBMECMSearchPredicateO">IBMECMSearchPredicate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums.html#/s:10IBMECMCore30IBMECMSearchPredicatesRelationO">IBMECMSearchPredicatesRelation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums.html#/s:10IBMECMCore29IBMECMSearchTemplateMimeTypesO">IBMECMSearchTemplateMimeTypes</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums.html#/s:10IBMECMCore34IBMECMSearchTemplateUserActionTypeO">IBMECMSearchTemplateUserActionType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums.html#/s:10IBMECMCore25IBMECMSearchVersionOptionO">IBMECMSearchVersionOption</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums.html#/s:10IBMECMCore20IBMECMSocialItemTypeO">IBMECMSocialItemType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/IBMECMTeamspaceState.html">IBMECMTeamspaceState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums.html#/s:10IBMECMCore19IBMECMTeamspaceTypeO">IBMECMTeamspaceType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums.html#/s:10IBMECMCore24IBMECMTextSearchOperatorO">IBMECMTextSearchOperator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums.html#/s:10IBMECMCore25IBMECMTextSearchPredicateO">IBMECMTextSearchPredicate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums.html#/s:10IBMECMCore20IBMECMTextSearchTypeO">IBMECMTextSearchType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/IBMECMAccessControlEntry.html">IBMECMAccessControlEntry</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IBMECMAccessControlList.html">IBMECMAccessControlList</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IBMECMApplication.html">IBMECMApplication</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IBMECMAttributeDefinition.html">IBMECMAttributeDefinition</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IBMECMAttributeDefinitionList.html">IBMECMAttributeDefinitionList</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IBMECMAuthenticator.html">IBMECMAuthenticator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IBMECMAuthenticatorDataSource.html">IBMECMAuthenticatorDataSource</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IBMECMBaseObject.html">IBMECMBaseObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IBMECMBaseUser.html">IBMECMBaseUser</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IBMECMComment.html">IBMECMComment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IBMECMCommentsResultSet.html">IBMECMCommentsResultSet</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IBMECMContentClass.html">IBMECMContentClass</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IBMECMContentItem.html">IBMECMContentItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IBMECMDesktop.html">IBMECMDesktop</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IBMECMDirectoriesList.html">IBMECMDirectoriesList</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IBMECMDirectory.html">IBMECMDirectory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IBMECMEntryTemplate.html">IBMECMEntryTemplate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IBMECMEntryTemplateList.html">IBMECMEntryTemplateList</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IBMECMFavorite.html">IBMECMFavorite</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IBMECMFavoriteList.html">IBMECMFavoriteList</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IBMECMFavoritesResultSet.html">IBMECMFavoritesResultSet</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IBMECMRecentItemList.html">IBMECMRecentItemList</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IBMECMRecommendationResultSet.html">IBMECMRecommendationResultSet</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IBMECMRepository.html">IBMECMRepository</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IBMECMRequestCall.html">IBMECMRequestCall</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IBMECMResultSet.html">IBMECMResultSet</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IBMECMSearchCriteriaList.html">IBMECMSearchCriteriaList</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IBMECMSearchResultSet.html">IBMECMSearchResultSet</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IBMECMSearchTemplate.html">IBMECMSearchTemplate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IBMECMSearchTemplateBuilder.html">IBMECMSearchTemplateBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IBMECMSearchTemplateList.html">IBMECMSearchTemplateList</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IBMECMSocialItem.html">IBMECMSocialItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IBMECMSocialItemResultSet.html">IBMECMSocialItemResultSet</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IBMECMSyncChangesList.html">IBMECMSyncChangesList</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IBMECMSyncItem.html">IBMECMSyncItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IBMECMSyncItemList.html">IBMECMSyncItemList</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IBMECMSyncItemResultSet.html">IBMECMSyncItemResultSet</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IBMECMTeamspace.html">IBMECMTeamspace</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IBMECMTeamspaceResultSet.html">IBMECMTeamspaceResultSet</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IBMECMUser.html">IBMECMUser</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IBMECMUserGroup.html">IBMECMUserGroup</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IBMECMUserGroupsList.html">IBMECMUserGroupsList</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IBMECMUserPermissions.html">IBMECMUserPermissions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IBMECMUserRole.html">IBMECMUserRole</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IBMECMUsersList.html">IBMECMUsersList</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/IBMECMItemProperty.html">IBMECMItemProperty</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/IBMECMSearchCriteria.html">IBMECMSearchCriteria</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/IBMECMTextSearchCriteria.html">IBMECMTextSearchCriteria</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:10IBMECMCore15OnCompleteBlocka">OnCompleteBlock</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>IBMECMEntryTemplate</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">IBMECMEntryTemplate</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/IBMECMBaseObject.html">IBMECMBaseObject</a></span></code></pre>
+
+                </div>
+              </div>
+            <p>Represents a single entry template in the repository.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10IBMECMCore19IBMECMEntryTemplateP4vsIdSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/vsId" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10IBMECMCore19IBMECMEntryTemplateP4vsIdSSSgvp">vsId</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The object&rsquo;s version series identifier. This is applicable only if the object is versionable. The version identifier is used to group different versions of content items together.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">vsId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10IBMECMCore19IBMECMEntryTemplateP4typeAA0bC4TypeOSgvp"></a>
+                    <a name="//apple_ref/swift/Property/type" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10IBMECMCore19IBMECMEntryTemplateP4typeAA0bC4TypeOSgvp">type</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The entry template type.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">type</span><span class="p">:</span> <span class="kt"><a href="../Enums.html#/s:10IBMECMCore23IBMECMEntryTemplateTypeO">IBMECMEntryTemplateType</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10IBMECMCore19IBMECMEntryTemplateP8mimetypeSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/mimetype" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10IBMECMCore19IBMECMEntryTemplateP8mimetypeSSSgvp">mimetype</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The minetype of the entry template.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">mimetype</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10IBMECMCore19IBMECMEntryTemplateP4descSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/desc" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10IBMECMCore19IBMECMEntryTemplateP4descSSSgvp">desc</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The description of the entry template.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">desc</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10IBMECMCore19IBMECMEntryTemplateP11displayNameSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/displayName" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10IBMECMCore19IBMECMEntryTemplateP11displayNameSSSgvp">displayName</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The display name of the entry template.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">displayName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10IBMECMCore19IBMECMEntryTemplateP23isCurrentFolderAsParentSbvp"></a>
+                    <a name="//apple_ref/swift/Property/isCurrentFolderAsParent" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10IBMECMCore19IBMECMEntryTemplateP23isCurrentFolderAsParentSbvp">isCurrentFolderAsParent</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether the current folder as the parent folder.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">isCurrentFolderAsParent</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10IBMECMCore19IBMECMEntryTemplateP10repositoryAA16IBMECMRepository_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/repository" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10IBMECMCore19IBMECMEntryTemplateP10repositoryAA16IBMECMRepository_pSgvp">repository</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The IBMECMRepository object where the entry template is stored.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">repository</span><span class="p">:</span> <span class="kt"><a href="../Protocols/IBMECMRepository.html">IBMECMRepository</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10IBMECMCore19IBMECMEntryTemplateP12contentClassAA013IBMECMContentE0_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/contentClass" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10IBMECMCore19IBMECMEntryTemplateP12contentClassAA013IBMECMContentE0_pSgvp">contentClass</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The content class of this entry template.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">contentClass</span><span class="p">:</span> <span class="kt"><a href="../Protocols/IBMECMContentClass.html">IBMECMContentClass</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10IBMECMCore19IBMECMEntryTemplateP14contentClassIdSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/contentClassId" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10IBMECMCore19IBMECMEntryTemplateP14contentClassIdSSSgvp">contentClassId</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The content class Id of this entry template.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">contentClassId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10IBMECMCore19IBMECMEntryTemplateP16contentClassNameSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/contentClassName" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10IBMECMCore19IBMECMEntryTemplateP16contentClassNameSSSgvp">contentClassName</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The content class Name of this entry template.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">contentClassName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10IBMECMCore19IBMECMEntryTemplateP17contentClassLabelSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/contentClassLabel" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10IBMECMCore19IBMECMEntryTemplateP17contentClassLabelSSSgvp">contentClassLabel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The content class label of this entry template.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">contentClassLabel</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10IBMECMCore19IBMECMEntryTemplateP16contentClassDescSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/contentClassDesc" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10IBMECMCore19IBMECMEntryTemplateP16contentClassDescSSSgvp">contentClassDesc</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The content class description of this entry template.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">contentClassDesc</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10IBMECMCore19IBMECMEntryTemplateP38isUsedForDocumentInformationPropertiesSbvp"></a>
+                    <a name="//apple_ref/swift/Property/isUsedForDocumentInformationProperties" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10IBMECMCore19IBMECMEntryTemplateP38isUsedForDocumentInformationPropertiesSbvp">isUsedForDocumentInformationProperties</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether this entry template should be used on the document information pane.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">isUsedForDocumentInformationProperties</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10IBMECMCore19IBMECMEntryTemplateP25allowUserSelectSaveChoiceSbvp"></a>
+                    <a name="//apple_ref/swift/Property/allowUserSelectSaveChoice" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10IBMECMCore19IBMECMEntryTemplateP25allowUserSelectSaveChoiceSbvp">allowUserSelectSaveChoice</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether the What do you want to save pull-down menu is displayd to the user.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">allowUserSelectSaveChoice</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10IBMECMCore19IBMECMEntryTemplateP36isInheritingSecurityFromParentFolderSbvp"></a>
+                    <a name="//apple_ref/swift/Property/isInheritingSecurityFromParentFolder" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10IBMECMCore19IBMECMEntryTemplateP36isInheritingSecurityFromParentFolderSbvp">isInheritingSecurityFromParentFolder</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether the entry template inherits Security From Parent Folder.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">isInheritingSecurityFromParentFolder</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10IBMECMCore19IBMECMEntryTemplateP25isUsedForViewerPropertiesSbvp"></a>
+                    <a name="//apple_ref/swift/Property/isUsedForViewerProperties" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10IBMECMCore19IBMECMEntryTemplateP25isUsedForViewerPropertiesSbvp">isUsedForViewerProperties</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether the entry template is used for viewer properties.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">isUsedForViewerProperties</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10IBMECMCore19IBMECMEntryTemplateP10propertiesSayAA25IBMECMAttributeDefinition_pGSgvp"></a>
+                    <a name="//apple_ref/swift/Property/properties" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10IBMECMCore19IBMECMEntryTemplateP10propertiesSayAA25IBMECMAttributeDefinition_pGSgvp">properties</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An array of IBMECMAttributeDefinition objects that specifies the property display order and property options such as hidden, read only, etc.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">properties</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Protocols/IBMECMAttributeDefinition.html">IBMECMAttributeDefinition</a></span><span class="p">]?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10IBMECMCore19IBMECMEntryTemplateP21allowUserSelectFolderSbvp"></a>
+                    <a name="//apple_ref/swift/Property/allowUserSelectFolder" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10IBMECMCore19IBMECMEntryTemplateP21allowUserSelectFolderSbvp">allowUserSelectFolder</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether this entry template will allow the user to select the folder under which the new content item will be filed.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">allowUserSelectFolder</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10IBMECMCore19IBMECMEntryTemplateP16isUsedForCheckinSbvp"></a>
+                    <a name="//apple_ref/swift/Property/isUsedForCheckin" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10IBMECMCore19IBMECMEntryTemplateP16isUsedForCheckinSbvp">isUsedForCheckin</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether this entry template should be applied when a document added using this entry template is checked in.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">isUsedForCheckin</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10IBMECMCore19IBMECMEntryTemplateP19isUsedForPropertiesSbvp"></a>
+                    <a name="//apple_ref/swift/Property/isUsedForProperties" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10IBMECMCore19IBMECMEntryTemplateP19isUsedForPropertiesSbvp">isUsedForProperties</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether the entry template is used for properties view.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">isUsedForProperties</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10IBMECMCore19IBMECMEntryTemplateP21allowNoFolderSelectedSbvp"></a>
+                    <a name="//apple_ref/swift/Property/allowNoFolderSelected" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10IBMECMCore19IBMECMEntryTemplateP21allowNoFolderSelectedSbvp">allowNoFolderSelected</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether the user can select the repository as the destination without filing the document in a folder.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">allowNoFolderSelected</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10IBMECMCore19IBMECMEntryTemplateP11permissionsSayAA24IBMECMAccessControlEntry_pGSgvp"></a>
+                    <a name="//apple_ref/swift/Property/permissions" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10IBMECMCore19IBMECMEntryTemplateP11permissionsSayAA24IBMECMAccessControlEntry_pGSgvp">permissions</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An array of IBMECMAccessControlEntry objects specifying the security for the new content item.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">permissions</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Protocols/IBMECMAccessControlEntry.html">IBMECMAccessControlEntry</a></span><span class="p">]?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10IBMECMCore19IBMECMEntryTemplateP12addClassNameSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/addClassName" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10IBMECMCore19IBMECMEntryTemplateP12addClassNameSSSgvp">addClassName</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A string holding the content class name.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">addClassName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10IBMECMCore19IBMECMEntryTemplateP22allowSaveLocalDocumentSbvp"></a>
+                    <a name="//apple_ref/swift/Property/allowSaveLocalDocument" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10IBMECMCore19IBMECMEntryTemplateP22allowSaveLocalDocumentSbvp">allowSaveLocalDocument</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>whether the What do you want to save pull-down menu contains Local document.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">allowSaveLocalDocument</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10IBMECMCore19IBMECMEntryTemplateP23allowDuplicateFileNamesSbvp"></a>
+                    <a name="//apple_ref/swift/Property/allowDuplicateFileNames" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10IBMECMCore19IBMECMEntryTemplateP23allowDuplicateFileNamesSbvp">allowDuplicateFileNames</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>FileNet P8 only.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">allowDuplicateFileNames</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10IBMECMCore19IBMECMEntryTemplateP19allowUserSelectFileSbvp"></a>
+                    <a name="//apple_ref/swift/Property/allowUserSelectFile" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10IBMECMCore19IBMECMEntryTemplateP19allowUserSelectFileSbvp">allowUserSelectFile</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether this entry template will allow the user to select the content file.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">allowUserSelectFile</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10IBMECMCore19IBMECMEntryTemplateP14securityPolicySSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/securityPolicy" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10IBMECMCore19IBMECMEntryTemplateP14securityPolicySSSgvp">securityPolicy</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>FileNet P8 only.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">securityPolicy</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10IBMECMCore19IBMECMEntryTemplateP26allowUserSetPropertyValuesSbvp"></a>
+                    <a name="//apple_ref/swift/Property/allowUserSetPropertyValues" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10IBMECMCore19IBMECMEntryTemplateP26allowUserSetPropertyValuesSbvp">allowUserSetPropertyValues</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether this entry template will allow the user to set property values.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">allowUserSetPropertyValues</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10IBMECMCore19IBMECMEntryTemplateP26isEnabledCompoundDocumentsSbvp"></a>
+                    <a name="//apple_ref/swift/Property/isEnabledCompoundDocuments" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10IBMECMCore19IBMECMEntryTemplateP26isEnabledCompoundDocumentsSbvp">isEnabledCompoundDocuments</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>FileNet P8 only.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">isEnabledCompoundDocuments</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10IBMECMCore19IBMECMEntryTemplateP23allowSavePropertiesOnlySbvp"></a>
+                    <a name="//apple_ref/swift/Property/allowSavePropertiesOnly" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10IBMECMCore19IBMECMEntryTemplateP23allowSavePropertiesOnlySbvp">allowSavePropertiesOnly</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether the What do you want to save pull-down menu contains Information about a document.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">allowSavePropertiesOnly</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10IBMECMCore19IBMECMEntryTemplateP19templatePermissionsSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/templatePermissions" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10IBMECMCore19IBMECMEntryTemplateP19templatePermissionsSSSgvp">templatePermissions</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An array of Permission objects specifying the security for the entry template.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">templatePermissions</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10IBMECMCore19IBMECMEntryTemplateP16teamspaceDefaultSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/teamspaceDefault" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10IBMECMCore19IBMECMEntryTemplateP16teamspaceDefaultSSSgvp">teamspaceDefault</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A string that indicates if this entry template is the default for a teamspace.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">teamspaceDefault</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10IBMECMCore19IBMECMEntryTemplateP21overrideClassSecuritySbvp"></a>
+                    <a name="//apple_ref/swift/Property/overrideClassSecurity" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10IBMECMCore19IBMECMEntryTemplateP21overrideClassSecuritySbvp">overrideClassSecurity</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether this entry template overrides the security defined by the class.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">overrideClassSecurity</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10IBMECMCore19IBMECMEntryTemplateP20allowUserSetSecuritySbvp"></a>
+                    <a name="//apple_ref/swift/Property/allowUserSetSecurity" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10IBMECMCore19IBMECMEntryTemplateP20allowUserSetSecuritySbvp">allowUserSetSecurity</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether this entry template allows the user to modify security settings.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">allowUserSetSecurity</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10IBMECMCore19IBMECMEntryTemplateP18targetRepositoryIdSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/targetRepositoryId" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10IBMECMCore19IBMECMEntryTemplateP18targetRepositoryIdSSSgvp">targetRepositoryId</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The destination repository Id for content added using this entry template.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">targetRepositoryId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10IBMECMCore19IBMECMEntryTemplateP14isAutoClassifySbvp"></a>
+                    <a name="//apple_ref/swift/Property/isAutoClassify" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10IBMECMCore19IBMECMEntryTemplateP14isAutoClassifySbvp">isAutoClassify</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>FileNet P8 only.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">isAutoClassify</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10IBMECMCore19IBMECMEntryTemplateP33saveToFolderInheritParentSecuritySbvp"></a>
+                    <a name="//apple_ref/swift/Property/saveToFolderInheritParentSecurity" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10IBMECMCore19IBMECMEntryTemplateP33saveToFolderInheritParentSecuritySbvp">saveToFolderInheritParentSecurity</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>FileNet P8 only. A boolean value indicating whether this entry template inherits security from the parent folder.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">saveToFolderInheritParentSecurity</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10IBMECMCore19IBMECMEntryTemplateP36restrictToSelectedFolderOrDescendantSbvp"></a>
+                    <a name="//apple_ref/swift/Property/restrictToSelectedFolderOrDescendant" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10IBMECMCore19IBMECMEntryTemplateP36restrictToSelectedFolderOrDescendantSbvp">restrictToSelectedFolderOrDescendant</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether this entry template only allows the user to select the specified folder or a sub-folder as the folder under which the new content item will be filed.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">restrictToSelectedFolderOrDescendant</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10IBMECMCore19IBMECMEntryTemplateP15fileTypesFilterSaySSGSgvp"></a>
+                    <a name="//apple_ref/swift/Property/fileTypesFilter" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10IBMECMCore19IBMECMEntryTemplateP15fileTypesFilterSaySSGSgvp">fileTypesFilter</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The specified file types when associating the entry template.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">fileTypesFilter</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10IBMECMCore19IBMECMEntryTemplateP9isDefaultSbvp"></a>
+                    <a name="//apple_ref/swift/Property/isDefault" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10IBMECMCore19IBMECMEntryTemplateP9isDefaultSbvp">isDefault</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether the entry template is a default one.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">isDefault</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10IBMECMCore19IBMECMEntryTemplateP12saveInFolderAA17IBMECMContentItem_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/saveInFolder" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10IBMECMCore19IBMECMEntryTemplateP12saveInFolderAA17IBMECMContentItem_pSgvp">saveInFolder</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The folder object under which the new content item will be filed.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">saveInFolder</span><span class="p">:</span> <span class="kt"><a href="../Protocols/IBMECMContentItem.html">IBMECMContentItem</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10IBMECMCore19IBMECMEntryTemplateP14asMinorVersionSbvp"></a>
+                    <a name="//apple_ref/swift/Property/asMinorVersion" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10IBMECMCore19IBMECMEntryTemplateP14asMinorVersionSbvp">asMinorVersion</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether add or check in documents as a minor version.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">asMinorVersion</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10IBMECMCore19IBMECMEntryTemplateP13objectStoreIdSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/objectStoreId" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10IBMECMCore19IBMECMEntryTemplateP13objectStoreIdSSSgvp">objectStoreId</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>FileNet P8 only. The destination object store for content added using this entry template.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">objectStoreId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10IBMECMCore19IBMECMEntryTemplateP28combineAttributeDefinictions20attributeDefinitionsAaB_pSayAA25IBMECMAttributeDefinition_pG_tF"></a>
+                    <a name="//apple_ref/swift/Method/combineAttributeDefinictions(attributeDefinitions:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10IBMECMCore19IBMECMEntryTemplateP28combineAttributeDefinictions20attributeDefinitionsAaB_pSayAA25IBMECMAttributeDefinition_pG_tF">combineAttributeDefinictions(attributeDefinitions:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Combines the incoming attributes definitions with the properties of the entry template.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">combineAttributeDefinictions</span><span class="p">(</span><span class="nv">attributeDefinitions</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Protocols/IBMECMAttributeDefinition.html">IBMECMAttributeDefinition</a></span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt">IBMECMEntryTemplate</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10IBMECMCore19IBMECMEntryTemplateP013getShortEntryC2IdSSSgyF"></a>
+                    <a name="//apple_ref/swift/Method/getShortEntryTemplateId()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10IBMECMCore19IBMECMEntryTemplateP013getShortEntryC2IdSSSgyF">getShortEntryTemplateId()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gets the short entry template ID, which is used when interacting with ICN servers.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">getShortEntryTemplateId</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10IBMECMCore19IBMECMEntryTemplateP22hasDependentAttributesSbyF"></a>
+                    <a name="//apple_ref/swift/Method/hasDependentAttributes()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10IBMECMCore19IBMECMEntryTemplateP22hasDependentAttributesSbyF">hasDependentAttributes()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns whether this entry template has dependent attributes.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">hasDependentAttributes</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10IBMECMCore19IBMECMEntryTemplateP30retrieveDependentAttributeInfo_7context10onCompleteySayAA25IBMECMAttributeDefinition_pGSg_SDyS2SGSgyAA0kL4List_pSg_So7NSErrorCSgtcSgtF"></a>
+                    <a name="//apple_ref/swift/Method/retrieveDependentAttributeInfo(_:context:onComplete:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10IBMECMCore19IBMECMEntryTemplateP30retrieveDependentAttributeInfo_7context10onCompleteySayAA25IBMECMAttributeDefinition_pGSg_SDyS2SGSgyAA0kL4List_pSg_So7NSErrorCSgtcSgtF">retrieveDependentAttributeInfo(_:<wbr>context:<wbr>onComplete:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Retrieves information about dependent attributes for the entry template. The information is related to the external data service (EDS).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">retrieveDependentAttributeInfo</span><span class="p">(</span><span class="n">_</span> <span class="nv">attributeDefinitions</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Protocols/IBMECMAttributeDefinition.html">IBMECMAttributeDefinition</a></span><span class="p">]?,</span> <span class="nv">context</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">String</span><span class="p">]?,</span> <span class="nv">onComplete</span><span class="p">:</span> <span class="p">((</span><span class="n">_</span> <span class="nv">attributeDefinitionList</span><span class="p">:</span> <span class="kt"><a href="../Protocols/IBMECMAttributeDefinitionList.html">IBMECMAttributeDefinitionList</a></span><span class="p">?,</span> <span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">NSError</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>attributeDefinitions</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>a group of properties is selected for dependent info.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>action</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the action for the current operation.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>onComplete</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the completion call back that returns a list of dependent attribute definition if the call is successful.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2020 <a class="link" href="" target="_blank" rel="external">International Business Machines Corporation</a>. All rights reserved. (Last updated: 2020-06-11)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
