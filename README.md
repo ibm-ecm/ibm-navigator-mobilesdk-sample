@@ -2,7 +2,7 @@
 
 Sample Application to demonstrate the features of IBM Navigator Mobile SDK for iOS
 
-** The IBM Navigator Mobile 3.4.0.3 SDK binary framework, Swift 5.0, and Xcode 11.4 or later, are required  to compile the sample app. Refer to the [README pdf](/IBMNavigatorMobileSDK_Readme.pdf) for detailed instructions on how to obtain the framework. ** 
+** The IBM Navigator Mobile 3.4.0.4 SDK binary framework, Swift 5.0, and Xcode 12.2 or later, are required  to compile the sample app. Refer to the [README pdf](/IBMNavigatorMobileSDK_Readme.pdf) for detailed instructions on how to obtain the framework. ** 
 
 ## Usage
 
