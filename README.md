@@ -12,7 +12,7 @@ Some of the goals of this framework are to provide the following:
 ## Requirements
 
 * iOS 9
-* Xcode 11.4
+* Xcode 12.2
 
 ## Installation
 

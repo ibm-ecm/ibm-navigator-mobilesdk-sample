@@ -491,6 +491,13 @@
       "warning": "undocumented"
     },
     {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentClass.swift",
+      "line": 169,
+      "symbol": "IBMECMContentClass.retrieveAttributeDefinitionsForSearch(onComplete:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMContentItem.swift",
       "line": 17,
       "symbol": "IBMECMContentItemVersionStatus.Released",
@@ -1363,6 +1370,13 @@
       "line": 15,
       "symbol": "IBMECMSearchResultCountType",
       "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/administrator/workspace/ECMMobileCoreSDK_develop_Build/IBMECMCore/IBMECMCore/API/Model/IBMECMSearchResultSet.swift",
+      "line": 32,
+      "symbol": "IBMECMSearchResultSet.columnNames",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
