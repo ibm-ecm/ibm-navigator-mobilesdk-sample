@@ -347,6 +347,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ibm.ecm.$(PRODUCT_NAME:rfc1034identifier)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 5.0;
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Debug;
 		};
@@ -366,6 +367,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ibm.ecm.$(PRODUCT_NAME:rfc1034identifier)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 5.0;
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Release;
 		};
