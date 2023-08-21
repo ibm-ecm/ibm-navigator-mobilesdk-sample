@@ -8,6 +8,9 @@
     <script src="../js/jquery.min.js" defer></script>
     <script src="../js/jazzy.js" defer></script>
     
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
   </head>
   <body>
     <a name="//apple_ref/swift/Protocol/IBMECMDesktop" class="dashAnchor"></a>
@@ -15,12 +18,17 @@
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html">IBMECMCore Docs</a> (65% documented)</p>
+        <div class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
       </div>
     </header>
     <div class="content-wrapper">
       <p id="breadcrumbs">
         <a href="../index.html">IBMECMCore Reference</a>
-        <img id="carat" src="../img/carat.png" />
+        <img id="carat" src="../img/carat.png" alt=""/>
         IBMECMDesktop Protocol Reference
       </p>
     </div>
@@ -318,6 +326,7 @@
             <h1>IBMECMDesktop</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">IBMECMDesktop</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/IBMECMBaseObject.html">IBMECMBaseObject</a></span></code></pre>
 
                 </div>
@@ -1708,16 +1717,73 @@
                     </section>
                   </div>
                 </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10IBMECMCore13IBMECMDesktopP16decryptShortLink13encryptedData10onCompleteySS_ySSSg_So7NSErrorCSgtcSgtF"></a>
+                    <a name="//apple_ref/swift/Method/decryptShortLink(encryptedData:onComplete:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10IBMECMCore13IBMECMDesktopP16decryptShortLink13encryptedData10onCompleteySS_ySSSg_So7NSErrorCSgtcSgtF">decryptShortLink(encryptedData:<wbr>onComplete:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Decrypt a short encrypted link.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">decryptShortLink</span><span class="p">(</span><span class="nv">encryptedData</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">onComplete</span><span class="p">:</span> <span class="p">((</span><span class="n">_</span> <span class="nv">decrypedData</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span> <span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">NSError</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>encryptedData</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the data parameter value in the short encrypted link</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>onComplete</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the completion callback that returns the decrypted data for the long link</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
               </ul>
             </div>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2021 <a class="link" href="" target="_blank" rel="external">International Business Machines Corporation</a>. All rights reserved. (Last updated: 2021-02-03)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2023 <a class="link" href="" target="_blank" rel="external noopener">International Business Machines Corporation</a>. All rights reserved. (Last updated: 2023-02-13)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>
     </div>
   </body>
-</div>
 </html>
