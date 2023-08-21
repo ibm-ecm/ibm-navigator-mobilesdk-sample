@@ -14,13 +14,13 @@ The latest SDK Documentation can be found here: http://ibm-ecm.github.io/ibm-nav
 ## Screenshots
 
 ### Login
-![](https://raw.githubusercontent.com/kosta-tachtevrenidis/ibm-navigator-mobilesdk-sample/tree/angie/screenshots/login.png)
+![](screenshots/login.png)
 
 ### Browse
-![](https://raw.githubusercontent.com/kosta-tachtevrenidis/ibm-navigator-mobilesdk-sample/master/screenshots/browse.png)
+![](screenshots/browse.png)
 
 ### Search
-![](https://raw.githubusercontent.com/kosta-tachtevrenidis/ibm-navigator-mobilesdk-sample/master/screenshots/search.png)
+![](screenshots/search.png)
 
 ## License
 
