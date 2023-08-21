@@ -11,7 +11,6 @@
 		0A32C5991BD93B5100970014 /* RepositoryObjectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A32C5981BD93B5100970014 /* RepositoryObjectTableViewCell.swift */; };
 		0A32C59E1BD9439E00970014 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A32C59D1BD9439E00970014 /* Util.swift */; };
 		0A5D6CD61BD8A641006B00FF /* BrowseRepositoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5D6CD51BD8A641006B00FF /* BrowseRepositoryTableViewController.swift */; };
-		0A76838C1BD83BAF009DD622 /* old-ibm-logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0A76838B1BD83BAF009DD622 /* old-ibm-logo.jpg */; };
 		0A76838E1BD83DC9009DD622 /* login_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A76838D1BD83DC9009DD622 /* login_background.png */; };
 		0A7683901BD83F9B009DD622 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A76838F1BD83F9B009DD622 /* LoginViewController.swift */; };
 		0A7683941BD845B4009DD622 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A7683921BD845B4009DD622 /* Main.storyboard */; };
@@ -27,7 +26,7 @@
 		0ACBEC021B62DF6400479F56 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ACBEC011B62DF6400479F56 /* Images.xcassets */; };
 		0ACBEC051B62DF6400479F56 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0ACBEC031B62DF6400479F56 /* LaunchScreen.xib */; };
 		0ADFC26D1BD867A300F1D4AB /* MenuOptionNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADFC26C1BD867A300F1D4AB /* MenuOptionNavigationController.swift */; };
-		6F9D8EF8FD49D64431A9E29B /* Pods_IBMECMCoreSampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E178EF38A66E325620657F3 /* Pods_IBMECMCoreSampleApp.framework */; };
+		6F9D8EF8FD49D64431A9E29B /* Pods_INMiOSSDKSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E178EF38A66E325620657F3 /* Pods_INMiOSSDKSample.framework */; };
 		D699BED21BD0E2DA0049117C /* IBMECMCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6E479AD1BD0DB3000297E12 /* IBMECMCore.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,7 +49,6 @@
 		0A32C5981BD93B5100970014 /* RepositoryObjectTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryObjectTableViewCell.swift; sourceTree = "<group>"; };
 		0A32C59D1BD9439E00970014 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		0A5D6CD51BD8A641006B00FF /* BrowseRepositoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowseRepositoryTableViewController.swift; sourceTree = "<group>"; };
-		0A76838B1BD83BAF009DD622 /* old-ibm-logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "old-ibm-logo.jpg"; sourceTree = "<group>"; };
 		0A76838D1BD83DC9009DD622 /* login_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_background.png; sourceTree = "<group>"; };
 		0A76838F1BD83F9B009DD622 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		0A7683931BD845B4009DD622 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -61,15 +59,15 @@
 		0A7D52C31BD9915F00B0EEBE /* SamplePreviewItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SamplePreviewItem.swift; sourceTree = "<group>"; };
 		0AB0B7F61BD852110088344C /* MenuOptionsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuOptionsTableViewController.swift; sourceTree = "<group>"; };
 		0AC7E12A1BDA9D1400337245 /* SearchRepositoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchRepositoryViewController.swift; sourceTree = "<group>"; };
-		0ACBEBF31B62DF6400479F56 /* IBMECMCoreSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IBMECMCoreSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0ACBEBF31B62DF6400479F56 /* INMiOSSDKSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = INMiOSSDKSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ACBEBF61B62DF6400479F56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0ACBEBF71B62DF6400479F56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0ACBEC011B62DF6400479F56 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0ACBEC041B62DF6400479F56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		0ADFC26C1BD867A300F1D4AB /* MenuOptionNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuOptionNavigationController.swift; sourceTree = "<group>"; };
-		13D0D888D8487F631221EFD4 /* Pods-IBMECMCoreSampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IBMECMCoreSampleApp.release.xcconfig"; path = "../Pods/Target Support Files/Pods-IBMECMCoreSampleApp/Pods-IBMECMCoreSampleApp.release.xcconfig"; sourceTree = "<group>"; };
-		15CEAE41DEA7F0862081F24B /* Pods-IBMECMCoreSampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IBMECMCoreSampleApp.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-IBMECMCoreSampleApp/Pods-IBMECMCoreSampleApp.debug.xcconfig"; sourceTree = "<group>"; };
-		2E178EF38A66E325620657F3 /* Pods_IBMECMCoreSampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IBMECMCoreSampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		13D0D888D8487F631221EFD4 /* Pods-INMiOSSDKSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-INMiOSSDKSample.release.xcconfig"; path = "../Pods/Target Support Files/Pods-INMiOSSDKSample/Pods-INMiOSSDKSample.release.xcconfig"; sourceTree = "<group>"; };
+		15CEAE41DEA7F0862081F24B /* Pods-INMiOSSDKSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-INMiOSSDKSample.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-INMiOSSDKSample/Pods-INMiOSSDKSample.debug.xcconfig"; sourceTree = "<group>"; };
+		2E178EF38A66E325620657F3 /* Pods_INMiOSSDKSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_INMiOSSDKSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6E479AD1BD0DB3000297E12 /* IBMECMCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IBMECMCore.framework; path = ../IBMECMCore.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,7 +78,7 @@
 			files = (
 				0A7D52C21BD9902800B0EEBE /* QuickLook.framework in Frameworks */,
 				D699BED21BD0E2DA0049117C /* IBMECMCore.framework in Frameworks */,
-				6F9D8EF8FD49D64431A9E29B /* Pods_IBMECMCoreSampleApp.framework in Frameworks */,
+				6F9D8EF8FD49D64431A9E29B /* Pods_INMiOSSDKSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,12 +91,11 @@
 				0A7D52BB1BD96F4A00B0EEBE /* folderIcon.png */,
 				0A7D52BC1BD96F4A00B0EEBE /* fileIcon.png */,
 				0A76838D1BD83DC9009DD622 /* login_background.png */,
-				0A76838B1BD83BAF009DD622 /* old-ibm-logo.jpg */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		0ACBEBF41B62DF6400479F56 /* IBMECMCoreSampleApp */ = {
+		0ACBEBF41B62DF6400479F56 /* INMiOSSDKSample */ = {
 			isa = PBXGroup;
 			children = (
 				0A2EE8A81B6E7D9600995619 /* ApiUsage.swift */,
@@ -118,7 +115,7 @@
 				0A76838A1BD83B9E009DD622 /* Resources */,
 				0ACBEBF51B62DF6400479F56 /* Supporting Files */,
 			);
-			path = IBMECMCoreSampleApp;
+			path = INMiOSSDKSample;
 			sourceTree = "<group>";
 		};
 		0ACBEBF51B62DF6400479F56 /* Supporting Files */ = {
@@ -134,7 +131,7 @@
 			children = (
 				0A7D52C11BD9902800B0EEBE /* QuickLook.framework */,
 				D6E479AD1BD0DB3000297E12 /* IBMECMCore.framework */,
-				2E178EF38A66E325620657F3 /* Pods_IBMECMCoreSampleApp.framework */,
+				2E178EF38A66E325620657F3 /* Pods_INMiOSSDKSample.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -142,8 +139,8 @@
 		5075461D6691F78C786A5CA6 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				15CEAE41DEA7F0862081F24B /* Pods-IBMECMCoreSampleApp.debug.xcconfig */,
-				13D0D888D8487F631221EFD4 /* Pods-IBMECMCoreSampleApp.release.xcconfig */,
+				15CEAE41DEA7F0862081F24B /* Pods-INMiOSSDKSample.debug.xcconfig */,
+				13D0D888D8487F631221EFD4 /* Pods-INMiOSSDKSample.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -151,7 +148,7 @@
 		A77261691B595F280077E80E = {
 			isa = PBXGroup;
 			children = (
-				0ACBEBF41B62DF6400479F56 /* IBMECMCoreSampleApp */,
+				0ACBEBF41B62DF6400479F56 /* INMiOSSDKSample */,
 				A77261741B595F280077E80E /* Products */,
 				5075461D6691F78C786A5CA6 /* Pods */,
 				2982D5609C486998937DB40B /* Frameworks */,
@@ -161,7 +158,7 @@
 		A77261741B595F280077E80E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0ACBEBF31B62DF6400479F56 /* IBMECMCoreSampleApp.app */,
+				0ACBEBF31B62DF6400479F56 /* INMiOSSDKSample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -169,9 +166,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0ACBEBF21B62DF6400479F56 /* IBMECMCoreSampleApp */ = {
+		0ACBEBF21B62DF6400479F56 /* INMiOSSDKSample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0ACBEC121B62DF6400479F56 /* Build configuration list for PBXNativeTarget "IBMECMCoreSampleApp" */;
+			buildConfigurationList = 0ACBEC121B62DF6400479F56 /* Build configuration list for PBXNativeTarget "INMiOSSDKSample" */;
 			buildPhases = (
 				0A6D04892F717FB7FF1BC78E /* [CP] Check Pods Manifest.lock */,
 				0ACBEBEF1B62DF6400479F56 /* Sources */,
@@ -184,9 +181,9 @@
 			);
 			dependencies = (
 			);
-			name = IBMECMCoreSampleApp;
-			productName = IBMECMCoreSampleApp;
-			productReference = 0ACBEBF31B62DF6400479F56 /* IBMECMCoreSampleApp.app */;
+			name = INMiOSSDKSample;
+			productName = INMiOSSDKSample;
+			productReference = 0ACBEBF31B62DF6400479F56 /* INMiOSSDKSample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -205,7 +202,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A772616D1B595F280077E80E /* Build configuration list for PBXProject "IBMECMCoreSample" */;
+			buildConfigurationList = A772616D1B595F280077E80E /* Build configuration list for PBXProject "INMiOSSDKSample" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -218,7 +215,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0ACBEBF21B62DF6400479F56 /* IBMECMCoreSampleApp */,
+				0ACBEBF21B62DF6400479F56 /* INMiOSSDKSample */,
 			);
 		};
 /* End PBXProject section */
@@ -231,7 +228,6 @@
 				0A7D52BD1BD96F4A00B0EEBE /* folderIcon.png in Resources */,
 				0A76838E1BD83DC9009DD622 /* login_background.png in Resources */,
 				0A7683941BD845B4009DD622 /* Main.storyboard in Resources */,
-				0A76838C1BD83BAF009DD622 /* old-ibm-logo.jpg in Resources */,
 				0A7D52BE1BD96F4A00B0EEBE /* fileIcon.png in Resources */,
 				0ACBEC051B62DF6400479F56 /* LaunchScreen.xib in Resources */,
 				0ACBEC021B62DF6400479F56 /* Images.xcassets in Resources */,
@@ -252,7 +248,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-IBMECMCoreSampleApp-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-INMiOSSDKSample-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -265,7 +261,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-IBMECMCoreSampleApp/Pods-IBMECMCoreSampleApp-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-INMiOSSDKSample/Pods-INMiOSSDKSample-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
 				"${BUILT_PRODUCTS_DIR}/MTLManagedObjectAdapter/MTLManagedObjectAdapter.framework",
@@ -280,7 +276,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IBMECMCoreSampleApp/Pods-IBMECMCoreSampleApp-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-INMiOSSDKSample/Pods-INMiOSSDKSample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -328,7 +324,7 @@
 /* Begin XCBuildConfiguration section */
 		0ACBEC131B62DF6400479F56 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 15CEAE41DEA7F0862081F24B /* Pods-IBMECMCoreSampleApp.debug.xcconfig */;
+			baseConfigurationReference = 15CEAE41DEA7F0862081F24B /* Pods-INMiOSSDKSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ENABLE_BITCODE = NO;
@@ -342,10 +338,10 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = IBMECMCoreSampleApp/Info.plist;
+				INFOPLIST_FILE = INMiOSSDKSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ibm.ecm.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "app.$(PRODUCT_NAME:rfc1034identifier)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 5.0;
 				VALIDATE_WORKSPACE = YES;
@@ -354,7 +350,7 @@
 		};
 		0ACBEC141B62DF6400479F56 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 13D0D888D8487F631221EFD4 /* Pods-IBMECMCoreSampleApp.release.xcconfig */;
+			baseConfigurationReference = 13D0D888D8487F631221EFD4 /* Pods-INMiOSSDKSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ENABLE_BITCODE = NO;
@@ -363,9 +359,9 @@
 					"$(inherited)",
 					..,
 				);
-				INFOPLIST_FILE = IBMECMCoreSampleApp/Info.plist;
+				INFOPLIST_FILE = INMiOSSDKSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ibm.ecm.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "app.$(PRODUCT_NAME:rfc1034identifier)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 5.0;
 				VALIDATE_WORKSPACE = YES;
@@ -423,7 +419,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_NAME = IBMECMCoreSampleApp;
+				PRODUCT_NAME = INMiOSSDKSample;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -475,7 +471,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = IBMECMCoreSampleApp;
+				PRODUCT_NAME = INMiOSSDKSample;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
@@ -488,7 +484,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0ACBEC121B62DF6400479F56 /* Build configuration list for PBXNativeTarget "IBMECMCoreSampleApp" */ = {
+		0ACBEC121B62DF6400479F56 /* Build configuration list for PBXNativeTarget "INMiOSSDKSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0ACBEC131B62DF6400479F56 /* Debug */,
@@ -497,7 +493,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A772616D1B595F280077E80E /* Build configuration list for PBXProject "IBMECMCoreSample" */ = {
+		A772616D1B595F280077E80E /* Build configuration list for PBXProject "INMiOSSDKSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A77261871B595F280077E80E /* Debug */,

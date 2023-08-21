@@ -1,8 +1,8 @@
-# Sample Application for IBM Navigator Mobile SDK for iOS
+# Sample Application for IBM Navigator Mobile iOS SDK
 
-Sample Application to demonstrate the features of IBM Navigator Mobile SDK for iOS
+Sample Application to demonstrate the features of IBM Navigator Mobile iOS SDK
 
-** The IBM Navigator Mobile 3.4.0.7 SDK binary framework, Swift 5.0, and Xcode 13.4.1 or later, are required to compile the sample app. Refer to the [README pdf](/IBMNavigatorMobileSDK_Readme.pdf) for detailed instructions on how to obtain the framework. ** 
+** The IBM Navigator Mobile iOS SDK 3.4.0.7 binary framework, Swift 5.0, and Xcode 13.4.1 or later, are required to compile the sample app. Refer to the [README pdf](/IBMNavigatorMobileiOSSDK_Readme.pdf) for detailed instructions on how to obtain the framework. ** 
 
 ## Usage
 
@@ -24,7 +24,7 @@ The latest SDK Documentation can be found here: http://ibm-ecm.github.io/ibm-nav
 
 ## License
 
-This Sample Application for IBM Navigator Mobile SDK for iOS is intended solely for use with an Apple iOS product and intended to be used in conjunction with officially licensed Apple development tools and further customized and distributed under the terms and conditions of your licensed Apple developer program.
+This Sample Application for IBM Navigator Mobile iOS SDK is intended solely for use with an Apple iOS product and intended to be used in conjunction with officially licensed Apple development tools and further customized and distributed under the terms and conditions of your licensed Apple developer program.
 
 See the [License](/Ready%20Apps%20open%20source%20license.pdf) text for more information about how this application is licensed.
 

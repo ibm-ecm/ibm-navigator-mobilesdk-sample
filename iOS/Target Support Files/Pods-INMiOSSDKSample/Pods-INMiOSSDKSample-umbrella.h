@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_IBMECMCoreSampleAppVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_IBMECMCoreSampleAppVersionString[];
+FOUNDATION_EXPORT double Pods_INMiOSSDKSampleVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_INMiOSSDKSampleVersionString[];
 

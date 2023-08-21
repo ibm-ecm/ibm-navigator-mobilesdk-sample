@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,7 +11,7 @@
         <!--Login-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="Login" id="BYZ-38-t0r" customClass="LoginViewController" customModule="IBMECMCoreSampleApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Login" id="BYZ-38-t0r" customClass="LoginViewController" customModule="INMiOSSDKSample" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -20,10 +20,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="old-ibm-logo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="DMa-6n-NHw" userLabel="logo">
-                                <rect key="frame" x="67" y="86" width="240" height="186"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="login_background.png" translatesAutoresizingMaskIntoConstraints="NO" id="Oln-EC-442" userLabel="login_background">
                                 <rect key="frame" x="8" y="330" width="359" height="190"/>
                             </imageView>
@@ -72,16 +68,12 @@
                             <constraint firstItem="oxV-kS-LxC" firstAttribute="centerX" secondItem="Oln-EC-442" secondAttribute="centerX" id="B6D-xX-hb6"/>
                             <constraint firstItem="Oln-EC-442" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-8" id="IK9-WY-kll"/>
                             <constraint firstItem="JQQ-Jk-dUf" firstAttribute="top" secondItem="oxV-kS-LxC" secondAttribute="bottom" constant="20" id="MCg-bf-7qy"/>
-                            <constraint firstItem="DMa-6n-NHw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="51" id="MFS-30-1QQ"/>
                             <constraint firstItem="be2-he-4hv" firstAttribute="centerX" secondItem="JQQ-Jk-dUf" secondAttribute="centerX" id="XPp-cf-2fn"/>
-                            <constraint firstItem="DMa-6n-NHw" firstAttribute="centerX" secondItem="zWV-if-CVs" secondAttribute="centerX" id="Yrr-RQ-mDx"/>
                             <constraint firstItem="oxV-kS-LxC" firstAttribute="trailing" secondItem="JQQ-Jk-dUf" secondAttribute="trailing" id="aQX-Ib-Edw"/>
                             <constraint firstItem="Oln-EC-442" firstAttribute="centerY" secondItem="oxV-kS-LxC" secondAttribute="centerY" id="dGB-zS-0HX"/>
                             <constraint firstItem="oxV-kS-LxC" firstAttribute="leading" secondItem="zWV-if-CVs" secondAttribute="leading" id="dcb-Fz-e0c"/>
                             <constraint firstItem="be2-he-4hv" firstAttribute="top" secondItem="JQQ-Jk-dUf" secondAttribute="bottom" constant="62" id="j6z-tX-okp"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="be2-he-4hv" secondAttribute="bottom" constant="85" id="sad-4k-2Ua"/>
-                            <constraint firstItem="DMa-6n-NHw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="66" id="uVY-Cb-JvF"/>
-                            <constraint firstItem="Oln-EC-442" firstAttribute="top" secondItem="DMa-6n-NHw" secondAttribute="bottom" constant="58" id="wEf-1O-VVf"/>
                         </constraints>
                     </view>
                     <connections>
@@ -99,17 +91,17 @@
         <!--Menu Options-->
         <scene sceneID="qSr-49-0y0">
             <objects>
-                <tableViewController title="Menu Options" id="xIN-xC-nd7" customClass="MenuOptionsTableViewController" customModule="IBMECMCoreSampleApp" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Menu Options" id="xIN-xC-nd7" customClass="MenuOptionsTableViewController" customModule="INMiOSSDKSample" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="VlX-Xs-DW7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="MenuOptionTableViewCell" rowHeight="55" id="XZJ-Q4-VgT">
-                                <rect key="frame" x="0.0" y="28" width="414" height="55"/>
+                                <rect key="frame" x="0.0" y="44.666666030883789" width="414" height="55"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XZJ-Q4-VgT" id="B02-im-cdu">
-                                    <rect key="frame" x="0.0" y="0.0" width="382.66666666666669" height="55"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="385.33333333333331" height="55"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -142,7 +134,7 @@
         <!--Search Repository-->
         <scene sceneID="15w-Y0-Nik">
             <objects>
-                <viewController title="Search Repository" id="xS1-0t-iC7" customClass="SearchRepositoryViewController" customModule="IBMECMCoreSampleApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Search Repository" id="xS1-0t-iC7" customClass="SearchRepositoryViewController" customModule="INMiOSSDKSample" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mQJ-SG-Enl"/>
                         <viewControllerLayoutGuide type="bottom" id="w02-kb-bmu"/>
@@ -156,8 +148,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SearchDocumentTableViewCell" textLabel="gbc-8D-LPO" rowHeight="55" style="IBUITableViewCellStyleDefault" id="PFk-9d-HHk" customClass="RepositoryObjectTableViewCell" customModule="IBMECMCoreSampleApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="55"/>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SearchDocumentTableViewCell" textLabel="gbc-8D-LPO" rowHeight="55" style="IBUITableViewCellStyleDefault" id="PFk-9d-HHk" customClass="RepositoryObjectTableViewCell" customModule="INMiOSSDKSample" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.666666030883789" width="375" height="55"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PFk-9d-HHk" id="Wf4-BQ-JaZ">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
@@ -174,7 +166,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SearchMore" textLabel="gPq-gH-8Mp" style="IBUITableViewCellStyleDefault" id="dnO-uk-k6V">
-                                        <rect key="frame" x="0.0" y="83" width="375" height="55"/>
+                                        <rect key="frame" x="0.0" y="99.666666030883789" width="375" height="55"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dnO-uk-k6V" id="neo-QO-jIX">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
@@ -268,7 +260,7 @@
         <!--App Navigation-->
         <scene sceneID="rjS-ZG-1aq">
             <objects>
-                <navigationController title="App Navigation" id="Le3-tU-h4o" customClass="MenuOptionNavigationController" customModule="IBMECMCoreSampleApp" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController title="App Navigation" id="Le3-tU-h4o" customClass="MenuOptionNavigationController" customModule="INMiOSSDKSample" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="S1u-SP-h9g">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -285,14 +277,14 @@
         <!--Browse Repository-->
         <scene sceneID="naZ-co-K0g">
             <objects>
-                <tableViewController storyboardIdentifier="BrowseRepositoryScene" title="Browse Repository" id="Fcf-ZZ-3a3" customClass="BrowseRepositoryTableViewController" customModule="IBMECMCoreSampleApp" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="BrowseRepositoryScene" title="Browse Repository" id="Fcf-ZZ-3a3" customClass="BrowseRepositoryTableViewController" customModule="INMiOSSDKSample" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="55" sectionHeaderHeight="22" sectionFooterHeight="22" id="ane-za-IcM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BrowseDocumentTableViewCell" textLabel="dfU-20-vLa" detailTextLabel="hbD-tu-ehq" style="IBUITableViewCellStyleSubtitle" id="l7D-Gn-S91" customClass="RepositoryObjectTableViewCell" customModule="IBMECMCoreSampleApp" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="55"/>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BrowseDocumentTableViewCell" textLabel="dfU-20-vLa" detailTextLabel="hbD-tu-ehq" style="IBUITableViewCellStyleSubtitle" id="l7D-Gn-S91" customClass="RepositoryObjectTableViewCell" customModule="INMiOSSDKSample" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44.666666030883789" width="414" height="55"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="l7D-Gn-S91" id="Hnd-q3-PkX">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="55"/>
@@ -315,15 +307,15 @@
                                     </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
-                            <tableViewCell contentMode="scaleToFill" restorationIdentifier="BrowseRepositoryTableViewCell" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="BrowseFolderTableViewCell" textLabel="LUx-b4-ioO" style="IBUITableViewCellStyleDefault" id="crO-VW-H1z" customClass="RepositoryObjectTableViewCell" customModule="IBMECMCoreSampleApp" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="83" width="414" height="55"/>
+                            <tableViewCell contentMode="scaleToFill" restorationIdentifier="BrowseRepositoryTableViewCell" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="BrowseFolderTableViewCell" textLabel="LUx-b4-ioO" style="IBUITableViewCellStyleDefault" id="crO-VW-H1z" customClass="RepositoryObjectTableViewCell" customModule="INMiOSSDKSample" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="99.666666030883789" width="414" height="55"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="crO-VW-H1z" id="b9I-OS-fGZ">
-                                    <rect key="frame" x="0.0" y="0.0" width="382.66666666666669" height="55"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="385.33333333333331" height="55"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="LUx-b4-ioO">
-                                            <rect key="frame" x="20" y="0.0" width="354.66666666666669" height="55"/>
+                                            <rect key="frame" x="20" y="0.0" width="357.33333333333331" height="55"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -333,7 +325,7 @@
                                 </tableViewCellContentView>
                             </tableViewCell>
                             <tableViewCell userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="BrowseMore" textLabel="iFn-2m-Ycn" style="IBUITableViewCellStyleDefault" id="h9z-8h-5S3">
-                                <rect key="frame" x="0.0" y="138" width="414" height="55"/>
+                                <rect key="frame" x="0.0" y="154.66666603088379" width="414" height="55"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="h9z-8h-5S3" id="W5E-bp-6Zf">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="55"/>
@@ -385,7 +377,7 @@
         <!--View Document-->
         <scene sceneID="szD-Iu-TTk">
             <objects>
-                <viewController title="View Document" id="sEL-hS-8oH" customClass="DocumentViewerController" customModule="IBMECMCoreSampleApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="View Document" id="sEL-hS-8oH" customClass="DocumentViewerController" customModule="INMiOSSDKSample" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jsf-Vo-gph"/>
                         <viewControllerLayoutGuide type="bottom" id="VIO-71-lqj"/>
@@ -407,7 +399,6 @@
     </inferredMetricsTieBreakers>
     <resources>
         <image name="login_background.png" width="417" height="261"/>
-        <image name="old-ibm-logo.jpg" width="443" height="365"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

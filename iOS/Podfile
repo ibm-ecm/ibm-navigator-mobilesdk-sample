@@ -8,12 +8,12 @@ def corekit_pods
     pod 'MTLManagedObjectAdapter', '1.0.3'
 end
 
-    project 'IBMECMCoreSample/IBMECMCoreSample.xcodeproj'
+    project 'INMiOSSDKSample/INMiOSSDKSample.xcodeproj'
 
-target :'IBMECMCoreSampleApp' do
-    project 'IBMECMCoreSample/IBMECMCoreSample.xcodeproj'
+target :'INMiOSSDKSample' do
+    project 'INMiOSSDKSample/INMiOSSDKSample.xcodeproj'
 
     corekit_pods
 end
 
-workspace 'navigatorMobileSDK'
+workspace 'INMiOSSDKSample'

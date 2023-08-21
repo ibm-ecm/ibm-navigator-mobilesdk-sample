@@ -20,7 +20,7 @@
 		20D0F3210EC338BAD22EF28EEDADB465 /* DDLogMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 22D2311ADFA1F58A078CF7FE987221AD /* DDLogMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2328D4EF7AB8E106F8AE78B1F6CEB8AA /* NSValueTransformer+MTLInversionAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2CDB7F53070F3509394777DBA6DA48 /* NSValueTransformer+MTLInversionAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		26329250F70B5E27A5435B58DE5C654C /* EXTKeyPathCoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B72D21E6C61174C0B5F3C5885044191 /* EXTKeyPathCoding.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		2884D7E13E5F4CFBBFF60A4752ACA7F6 /* Pods-IBMECMCoreSampleApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B407E2641B116374A6DAFE9C3891B9D9 /* Pods-IBMECMCoreSampleApp-dummy.m */; };
+		2884D7E13E5F4CFBBFF60A4752ACA7F6 /* Pods-INMiOSSDKSample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B407E2641B116374A6DAFE9C3891B9D9 /* Pods-INMiOSSDKSample-dummy.m */; };
 		2C61B040BA6A9A7AE66C4D9BA26D5520 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826128501891C661DF9AC52420727EED /* SessionDelegate.swift */; };
 		2E57FBEDDEAA9A29EFD2CBF205CB8938 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E36246E739C0A4057F6047967BE4C70 /* Foundation.framework */; };
 		3571F958A3907B3A806E62D50C2550D4 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCCD25900C2A7BB2E651DA771B720C0 /* NetworkReachabilityManager.swift */; };
@@ -41,7 +41,7 @@
 		579B9CA6D39E78453FA3144E25F7184A /* DDTTYLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = A8675C8B3A66C02F498FCCA8D93D5275 /* DDTTYLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		58436D9AE10F03D7434B403AD51BF14A /* MTLReflection.m in Sources */ = {isa = PBXBuildFile; fileRef = 333155ABA645DABEFAEB4469B56FE3BF /* MTLReflection.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		5AB97534989615A4E5BDF0E9B9DA4593 /* MTLValueTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DDD8C10930588A8304C59B62BC7296A /* MTLValueTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5EB8C02A77AF1E17916D5B2C8DC65CD1 /* Pods-IBMECMCoreSampleApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D2EC80EDB44189C7A10C2EEC59F4C65 /* Pods-IBMECMCoreSampleApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5EB8C02A77AF1E17916D5B2C8DC65CD1 /* Pods-INMiOSSDKSample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D2EC80EDB44189C7A10C2EEC59F4C65 /* Pods-INMiOSSDKSample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5FEC35D1EAC838DE53B6418495565E2E /* MTLReflection.h in Headers */ = {isa = PBXBuildFile; fileRef = C75B9E85861E1ECEF82F4A94C1937B85 /* MTLReflection.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		60B568966AF6F5F42356857D61ED4F59 /* DDAssertMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 8214C16FAD49E0FEA0A7E3625702952B /* DDAssertMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6213B66ACDCE3F7F9C9204A9FF413DC3 /* EXTScope.m in Sources */ = {isa = PBXBuildFile; fileRef = FE202933B712C88CB7D49EE547715C84 /* EXTScope.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
@@ -165,7 +165,7 @@
 		0B4150C521810FFC4752F51C5AAD8007 /* Mantle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Mantle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E183EB939D0F20E8C4F8042599E3B2A /* DDLoggerNames.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDLoggerNames.h; path = Sources/CocoaLumberjack/include/DDLoggerNames.h; sourceTree = "<group>"; };
 		11A9CC622691EBDF0D44E8E8D525EEB8 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
-		11DA7AC854ADFB52077D1B5A052F1239 /* Pods-IBMECMCoreSampleApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IBMECMCoreSampleApp-acknowledgements.plist"; sourceTree = "<group>"; };
+		11DA7AC854ADFB52077D1B5A052F1239 /* Pods-INMiOSSDKSample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-INMiOSSDKSample-acknowledgements.plist"; sourceTree = "<group>"; };
 		12459ED3E3C81EE89618E170065E452E /* Alamofire-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Alamofire-Info.plist"; sourceTree = "<group>"; };
 		15818FB7627D61EC8B6FE30D5DF652BC /* NSDictionary+MTLMappingAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+MTLMappingAdditions.h"; path = "Mantle/NSDictionary+MTLMappingAdditions.h"; sourceTree = "<group>"; };
 		179955B46F8940707BD5706B65D4BC7B /* Mantle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Mantle.debug.xcconfig; sourceTree = "<group>"; };
@@ -180,7 +180,7 @@
 		2F1EFC400CDB43C539E98ACD1003E7E0 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
 		333155ABA645DABEFAEB4469B56FE3BF /* MTLReflection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MTLReflection.m; path = Mantle/MTLReflection.m; sourceTree = "<group>"; };
 		33ACEF5E282B73102412DDEE00D1535D /* MTLModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MTLModel.m; path = Mantle/MTLModel.m; sourceTree = "<group>"; };
-		34398FE3C322717A0C78EE66C1BAAAB4 /* Pods-IBMECMCoreSampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IBMECMCoreSampleApp.debug.xcconfig"; sourceTree = "<group>"; };
+		34398FE3C322717A0C78EE66C1BAAAB4 /* Pods-INMiOSSDKSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-INMiOSSDKSample.debug.xcconfig"; sourceTree = "<group>"; };
 		37240F9CF36557DBBB678426B000EE32 /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
 		3AFF5DD65125FC541182B147449A3470 /* NSError+MTLModelException.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSError+MTLModelException.m"; path = "Mantle/NSError+MTLModelException.m"; sourceTree = "<group>"; };
 		3B72D21E6C61174C0B5F3C5885044191 /* EXTKeyPathCoding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXTKeyPathCoding.h; path = Mantle/extobjc/EXTKeyPathCoding.h; sourceTree = "<group>"; };
@@ -197,7 +197,7 @@
 		4650B8AE4767460C6B5EBA9EED7A297A /* Alamofire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.debug.xcconfig; sourceTree = "<group>"; };
 		4A1803D8CB7B360AB690DC26D187C857 /* DDLoggerNames.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDLoggerNames.m; path = Sources/CocoaLumberjack/DDLoggerNames.m; sourceTree = "<group>"; };
 		4C9A45DC69881E61BCF9A0A6E1DB8A8D /* EXTScope.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXTScope.m; path = Mantle/extobjc/EXTScope.m; sourceTree = "<group>"; };
-		4D2EC80EDB44189C7A10C2EEC59F4C65 /* Pods-IBMECMCoreSampleApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-IBMECMCoreSampleApp-umbrella.h"; sourceTree = "<group>"; };
+		4D2EC80EDB44189C7A10C2EEC59F4C65 /* Pods-INMiOSSDKSample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-INMiOSSDKSample-umbrella.h"; sourceTree = "<group>"; };
 		50FC1D30B4DF7F190756CB9225042654 /* DDAbstractDatabaseLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDAbstractDatabaseLogger.m; path = Sources/CocoaLumberjack/DDAbstractDatabaseLogger.m; sourceTree = "<group>"; };
 		55B8FAA99681958A9FF3959EBB254769 /* MTLValueTransformer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MTLValueTransformer.m; path = Mantle/MTLValueTransformer.m; sourceTree = "<group>"; };
 		578F57B4AD89A79BD2CB14949EEBEAB2 /* NSArray+MTLManipulationAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MTLManipulationAdditions.h"; path = "Mantle/NSArray+MTLManipulationAdditions.h"; sourceTree = "<group>"; };
@@ -215,7 +215,7 @@
 		699FF818470F4CB2B765867A390F0514 /* Mantle-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Mantle-dummy.m"; sourceTree = "<group>"; };
 		69DFB0848F1444CFAC2CF15323434DD0 /* NSDictionary+MTLManipulationAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+MTLManipulationAdditions.m"; path = "Mantle/NSDictionary+MTLManipulationAdditions.m"; sourceTree = "<group>"; };
 		6A8E385BF8A4DD5BC4B10858A6DA5CF5 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
-		6B9E72306D2109460640D285F2ACC17E /* Pods-IBMECMCoreSampleApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-IBMECMCoreSampleApp-frameworks.sh"; sourceTree = "<group>"; };
+		6B9E72306D2109460640D285F2ACC17E /* Pods-INMiOSSDKSample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-INMiOSSDKSample-frameworks.sh"; sourceTree = "<group>"; };
 		6BCD3E077861DE8917A0FFFBC6BD96CF /* Mantle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Mantle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C0C2257AB6CB2A741937FDE473C0E3E /* NSValueTransformer+MTLPredefinedTransformerAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSValueTransformer+MTLPredefinedTransformerAdditions.h"; path = "Mantle/NSValueTransformer+MTLPredefinedTransformerAdditions.h"; sourceTree = "<group>"; };
 		6DB9B1A9E137BDF05129AFF90DCA7278 /* MTLManagedObjectAdapter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MTLManagedObjectAdapter-dummy.m"; sourceTree = "<group>"; };
@@ -228,7 +228,7 @@
 		738612883E165079694E5338A1ECCAC3 /* CocoaLumberjack-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaLumberjack-prefix.pch"; sourceTree = "<group>"; };
 		75FD260FD69EA12530C53EBD5B9795EE /* DDFileLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDFileLogger.m; path = Sources/CocoaLumberjack/DDFileLogger.m; sourceTree = "<group>"; };
 		7648E22FB0462562012296E152EB6F57 /* DDLog+LOGV.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "DDLog+LOGV.h"; path = "Sources/CocoaLumberjack/include/DDLog+LOGV.h"; sourceTree = "<group>"; };
-		772A34864F9E7E0C170ACAE4A5F50047 /* Pods_IBMECMCoreSampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IBMECMCoreSampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		772A34864F9E7E0C170ACAE4A5F50047 /* Pods_INMiOSSDKSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_INMiOSSDKSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B427DDAA19A71D103AECFEFBD7AE1B6 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
 		7D2CDB7F53070F3509394777DBA6DA48 /* NSValueTransformer+MTLInversionAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSValueTransformer+MTLInversionAdditions.m"; path = "Mantle/NSValueTransformer+MTLInversionAdditions.m"; sourceTree = "<group>"; };
 		7E8C8A1998A5D89A53D39438039D8770 /* Mantle-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Mantle-prefix.pch"; sourceTree = "<group>"; };
@@ -251,17 +251,17 @@
 		A9E6C9223640DFFF30173D913B530485 /* DDOSLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDOSLogger.m; path = Sources/CocoaLumberjack/DDOSLogger.m; sourceTree = "<group>"; };
 		AA1E0112C36061F151B34C48E15DFD84 /* EXTScope.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXTScope.h; path = Mantle/extobjc/EXTScope.h; sourceTree = "<group>"; };
 		AB6AC5BBB074B69AA2432E57A5CD95DA /* NSDictionary+MTLManipulationAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+MTLManipulationAdditions.h"; path = "Mantle/NSDictionary+MTLManipulationAdditions.h"; sourceTree = "<group>"; };
-		AC98AF80C077FBD85A6832BA7CC04C4A /* Pods-IBMECMCoreSampleApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IBMECMCoreSampleApp-Info.plist"; sourceTree = "<group>"; };
+		AC98AF80C077FBD85A6832BA7CC04C4A /* Pods-INMiOSSDKSample-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-INMiOSSDKSample-Info.plist"; sourceTree = "<group>"; };
 		AD27C14B5E2FF10ED876F71704064C3E /* DDLog.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDLog.m; path = Sources/CocoaLumberjack/DDLog.m; sourceTree = "<group>"; };
 		AF93D49148BA9D039A5E370F80DC185C /* MTLModel+NSCoding.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MTLModel+NSCoding.m"; path = "Mantle/MTLModel+NSCoding.m"; sourceTree = "<group>"; };
 		B00246DBD3B41CE9B092EEB00A9FF3F3 /* MTLManagedObjectAdapter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MTLManagedObjectAdapter.modulemap; sourceTree = "<group>"; };
 		B1A5A127426BC44C199905E24E3BA6F9 /* DDLog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDLog.h; path = Sources/CocoaLumberjack/include/DDLog.h; sourceTree = "<group>"; };
-		B38C146D1D8A92994F6F036E622D3C85 /* Pods-IBMECMCoreSampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IBMECMCoreSampleApp.release.xcconfig"; sourceTree = "<group>"; };
-		B407E2641B116374A6DAFE9C3891B9D9 /* Pods-IBMECMCoreSampleApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-IBMECMCoreSampleApp-dummy.m"; sourceTree = "<group>"; };
+		B38C146D1D8A92994F6F036E622D3C85 /* Pods-INMiOSSDKSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-INMiOSSDKSample.release.xcconfig"; sourceTree = "<group>"; };
+		B407E2641B116374A6DAFE9C3891B9D9 /* Pods-INMiOSSDKSample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-INMiOSSDKSample-dummy.m"; sourceTree = "<group>"; };
 		B7777AEB64A34A426EA6AEBFFB842C35 /* mtl_moa_metamacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mtl_moa_metamacros.h; path = MTLManagedObjectAdapter/extobjc/mtl_moa_metamacros.h; sourceTree = "<group>"; };
 		BCA9C931464A54ECDDF3E0D5BBDB5F87 /* Mantle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Mantle.h; path = Mantle/Mantle.h; sourceTree = "<group>"; };
-		BDD95D1174D2091C05392FF454AAFEF5 /* Pods-IBMECMCoreSampleApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-IBMECMCoreSampleApp.modulemap"; sourceTree = "<group>"; };
-		C16821176E1947F8CD8A6F555F61D15C /* Pods-IBMECMCoreSampleApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-IBMECMCoreSampleApp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BDD95D1174D2091C05392FF454AAFEF5 /* Pods-INMiOSSDKSample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-INMiOSSDKSample.modulemap"; sourceTree = "<group>"; };
+		C16821176E1947F8CD8A6F555F61D15C /* Pods-INMiOSSDKSample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-INMiOSSDKSample-acknowledgements.markdown"; sourceTree = "<group>"; };
 		C261436D14052AE3C35F240BCD155CAC /* CocoaLumberjack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CocoaLumberjack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2988677A2A450E573BE56B4EB290001 /* mtl_moa_EXTScope.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mtl_moa_EXTScope.h; path = MTLManagedObjectAdapter/extobjc/mtl_moa_EXTScope.h; sourceTree = "<group>"; };
 		C29BACEA84372DC03DCD2C3102EC329F /* MTLModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MTLModel.h; path = Mantle/MTLModel.h; sourceTree = "<group>"; };
@@ -489,21 +489,21 @@
 			path = MTLManagedObjectAdapter;
 			sourceTree = "<group>";
 		};
-		6355EE9D9B29C787B41F76AEBCA956B9 /* Pods-IBMECMCoreSampleApp */ = {
+		6355EE9D9B29C787B41F76AEBCA956B9 /* Pods-INMiOSSDKSample */ = {
 			isa = PBXGroup;
 			children = (
-				BDD95D1174D2091C05392FF454AAFEF5 /* Pods-IBMECMCoreSampleApp.modulemap */,
-				C16821176E1947F8CD8A6F555F61D15C /* Pods-IBMECMCoreSampleApp-acknowledgements.markdown */,
-				11DA7AC854ADFB52077D1B5A052F1239 /* Pods-IBMECMCoreSampleApp-acknowledgements.plist */,
-				B407E2641B116374A6DAFE9C3891B9D9 /* Pods-IBMECMCoreSampleApp-dummy.m */,
-				6B9E72306D2109460640D285F2ACC17E /* Pods-IBMECMCoreSampleApp-frameworks.sh */,
-				AC98AF80C077FBD85A6832BA7CC04C4A /* Pods-IBMECMCoreSampleApp-Info.plist */,
-				4D2EC80EDB44189C7A10C2EEC59F4C65 /* Pods-IBMECMCoreSampleApp-umbrella.h */,
-				34398FE3C322717A0C78EE66C1BAAAB4 /* Pods-IBMECMCoreSampleApp.debug.xcconfig */,
-				B38C146D1D8A92994F6F036E622D3C85 /* Pods-IBMECMCoreSampleApp.release.xcconfig */,
+				BDD95D1174D2091C05392FF454AAFEF5 /* Pods-INMiOSSDKSample.modulemap */,
+				C16821176E1947F8CD8A6F555F61D15C /* Pods-INMiOSSDKSample-acknowledgements.markdown */,
+				11DA7AC854ADFB52077D1B5A052F1239 /* Pods-INMiOSSDKSample-acknowledgements.plist */,
+				B407E2641B116374A6DAFE9C3891B9D9 /* Pods-INMiOSSDKSample-dummy.m */,
+				6B9E72306D2109460640D285F2ACC17E /* Pods-INMiOSSDKSample-frameworks.sh */,
+				AC98AF80C077FBD85A6832BA7CC04C4A /* Pods-INMiOSSDKSample-Info.plist */,
+				4D2EC80EDB44189C7A10C2EEC59F4C65 /* Pods-INMiOSSDKSample-umbrella.h */,
+				34398FE3C322717A0C78EE66C1BAAAB4 /* Pods-INMiOSSDKSample.debug.xcconfig */,
+				B38C146D1D8A92994F6F036E622D3C85 /* Pods-INMiOSSDKSample.release.xcconfig */,
 			);
-			name = "Pods-IBMECMCoreSampleApp";
-			path = "Target Support Files/Pods-IBMECMCoreSampleApp";
+			name = "Pods-INMiOSSDKSample";
+			path = "Target Support Files/Pods-INMiOSSDKSample";
 			sourceTree = "<group>";
 		};
 		8E9FE85B871242B1144FBB7E31F6B6C0 /* Support Files */ = {
@@ -528,7 +528,7 @@
 				C261436D14052AE3C35F240BCD155CAC /* CocoaLumberjack.framework */,
 				6BCD3E077861DE8917A0FFFBC6BD96CF /* Mantle.framework */,
 				68FFE1BCB834E0531D753B75272BD3FB /* MTLManagedObjectAdapter.framework */,
-				772A34864F9E7E0C170ACAE4A5F50047 /* Pods_IBMECMCoreSampleApp.framework */,
+				772A34864F9E7E0C170ACAE4A5F50047 /* Pods_INMiOSSDKSample.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -545,7 +545,7 @@
 		B66359B3B4A25B200DF9154CC4DC9A97 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				6355EE9D9B29C787B41F76AEBCA956B9 /* Pods-IBMECMCoreSampleApp */,
+				6355EE9D9B29C787B41F76AEBCA956B9 /* Pods-INMiOSSDKSample */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
@@ -697,7 +697,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5EB8C02A77AF1E17916D5B2C8DC65CD1 /* Pods-IBMECMCoreSampleApp-umbrella.h in Headers */,
+				5EB8C02A77AF1E17916D5B2C8DC65CD1 /* Pods-INMiOSSDKSample-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -717,9 +717,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		22C59406D4AF998D236A43D343DE61E0 /* Pods-IBMECMCoreSampleApp */ = {
+		22C59406D4AF998D236A43D343DE61E0 /* Pods-INMiOSSDKSample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0B5CBB21BDE68F1093B4A80EFAF7CF5C /* Build configuration list for PBXNativeTarget "Pods-IBMECMCoreSampleApp" */;
+			buildConfigurationList = 0B5CBB21BDE68F1093B4A80EFAF7CF5C /* Build configuration list for PBXNativeTarget "Pods-INMiOSSDKSample" */;
 			buildPhases = (
 				A63B522DA758D1ED15E3049BC9712A7D /* Headers */,
 				4DB88A52FE4230A68EFCADBC871F0C1C /* Sources */,
@@ -734,9 +734,9 @@
 				9F2CB092A36E9E1F059026A4BD7BDC54 /* PBXTargetDependency */,
 				280A78EFA16E3DE66F7B15DABE9E4284 /* PBXTargetDependency */,
 			);
-			name = "Pods-IBMECMCoreSampleApp";
-			productName = "Pods-IBMECMCoreSampleApp";
-			productReference = 772A34864F9E7E0C170ACAE4A5F50047 /* Pods_IBMECMCoreSampleApp.framework */;
+			name = "Pods-INMiOSSDKSample";
+			productName = "Pods-INMiOSSDKSample";
+			productReference = 772A34864F9E7E0C170ACAE4A5F50047 /* Pods_INMiOSSDKSample.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		47CCF1D9F019FFC6546DA481B71A2C4E /* Mantle */ = {
@@ -838,7 +838,7 @@
 				E95654B155D25890BE8E26081FCA8265 /* CocoaLumberjack */,
 				47CCF1D9F019FFC6546DA481B71A2C4E /* Mantle */,
 				AD5B475E41267D6A7AD3C5DB6B290D8E /* MTLManagedObjectAdapter */,
-				22C59406D4AF998D236A43D343DE61E0 /* Pods-IBMECMCoreSampleApp */,
+				22C59406D4AF998D236A43D343DE61E0 /* Pods-INMiOSSDKSample */,
 			);
 		};
 /* End PBXProject section */
@@ -932,7 +932,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2884D7E13E5F4CFBBFF60A4752ACA7F6 /* Pods-IBMECMCoreSampleApp-dummy.m in Sources */,
+				2884D7E13E5F4CFBBFF60A4752ACA7F6 /* Pods-INMiOSSDKSample-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1041,7 +1041,7 @@
 		};
 		24017292B0867E8FA9170C8CD3E5C64D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 34398FE3C322717A0C78EE66C1BAAAB4 /* Pods-IBMECMCoreSampleApp.debug.xcconfig */;
+			baseConfigurationReference = 34398FE3C322717A0C78EE66C1BAAAB4 /* Pods-INMiOSSDKSample.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -1054,12 +1054,12 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
-				INFOPLIST_FILE = "Target Support Files/Pods-IBMECMCoreSampleApp/Pods-IBMECMCoreSampleApp-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-INMiOSSDKSample/Pods-INMiOSSDKSample-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-IBMECMCoreSampleApp/Pods-IBMECMCoreSampleApp.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-INMiOSSDKSample/Pods-INMiOSSDKSample.modulemap";
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
@@ -1141,7 +1141,7 @@
 		};
 		5F2906145F9B9FAEEF0D7D6CC8282C3E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B38C146D1D8A92994F6F036E622D3C85 /* Pods-IBMECMCoreSampleApp.release.xcconfig */;
+			baseConfigurationReference = B38C146D1D8A92994F6F036E622D3C85 /* Pods-INMiOSSDKSample.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -1153,12 +1153,12 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-IBMECMCoreSampleApp/Pods-IBMECMCoreSampleApp-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-INMiOSSDKSample/Pods-INMiOSSDKSample-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-IBMECMCoreSampleApp/Pods-IBMECMCoreSampleApp.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-INMiOSSDKSample/Pods-INMiOSSDKSample.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -1462,7 +1462,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0B5CBB21BDE68F1093B4A80EFAF7CF5C /* Build configuration list for PBXNativeTarget "Pods-IBMECMCoreSampleApp" */ = {
+		0B5CBB21BDE68F1093B4A80EFAF7CF5C /* Build configuration list for PBXNativeTarget "Pods-INMiOSSDKSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				24017292B0867E8FA9170C8CD3E5C64D /* Debug */,
