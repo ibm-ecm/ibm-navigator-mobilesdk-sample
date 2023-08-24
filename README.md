@@ -1,4 +1,4 @@
-# Sample Application for IBM Navigator Mobile iOS SDK (IBMECMCore.framework)
+# IBM Navigator Mobile Sample
 
 Sample Application to demonstrate the features of IBM Navigator Mobile iOS SDK
 
@@ -24,7 +24,7 @@ The latest SDK Documentation can be found here: http://ibm-ecm.github.io/ibm-nav
 
 ## License
 
-This Sample Application for IBM Navigator Mobile iOS SDK (IBMECMCore.framework) is intended solely for use with an Apple iOS product and intended to be used in conjunction with officially licensed Apple development tools and further customized and distributed under the terms and conditions of your licensed Apple developer program.
+This IBM Navigator Mobile Sample is intended solely for use with an Apple iOS product and intended to be used in conjunction with officially licensed Apple development tools and further customized and distributed under the terms and conditions of your licensed Apple developer program.
 
 See the [License](/Ready%20Apps%20open%20source%20license.pdf) text for more information about how this application is licensed.
 

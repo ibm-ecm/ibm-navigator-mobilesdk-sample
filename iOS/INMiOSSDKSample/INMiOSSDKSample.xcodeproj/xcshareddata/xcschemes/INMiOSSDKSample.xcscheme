@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0ACBEBF21B62DF6400479F56"
-               BuildableName = "INMiOSSDKSample.app"
+               BuildableName = "Navigator Sample.app"
                BlueprintName = "INMiOSSDKSample"
                ReferencedContainer = "container:INMiOSSDKSample.xcodeproj">
             </BuildableReference>
@@ -31,7 +31,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0ACBEBF21B62DF6400479F56"
-            BuildableName = "INMiOSSDKSample.app"
+            BuildableName = "Navigator Sample.app"
             BlueprintName = "INMiOSSDKSample"
             ReferencedContainer = "container:INMiOSSDKSample.xcodeproj">
          </BuildableReference>
@@ -54,7 +54,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0ACBEBF21B62DF6400479F56"
-            BuildableName = "INMiOSSDKSample.app"
+            BuildableName = "Navigator Sample.app"
             BlueprintName = "INMiOSSDKSample"
             ReferencedContainer = "container:INMiOSSDKSample.xcodeproj">
          </BuildableReference>
@@ -71,7 +71,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0ACBEBF21B62DF6400479F56"
-            BuildableName = "INMiOSSDKSample.app"
+            BuildableName = "Navigator Sample.app"
             BlueprintName = "INMiOSSDKSample"
             ReferencedContainer = "container:INMiOSSDKSample.xcodeproj">
          </BuildableReference>
