@@ -6,7 +6,7 @@ Sample Application to demonstrate the features of IBM Navigator Mobile iOS SDK
 
 ## Usage
 
-Simply place IBMECMCore.framework in the same folder as the workspace file (not the project file,) build and run on simulator. You can connect only to IBM Content Navigator V3.0.0 or later (more information [here](https://www.ibm.com/us-en/marketplace/content-navigator))
+Simply place IBMECMCore.framework in the same folder as the workspace file (not the project file,) build and run on simulator. You can connect only to IBM Content Navigator V3.0.11 or later (more information [here](https://www.ibm.com/docs/en/content-navigator))
 
 ## Screenshots
 
